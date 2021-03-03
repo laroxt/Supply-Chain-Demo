@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home-TDA (Supply Chain)</title>
+
+	<!-- Global stylesheets -->
+	<link href="https//fonts.googleapis.com/css?family=Roboto400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="./global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="./global_assets/js/main/jquery.min.js"></script>
+	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="./global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="./global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+	<script src="./global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="./global_assets/js/plugins/extensions/cookie.js"></script>
+
+
+	<script src="assets/js/app.js"></script>
+	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+
+		<!-- Header with logos -->
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="./global_assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="./global_assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- /header with logos -->
+
+
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="./global_assets/images/logo_dark.png" alt="">
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+		<!-- /mobile controls -->
+
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bell3"></i>
+						<span class="d-md-none ml-2">Alert</span>
+						<span class="badge badge-mark border-pink-400 ml-auto ml-md-0"></span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Alert</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has 'Notified' on this programme
+											SM21</span>
+									</div>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Alert</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bubble-notification"></i>
+						<span class="d-md-none ml-2">Notifications</span>
+						<span class="badge badge-mark border-pink-400 ml-auto ml-md-0"></span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Notifications</span>
+
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="./global_assets/images/placeholders/placeholder2.jpg" width="36"
+											height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Aidan Chong</a>
+										<span class="d-block text-muted font-size-sm">has closed
+											Project TDA/POD-CEMRT_20/2021/803/909</span>
+									</div>
+
+								</li>
+
+
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All Notification</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<span class="badge bg-success-400 badge-pill ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+						data-toggle="dropdown">
+						<img src="./global_assets/images/placeholders/placeholder2.jpg" class="rounded-circle mr-2"
+							height="34" alt="">
+						<span>Aidan Chong</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
+						<a href="#" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- /navbar content -->
+
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-user" style="padding-bottom: 0px;">
+					<div class="card-body" style="
+					padding-bottom: 0px;
+				">
+						<div class="media">
+							<div class="mr-3">
+								<a href="#"><img src="./global_assets/images/placeholders/placeholder2.jpg" width="38"
+										height="38" class="rounded-circle" alt=""></a>
+							</div>
+
+							<div class="media-body" style="padding-bottom: 10000;">
+								<div class="media-title font-weight-semibold">Aidan Chong
+								</div>
+								<div class="font-size-xs opacity-50">
+									<i class="icon-pin font-size-sm"></i> &nbsp;Kuala Lumpur, MYR
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"
+								title="Main"></i>
+						</li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active" style="background-color:#c9382e;">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-spinner4"></i> <span>Supply Chain</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="./layout_1/LTR/default/full/index.html"
+										class="nav-link">Company</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link active">Verification</a></li>
+								<li class="nav-item"><a href="./layout_3/LTR/default/full/index.html"
+										class="nav-link">Report</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Data Entry</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="./layout_1/LTR/default/full/index.html"
+										class="nav-link">Main-Contractor</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link active">Sub-Contractor</a>
+								</li>
+								<li class="nav-item"><a href="./layout_3/LTR/default/full/index.html"
+										class="nav-link">Distributor</a></li>
+								<li class="nav-item"><a href="./layout_4/LTR/default/full/index.html"
+										class="nav-link">Supplier</a></li>
+								<li class="nav-item"><a href="./layout_5/LTR/default/full/index.html"
+										class="nav-link">Manufacturer</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="./RTL/default/full/index.html" class="nav-link"><i
+									class="icon-gear"></i> <span>Settings</span></a></li>
+						<li class="nav-item"><a href="./RTL/default/full/index.html" class="nav-link"><i
+									class="icon-exit"></i> <span>Log Out</span></a></li>
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex" style="margin-left:18px;">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+						</div>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content2 pt-0">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- 2 columns form -->
+						<!-- Basic bars -->
+						<div class="card">
+							<div class="card-body">
+								<form class="wizard-form steps-starting-step" action="#" data-fouc>
+									<h6>Company<br>Information</h6>
+									<hr class="solid solid-form-divider">
+									<fieldset>
+										<h3 class="font-size-xs mb-1">1/6</h3>
+										<h3 class="font-weight-bold">Company Information</h3>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Company Origin</label>
+													<input type="text" name="name" class="form-control"
+														placeholder="John Doe">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Company Name</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Company Type</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+
+														<optgroup label="Latin America">
+															<option value="3">Chile</option>
+															<option value="4">Argentina</option>
+															<option value="5">Colombia</option>
+															<option value="6">Peru</option>
+														</optgroup>
+
+														<optgroup label="Europe">
+															<option value="8">Croatia</option>
+															<option value="9">Hungary</option>
+															<option value="10">Ukraine</option>
+															<option value="11">Greece</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Year Incorporated</label>
+												<div class="row">
+													<div class="col-md-4">
+														<div class="form-group">
+															<select name="birth-month" data-placeholder="Month"
+																class="form-control form-control-select2" data-fouc>
+																<option></option>
+																<option value="1">January</option>
+																<option value="2">February</option>
+																<option value="3">March</option>
+																<option value="4">April</option>
+																<option value="5">May</option>
+																<option value="6">June</option>
+																<option value="7">July</option>
+																<option value="8">August</option>
+																<option value="9">September</option>
+																<option value="10">October</option>
+																<option value="11">November</option>
+																<option value="12">December</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="col-md-4">
+														<div class="form-group">
+															<select name="birth-day" data-placeholder="Day"
+																class="form-control form-control-select2" data-fouc>
+																<option></option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+																<option value="7">7</option>
+																<option value="8">8</option>
+																<option value="9">9</option>
+																<option value="...">...</option>
+																<option value="31">31</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="col-md-4">
+														<div class="form-group">
+															<select name="birth-year" data-placeholder="Year"
+																class="form-control form-control-select2" data-fouc>
+																<option></option>
+																<option value="1">1980</option>
+																<option value="2">1981</option>
+																<option value="3">1982</option>
+																<option value="4">1983</option>
+																<option value="5">1984</option>
+																<option value="6">1985</option>
+																<option value="7">1986</option>
+																<option value="8">1987</option>
+																<option value="9">1988</option>
+																<option value="10">1989</option>
+																<option value="11">1990</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Accredetation</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+
+														<optgroup label="Latin America">
+															<option value="3">Chile</option>
+															<option value="4">Argentina</option>
+															<option value="5">Colombia</option>
+															<option value="6">Peru</option>
+														</optgroup>
+
+														<optgroup label="Europe">
+															<option value="8">Croatia</option>
+															<option value="9">Hungary</option>
+															<option value="10">Ukraine</option>
+															<option value="11">Greece</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Level of Services</label>
+													<select name="position" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Developer Relations">
+															<option value="1">Sales Engineer</option>
+															<option value="2">Ads Solutions Consultant</option>
+															<option value="3">Technical Solutions Consultant</option>
+															<option value="4">Business Intern</option>
+														</optgroup>
+
+														<optgroup label="Engineering &amp; Design">
+															<option value="5">Interaction Designer</option>
+															<option value="6">Technical Program Manager</option>
+															<option value="7">Software Engineer</option>
+															<option value="8">Information Security Engineer</option>
+														</optgroup>
+
+														<optgroup label="Marketing &amp; Communications">
+															<option value="13">Media Outreach Manager</option>
+															<option value="14">Research Manager</option>
+															<option value="15">Marketing Intern</option>
+															<option value="16">Business Intern</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+
+									<h6>Manpower</h6>
+									<fieldset>
+										<h3 class="font-size-xs mb-1">2/6</h3>
+										<h3 class="font-weight-bold">Manpower</h3>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Qualificattion</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Expertise</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Skills</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Nationality</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Gender</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>No. of Manpower</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+													</di>
+												</div>
+											</div>
+									</fieldset>
+
+									<h6>Material</h6>
+									<fieldset>
+										<h3 class="font-size-xs mb-1">3/6</h3>
+										<h3 class="font-weight-bold">Material</h3>
+										<h6 class="font-weight-bold font-italic">Original Equipment Manufacturer (OEM)
+										</h6>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Part Name</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Quantity</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Skills</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<h6 class="font-weight-bold font-italic">General Material Information
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Part of Product</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Description</label>
+													<textarea name="email" class="form-control form-textarea"
+														placeholder="your@email.com"></textarea>
+												</div>
+												<div class="form-group">
+													<label>Standard</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<h6 class="font-weight-bold font-italic">Quality Doc
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Illustrated Part Catalogue (IPC)</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Specifications</label>
+													<textarea class="form-control form-textarea"
+														placeholder="your@email.com"></textarea>
+												</div>
+												<div class="form-group">
+													<label>Design Drawing</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Price (MYR)</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+											</div>
+									</fieldset>
+
+
+									<h6>Machinery</h6>
+									<fieldset>
+										<h3 class="font-size-xs mb-1">4/6</h3>
+										<h3 class="font-weight-bold">Machinery</h3>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Country Origin</label>
+													<select name="location" data-placeholder="Select position"
+														class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="North America">
+															<option value="1">United States</option>
+															<option value="2">Canada</option>
+														</optgroup>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Type</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Brand</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Model</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+												<div class="form-group">
+													<label>Function Description</label>
+													<textarea type="email" name="email"
+														class="form-control form-textarea"
+														placeholder="your@email.com"></textarea>
+												</div>
+												<div class="form-group">
+													<label>Price (MYR)</label>
+													<input type="email" name="email" class="form-control"
+														placeholder="your@email.com">
+												</div>
+											</div>
+									</fieldset>
+
+
+								</form>
+							</div>
+						</div>
+						<!-- /basic bars -->
+					</div>
+				</div>
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+						data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="http//themeforest.net/user/Kopyov"
+							target="_blank">Technology Depository Agency (TDA)</a>
+					</span>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+
+</html>
