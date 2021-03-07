@@ -191,7 +191,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
+						<a href="./user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
 						<a href="#" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
@@ -241,7 +241,7 @@
 								<div class="media-title font-weight-semibold">Aidan Chong
 								</div>
 								<div class="font-size-xs opacity-50">
-								 AidanChong@hummingsoft.com.my
+									AidanChong@hummingsoft.com.my
 								</div>
 							</div>
 						</div>
@@ -268,11 +268,13 @@
 								</span>
 							</a>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-spinner4"></i> <span>Supply Chain</span></a>
+						<li class="nav-item nav-item-submenu nav-item-open">
+							<a href="#" class="nav-link active"><i class="icon-spinner4"></i> <span>Supply
+									Chain</span></a>
 
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="./sc-project-list.html" class="nav-link">Project</a></li>
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts" style="display: block;">
+								<li class="nav-item"><a href="./sc-project-list.html"
+										class="nav-link active">Project</a></li>
 								<li class="nav-item"><a href="./sc-company-list.html" class="nav-link">Company</a></li>
 								<li class="nav-item"><a href="./verification-list-project.html"
 										class="nav-link">Verification</a></li>
@@ -328,7 +330,8 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<h href="#" class="breadcrumb-item"> Supply Chain</h>
+							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -345,9 +348,10 @@
 							<h4 class="card-title font-weight-bold">Project List</h4>
 							<div class="header-elements">
 								<div class="list-icons">
-									<button type="button"
-										class="btn btn-success btn-labeled btn-labeled-left btn-sm"><b><i
-												class="icon-add"></i></b> Add New Project</button>
+									<button type="button" onClick="location.href='sc-project-list-add.html'"
+										class="btn bg-success btn-icon rounded-round"><i class="icon-plus3"></i> Add New
+										Project
+									</button>
 								</div>
 							</div>
 						</div>
@@ -388,7 +392,7 @@
 							<div class="card-body-content2">
 								<h5 class="card-title font-weight-bold">Project ABC1 2021</h5>
 								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="#" class="btn bg-light mr-1">See More</a>
+								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
 							</div>
 						</div>
 					</div>
