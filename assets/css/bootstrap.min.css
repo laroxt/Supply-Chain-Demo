@@ -2261,7 +2261,7 @@ textarea.form-control {
     padding: .4375rem .875rem;
     font-size: .8125rem;
     line-height: 1.5385;
-    border-radius: .1875rem;
+    border-radius: 15px;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -4044,7 +4044,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .navbar-light .navbar-text {
-    color: rgba(51, 51, 51, .85)
+    color: rgba(242, 242, 242, 0.85)
 }
 
 .navbar-light .navbar-text a {
@@ -4157,7 +4157,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .card-header {
-    padding: .9375rem 2.25rem;
+    padding: .9375rem 1.25rem;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, .02);
     border-bottom: 1px solid rgba(0, 0, 0, .125)
@@ -4209,8 +4209,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .card-img-top {
     width: 100%;
-    border-top-left-radius: .125rem;
-    border-top-right-radius: .125rem
+    border-top-left-radius: 1.125rem;
+    border-top-right-radius: 1.125rem
 }
 
 .card-img-bottom {
@@ -9141,4 +9141,35 @@ a.text-dark:focus, a.text-dark:hover {
         color: inherit;
         border-color: #ddd
     }
+}
+
+.card-body-content {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    height: 225px;
+    background-color: #373234;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card-body-content2 {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    height: 170px;
+    background-color: #373234;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #373234;
+    outline: 1px solid slategrey;
 }

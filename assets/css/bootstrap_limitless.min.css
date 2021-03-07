@@ -1830,8 +1830,8 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 
 .navbar-collapse {
     margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    padding-left: 1.25rem;
+    /* margin-right: -1.25rem; */
+    padding-left: 2.25rem;
     padding-right: 1.25rem
 }
 
@@ -2249,9 +2249,13 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-light {
-    color: rgba(51, 51, 51, .85);
-    background-color: #fff;
-    border-bottom-color: rgba(0, 0, 0, .125)
+    background: #ff4b1f;
+    background: #ED213A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content+.navbar-light, .fixed-bottom>.navbar-light:first-child, .page-content+.navbar-light, .page-header-content+.navbar-light {
@@ -2275,7 +2279,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-light .navbar-nav-link {
-    color: rgba(51, 51, 51, .85);
+    color: white;
     border-radius: 30px;
 }
 
@@ -2295,7 +2299,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 }
 
 .navbar-light .navbar-text a {
-    color: #2196f3
+    color: #fafafa
 }
 
 .navbar-light .navbar-text a:focus, .navbar-light .navbar-text a:hover {
@@ -2304,7 +2308,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 
 .navbar-dark {
     color: rgba(255, 255, 255, .9);
-    background-color: #252b38;
+    background-color: #373234;
     border-bottom-color: rgba(255, 255, 255, .1)
 }
 
@@ -2712,7 +2716,7 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
 
 @media (prefers-reduced-motion:reduce) {
     .card-img-actions-overlay {
-        transition: none
+        transition: 0.2s
     }
 }
 
@@ -2858,7 +2862,7 @@ a.breadcrumb-elements-item, a.breadcrumb-item {
 
 .breadcrumb-line {
     position: relative;
-    padding-left: 1.25rem;
+    padding-left: 2.25rem;
     padding-right: 1.25rem;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent

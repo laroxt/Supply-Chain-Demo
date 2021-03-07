@@ -91,7 +91,7 @@ var FormWizard = (function () {
         finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
       },
       transitionEffect: "fade",
-      startIndex: 2,
+      startIndex: 0,
       autoFocus: true,
       onFinished: function (event, currentIndex) {
         alert("Form submitted.");

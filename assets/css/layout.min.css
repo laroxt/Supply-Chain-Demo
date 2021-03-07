@@ -41,6 +41,7 @@ body {
 
 .content2 {
     padding: 1.25rem 1.25rem;
+    margin-bottom: 120px;
     -ms-flex-positive: 1;
     margin: 20px 30px;
     flex-grow: 1
@@ -1373,4 +1374,17 @@ body {
 
 .form-textarea {
     height: 150px !important;
+}
+
+thead {
+    background-color: #373234;
+    color: white;
+}
+
+.account-settings-user-profile-image {
+    border-radius: 300px;
+}
+
+.card-user-profile-image {
+    border-radius: 300px;
 }

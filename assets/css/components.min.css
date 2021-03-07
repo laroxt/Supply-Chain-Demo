@@ -4459,7 +4459,7 @@ body.trumbowyg-body-fullscreen {
 
 .daterangepicker .table-condensed .month {
     font-size: .9375rem;
-    color: #333;
+    color: rgb(255, 255, 255);
     padding-top: .46875rem;
     padding-bottom: .46875rem;
     font-weight: 500
@@ -14291,7 +14291,7 @@ a.fc-more:hover {
 
 .dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button.current:focus, .dataTables_paginate .paginate_button.current:hover {
     color: #fff;
-    background-color: #37474f
+    background-color: #373234
 }
 
 .dataTables_paginate .paginate_button.disabled, .dataTables_paginate .paginate_button.disabled:focus, .dataTables_paginate .paginate_button.disabled:hover {

@@ -25,3 +25,20 @@ function fxForeigner() {
     foreignerForm.style.display = "none";
   }
 }
+
+$(document).ready(function () {
+  $("select")
+    .change(function () {
+      $("select option:selected").each(function () {
+        if ($(this).attr("value") == "1") {
+          $(".formHide").hide();
+          $(".ssmFormShow").show();
+        }
+        if ($(this).attr("value") == "0") {
+          $(".formHide").hide();
+          $(".ssmForeignFormShow").show();
+        }
+      });
+    })
+    .change();
+});
