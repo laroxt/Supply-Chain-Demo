@@ -485,7 +485,7 @@ body {
 }
 
 .sidebar-dark {
-    background-color: #373234;
+    background-color: #30353b;
     color: #fff
 }
 
@@ -531,7 +531,7 @@ body {
 }
 
 .sidebar-dark .nav-sidebar>.nav-item-open>.nav-link:not(.disabled), .sidebar-dark .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light .card[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent) .nav-sidebar>.nav-item-open>.nav-link:not(.disabled), .sidebar-light .card[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent) .nav-sidebar>.nav-item>.nav-link.active {
-    background-color: #F44336;
+    background-color: #990302;
     color: #fff;
     margin: 6px 10px;
     border-radius: 15px;

@@ -14291,7 +14291,8 @@ a.fc-more:hover {
 
 .dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button.current:focus, .dataTables_paginate .paginate_button.current:hover {
     color: #fff;
-    background-color: #373234
+    background-color: #373234;
+    border-radius: 30px;
 }
 
 .dataTables_paginate .paginate_button.disabled, .dataTables_paginate .paginate_button.disabled:focus, .dataTables_paginate .paginate_button.disabled:hover {

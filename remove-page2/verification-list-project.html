@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Supply Chain | Company List</title>
+	<title>Verification | Project List</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -23,7 +23,7 @@
 	<script src="./global_assets/js/main/jquery.min.js"></script>
 	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
 	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
-
+	<script src="./global_assets/js/main/table_ticker.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -53,6 +53,10 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -65,8 +69,8 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-			<a href="index.html" class="d-inline-block">
-					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+				<a href="index.html" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:125px; height: 35px; "
 						alt="">
 				</a>
 			</div>
@@ -261,7 +265,8 @@
 								title="Main"></i>
 						</li>
 						<li class="nav-item">
-							<a href="./home-recent-activity.html" class="nav-link">
+							<a href="./home-recent-activity.html" class="nav-link active"
+								style="background-color:#c9382e;">
 								<i class="icon-home4"></i>
 								<span>
 									Home
@@ -278,7 +283,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a href="./sc-company-list.html" class="nav-link active">
+							<a href="./sc-company-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Company
@@ -290,7 +295,7 @@
 							<a href="./report-list.html" class="nav-link">
 								<i class="icon-paste2"></i>
 								<span>
-									Export CSV
+									Report
 								</span>
 							</a>
 						</li>
@@ -299,8 +304,16 @@
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="./data-entry-mcontractor-form.html"
-										class="nav-link">Company & Resources Information</a></li>
-
+										class="nav-link">Main-Contractor</a></li>
+								<li class="nav-item"><a href="./data-entry-scontractor-form.html"
+										class="nav-link">Sub-Contractor</a>
+								</li>
+								<li class="nav-item"><a href="./data-entry-distributor-form.html"
+										class="nav-link">Distributor</a></li>
+								<li class="nav-item"><a href="./data-entry-supplier-form .html"
+										class="nav-link">Supplier</a></li>
+								<li class="nav-item"><a href="./data-entry-manufacturer-form.html"
+										class="nav-link">Manufacturer</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -314,7 +327,8 @@
 								</li>
 							</ul>
 						</li>
-
+						<li class="nav-item"><a href="./index.html" class="nav-link"><i class="icon-exit"></i> <span>Log
+									Out</span></a></li>
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -335,7 +349,8 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<h href="#" class="breadcrumb-item"> Supply Chain</h>
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="./verification-list-project.html" class="breadcrumb-item"> Project Verification
+								List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -346,202 +361,151 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-							<div class="header-elements">
-								<div class="list-icons">
-									<button type="button" onClick="location.href='sc-company-list-add.html'"
-										class="btn bg-success btn-icon rounded-round"><i class="icon-plus3"></i> Add New
-										Company
-									</button>
+				<div class="card">
+					<div class="card-header header-elements-inline bg-white">
+						<h4 class="card-title font-weight-bold">Project Verification List</h4>
+						<div class="header-elements">
+							<div class="list-icons">
+								<div class="dropdown">
+									<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"
+										aria-expanded="false"><i class="icon-menu7"></i></a>
+									<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+										style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(33px, 19px, 0px);">
+										<a href="./verification-list-project.html" class="dropdown-item">Project
+											Verification List</a>
+										<a href="./verification-list-company.html" class="dropdown-item">Company
+											Verification List</a>
+										<a href="./verification-list-data-entry.html" class="dropdown-item">Data Entry
+											Verification List</a>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-									<i class="fas icon-search4 h4 text-body m-1"></i>
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
+					<table class="table datatable-basic" id="tblData">
+						<thead>
+							<tr>
+								<th class="table-row-color"><input type="checkbox" id="chkParent"
+										class="table-checkbox" />
+								<th>No.</th>
+								<th>Project Name</th>
+								<th>Post By</th>
+								<th>Role</th>
+								<th>Added Date</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>1</td>
+								<td>Project ABC1 2021</td>
+								<td>Ezan Saidul</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>2</td>
+								<td>Project ABC2 2021</td>
+								<td>Muhammand Ismail</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>3</td>
+								<td>Project ABC3 2021</td>
+								<td>Aidan Chong</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>4</td>
+								<td>Project ABC4 2021</td>
+								<td>Michael John</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>5</td>
+								<td>Project ABC5 2021</td>
+								<td>Lim Chung Yang</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>6</td>
+								<td>Project ABC6 2021</td>
+								<td>Shaiful Abidin</td>
+								<td>Industry Intelligent</td>
+								<td>01/01/2021</td>
+								</td>
+								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
+										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Comment"><i
+												class="icon-comment"></i></button>
+									</span>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="text-right mr-3 mb-3">
+						<button type="submit" class="btn btn-success">Verify</button>
+						<button type="submit" class="btn btn-danger">Reject</button>
 					</div>
 				</div>
-
-				<div class="row">
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-company-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-company-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5><br>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">See More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-				</div>
-
 			</div>
-
 			<!-- /content area -->
 
 
 			<!-- Footer -->
-		<div class="navbar navbar-expand-lg navbar-light2">
+			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
 						data-target="#navbar-footer">
