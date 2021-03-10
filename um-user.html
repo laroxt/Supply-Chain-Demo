@@ -69,7 +69,7 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-			<a href="index.html" class="d-inline-block">
+				<a href="index.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
@@ -146,7 +146,7 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					
+
 
 					<div class="dropdown-menu dropdown-content wmin-md-300">
 						<div class="dropdown-content-header">
@@ -294,15 +294,7 @@
 								</span>
 							</a>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Data Entry</span></a>
 
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="./data-entry-mcontractor-form.html"
-										class="nav-link">Company & Resource Information</a></li>
-
-							</ul>
-						</li>
 						<li class="nav-item nav-item-submenu nav-item-open">
 							<a href="#" class="nav-link active"><i class="icon-user"></i> <span>User
 									Management</span></a>
@@ -352,8 +344,9 @@
 						<h4 class="card-title font-weight-bold">User List</h4>
 						<div class="header-elements">
 							<div class="list-icons">
-								<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"><i
-										class="icon-plus-circle2"></i> Add New User</button>
+								<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"
+									data-toggle="modal" data-target="#formUser"><i class="icon-plus-circle2"></i> Add
+									New User</button>
 							</div>
 						</div>
 					</div>
@@ -472,9 +465,75 @@
 			</div>
 			<!-- /content area -->
 
+			<!-- Full width modal/ Sub-Contractor-->
+			<div id="formUser" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<div class="card">
+										<div class="card-header bg-white header-elements-inline">
+											<h4 class="card-title font-weight-bold">Add New Person-in-Charge</h4>
+										</div>
+										<div class="card-body">
+											<form action="#">
+												<div class="form-group">
+													<label>Name:</label>
+													<select name="location" data-placeholder="Select country of origin"
+														class="form-control select-search" data-fouc>
+														<option></option>
+														<option value="">-- select one --</option>
+														<option value="Suzan">Suzan
+														</option>
+														<option value="Ismail">Ismail</option>
+														<option value="John">John</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Email:</label>
+													<select name="location" data-placeholder="Select country of origin"
+														class="form-control select-search" data-fouc disabled>
+														<option></option>
+														<option value="">-- select one --</option>
+														<option value="Gamuda" selected>Ismail@Gamuda.com
+														</option>
+														<option value="TDA">TDA</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label>Role:</label>
+													<select name="location" data-placeholder="Select country of origin"
+														class="form-control select-search" data-fouc>
+														<option></option>
+														<option value="">-- select one --</option>
+														<option value="Industry Intelligent">Industry Intelligent
+														</option>
+														<option value="TDA">TDA</option>
+													</select>
+												</div>
+											</form>
+											<div class="text-right">
+												<button type="submit" class="btn btn-light" class="remove"
+													data-dismiss="modal">Back</button>
+												<button type="submit" class="btn btn-success">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /full width modal -->
 
 			<!-- Footer -->
-		<div class="navbar navbar-expand-lg navbar-light2">
+			<div class="navbar navbar-expand-lg navbar-light2">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
 						data-target="#navbar-footer">

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Projet List | Add</title>
+	<title>Company List | Add</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -267,7 +267,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="./sc-project-list.html" class="nav-link active">
+							<a href="./sc-project-list.html" class="nav-link ">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -276,7 +276,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a href="./sc-company-list.html" class="nav-link">
+							<a href="./sc-company-list.html" class="nav-link active">
 								<i class="icon-collaboration"></i>
 								<span>
 									Company
@@ -325,8 +325,8 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<h href="#" class="breadcrumb-item"> Supply Chain</h>
-							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
-							<a href="./sc-project-list-add.html" class="breadcrumb-item"> Add New Project</a>
+							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="./sc-company-list-add.html" class="breadcrumb-item"> Add New Company</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -342,7 +342,7 @@
 					<div class="col-md-8 offset-md-2">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Add New Project</h4>
+								<h4 class="card-title font-weight-bold">Add New Company</h4>
 							</div>
 
 
@@ -351,7 +351,7 @@
 
 
 									<div class="form-group">
-										<label>Project Image:</label>
+										<label>Company Image:</label>
 										<div class="custom-file">
 											<input type="file" class="custom-file-input" id="customFile">
 											<label class="custom-file-label" for="customFile">Choose
@@ -362,191 +362,97 @@
 									</div>
 
 									<div class="form-group">
-										<label>Project Name:</label>
+										<label>Company Name:</label>
+										<input type="text" class="form-control" placeholder="Example. UEM Group Berhad">
+									</div>
+
+									<div class="form-group">
+										<label>Description:</label>
+										<textarea type="text" class="form-control"
+											placeholder="Example. An international entity operating in emerging and matured economies"></textarea>
+									</div>
+
+									<div class="form-group">
+										<label>Website:</label>
 										<input type="text" class="form-control"
-											placeholder="Example. Project ABC1 2021">
+											placeholder="Example. http://www.uem.com.my/">
 									</div>
 
 									<div class="form-group">
-										<label>Area/Sector:</label>
+										<label>Contact Person:</label>
+										<input type="text" class="form-control" placeholder="Example. Jamal Huddin">
+									</div>
+
+									<div class="form-group">
+										<label>Contact Number:</label>
+										<input type="text" class="form-control" placeholder="Example. 03-2727 6868">
+									</div>
+
+									<div class="form-group">
+										<label>Email:</label>
 										<input type="text" class="form-control"
-											placeholder="Example. Civil & Construction">
-									</div>
-
-									<div class="form-group row">
-										<div class="col-lg-12">
-											<label>Contract Value:</label>
-											<div class="input-group">
-												<span class="input-group-prepend">
-													<span class="input-group-text">RM</span>
-												</span>
-												<input type="number" class="form-control"
-													placeholder="Example. 5,000,000.00">
-											</div>
-										</div>
-
-									</div>
-
-									<div class="form-group row">
-										<div class="col-lg-12">
-											<label>ICV:</label>
-											<div class="input-group">
-												<span class="input-group-prepend">
-													<span class="input-group-text">RM</span>
-												</span>
-												<input type="number" class="form-control"
-													placeholder="Example. 3,200,000">
-											</div>
-										</div>
-
+											placeholder="Example. uemcomms@uemnet.com">
 									</div>
 
 									<div class="form-group">
-										<div class="row">
-											<div class="col-6">
-												<label>Project Start:</label>
-												<div class="input-group">
-													<span class="input-group-prepend">
-														<span class="input-group-text"><i
-																class="icon-calendar22"></i></span>
-													</span>
-													<input type="text" class="form-control daterange-single"
-														value="01/01/2021">
-												</div>
-											</div>
-											<div class="col-6">
-												<label>Project End:</label>
-												<div class="input-group">
-													<span class="input-group-prepend">
-														<span class="input-group-text"><i
-																class="icon-calendar22"></i></span>
-													</span>
-													<input type="text" class="form-control daterange-single"
-														value="01/01/2021">
-												</div>
-											</div>
-										</div>
+										<label>Address:</label>
+										<textarea type="text" class="form-control" placeholder="Example. 17-2 Mercu UEM, Jalan Stesen Sentral 5 Kuala Lumpur Sentral, Wilayah Persekutuan, 50470 Kuala Lumpur
+										"></textarea>
 									</div>
 
 									<div class="form-group">
-										<label>Main Contractor Company Name:</label>
-										<input type="text" class="form-control" placeholder="Example. Gamuda Berhad">
+										<label>Phase</label>
+										<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
+											<option></option>
+											<option value="Advanceced Works" selected>Advanced Works
+											</option>
+											<option value="Guideways">Guideways
+											</option>
+											<option value="Depots">Depots
+											</option>
+											<option value="Underground">Underground
+											</option>
+											<option value="MSPR">MSPR
+											</option>
+											<option value="Systems">Systems
+											</option>
+											<option value="Stations">Stations
+											</option>
+											<option value="Centralised Procurement">Centralised
+												Procurement
+											</option>
+											<option value="Others">Others
+											</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label>Phase</label>
+										<select class="form-control select-multiple-tags" multiple="multiple" data-fouc>
+											<option value="Design" selected>Design
+											</option>
+											<option value="Manufacture">Manufacture
+											</option>
+											<option value="Supply">Supply
+											</option>
+											<option value="Construction">Construction
+											</option>
+											<option value="Test & Comm.">Test & Comm.
+											</option>
+											<option value="Maintenance">Maintenance
+											</option>
+										</select>
 									</div>
 
 
-									<div class="d-flex justify-content-between">
-										<h4 class="font-weight-bold">Main-Contractor Company Information</h4>
-										<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#subContractorForm"><i
-												class="icon-plus3"></i> Add More</button>
-									</div><br>
-									<table class="table datatable-basic mb-2">
-										<thead>
-											<tr>
-												<th>No.</th>
-												<th>Name</th>
-												<th>Email</th>
-												<th>Phone</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
 
-												<td>Ezan Saidul</td>
-												<td>016-111 1111</td>
-												<td>EzranSaidul1&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
 
-												<td>Michael John</td>
-												<td>016-111 1111</td>
-												<td>Micahel_John&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
 
-										</tbody>
-									</table>
 
-									<div class="d-flex justify-content-between">
-										<h4 class="font-weight-bold">Sub-Contractor Company Information</h4>
-										<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#subContractorForm"><i
-												class="icon-plus3"></i> Add More</button>
-									</div><br>
-									<table class="table datatable-basic mb-2">
-										<thead>
-											<tr>
-												<th>No.</th>
-												<th>Name</th>
-												<th>Email</th>
-												<th>Phone</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-
-												<td>Lim Chung Yang</td>
-												<td>016-111 1111</td>
-												<td>LCY1233&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-
-												<td>Muhammad Ismail</td>
-												<td>016-111 1111</td>
-												<td>Ismail&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-
-										</tbody>
-									</table>
 								</form>
-								<h7 class="card-title font-weight-semibold text-danger">Disclaimer:
-								</h7><br>
-								<h7 class="card-title font-weight-semibold">Key-in person-in-charge will
-									create credential for sub-contractor</h7>
 								<div class="text-right">
 									<button type="submit" class="btn btn-light"
-										onClick="location.href='sc-project-list.html'">Back</button>
+										onClick="location.href='sc-company-list.html'">Back</button>
 									<button type="submit" class="btn btn-success">Submit</button>
 								</div>
 							</div>
