@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Projet List | Add</title>
+	<title>Project List | View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -27,11 +27,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="assets/js/app.js"></script>
 	<script src="./global_assets/js/plugins/visualization/d3/d3.min.js"></script>
 	<script src="./global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
 	<script src="./global_assets/js/plugins/forms/styling/switchery.min.js"></script>
 	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
 	<script src="./global_assets/js/plugins/forms/wizards/steps.min.js"></script>
 	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
@@ -39,17 +39,24 @@
 	<script src="./global_assets/js/plugins/forms/inputs/inputmask.js"></script>
 	<script src="./global_assets/js/plugins/forms/validation/validate.min.js"></script>
 	<script src="./global_assets/js/plugins/extensions/cookie.js"></script>
-	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
 
+	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+
+	<script src="assets/js/app.js"></script>
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
-	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/components_collapsible.js"></script>
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
+
 	<!-- /theme JS files -->
 
 </head>
@@ -71,7 +78,7 @@
 			<div class="navbar-brand navbar-brand-xs">
 				<a href="index.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
-						style="width:50px; height: 35px; ">
+						style="width:40px; height: 25px; ">
 				</a>
 			</div>
 		</div>
@@ -139,7 +146,7 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-
+					
 
 					<div class="dropdown-menu dropdown-content wmin-md-300">
 						<div class="dropdown-content-header">
@@ -253,6 +260,7 @@
 							<div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
+						<!-- Home -->
 						<li class="nav-item">
 							<a href="./home-recent-activity.html" class="nav-link">
 								<i class="icon-home4"></i>
@@ -261,33 +269,48 @@
 								</span>
 							</a>
 						</li>
+						<!-- /Home -->
+						<!-- Project -->
 						<li class="nav-item">
-							<a href="./sc-project-list.html" class="nav-link active">
+							<a href="./project-list.html" class="nav-link active">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
 								</span>
 							</a>
 						</li>
-
+						<!-- /Project -->
+						<!-- Company -->
 						<li class="nav-item">
-							<a href="./sc-company-list.html" class="nav-link">
+							<a href="./company-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Company
 								</span>
 							</a>
 						</li>
-
+						<!-- /Company -->
+						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./report-list.html" class="nav-link">
+							<a href="./sub-contractor.html" class="nav-link">
+								<i class="icon-collaboration"></i>
+								<span>
+									Sub-Contractor
+								</span>
+							</a>
+						</li>
+						<!-- /Sub-Contractor -->
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./export-csv.html" class="nav-link">
 								<i class="icon-paste2"></i>
 								<span>
 									Export CSV
 								</span>
 							</a>
 						</li>
-
+						<!-- /Export-CSV -->
+						<!-- User Management -->
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User Management</span></a>
 
@@ -299,7 +322,8 @@
 								</li>
 							</ul>
 						</li>
-
+						<!-- /User Management -->
+						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -320,8 +344,9 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<h href="#" class="breadcrumb-item"> Supply Chain</h>
-							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
-							<a href="./sc-project-list-add.html" class="breadcrumb-item"> Add New Project</a>
+							<a href="./sc-project-list.html" class="breadcrumb-item"> Project
+								List</a>
+							<a href="./sc-project-list-view.html" class="breadcrumb-item"> Project ABC1 2021</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -334,219 +359,150 @@
 			<div class="content2 pt-0">
 				<div class="row">
 					<!-- card content placement -->
-					<div class="col-md-8 offset-md-2">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-img-actions">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-project/abc1.jpg" alt="">
+							</div>
+							<div class="card-body-content2">
+								<h5 class="card-title font-weight-bold">Project ABC1 2021</h5>
+								<label>Contract Value:</label>
+								<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
+								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
+							</div>
+						</div>
+					</div>
+					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-4">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Add New Project</h4>
+								<h4 class="card-title font-weight-bold">Project Information</h4>
 							</div>
-
-
 							<div class="card-body">
-								<form action="#">
 
+								<div class="form-group">
+									<label>Project Name:</label>
+									<h6 class="card-title font-weight-semibold"> Project ABC1 2021</h6>
+								</div>
 
-									<div class="form-group">
-										<label>Project Image:</label>
-										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="customFile">
-											<label class="custom-file-label" for="customFile">Choose
-												file</label>
-										</div>
-										<span class="form-text text-muted">Accepted formats: Jpg. docx. Max file size
-											15Mb</span>
-									</div>
+								<div class="form-group">
+									<label>Area/Sector:</label>
+									<h6 class="card-title font-weight-semibold">Civil & Construction</h6>
+								</div>
 
-									<div class="form-group">
-										<label>Project Name:</label>
-										<input type="text" class="form-control"
-											placeholder="Example. Project ABC1 2021">
-									</div>
+								<div class="form-group">
+									<label>Contract Value:</label>
+									<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
+								</div>
 
-									<div class="form-group">
-										<label>Area/Sector:</label>
-										<input type="text" class="form-control"
-											placeholder="Example. Civil & Construction">
-									</div>
+								<div class="form-group">
+									<label>ICV:</label>
+									<h6 class="card-title font-weight-semibold">RM3,200,000.00</h6>
+								</div>
 
-									<div class="form-group row">
-										<div class="col-lg-12">
-											<label>Contract Value:</label>
-											<div class="input-group">
-												<span class="input-group-prepend">
-													<span class="input-group-text">RM</span>
-												</span>
-												<input type="number" class="form-control"
-													placeholder="Example. 5,000,000.00">
-											</div>
-										</div>
-									</div>
+								<div class="form-group">
+									<label>Project Timeline:</label>
+									<h6 class="card-title font-weight-semibold">01/01/2021 - 31/01/2021 </h6>
+								</div>
 
-									<div class="form-group row">
-										<div class="col-lg-12">
-											<label>ICV:</label>
-											<div class="input-group">
-												<span class="input-group-prepend">
-													<span class="input-group-text">RM</span>
-												</span>
-												<input type="number" class="form-control"
-													placeholder="Example. 3,200,000">
-											</div>
-										</div>
-
-									</div>
-
-									<div class="form-group">
-										<div class="row">
-											<div class="col-6">
-												<label>Project Start:</label>
-												<div class="input-group">
-													<span class="input-group-prepend">
-														<span class="input-group-text"><i
-																class="icon-calendar22"></i></span>
-													</span>
-													<input type="text" class="form-control daterange-single"
-														value="01/01/2021">
-												</div>
-											</div>
-											<div class="col-6">
-												<label>Project End:</label>
-												<div class="input-group">
-													<span class="input-group-prepend">
-														<span class="input-group-text"><i
-																class="icon-calendar22"></i></span>
-													</span>
-													<input type="text" class="form-control daterange-single"
-														value="01/01/2021">
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label>Main Contractor Company Name:</label>
-										<input type="text" class="form-control" placeholder="Example. Gamuda Berhad">
-									</div>
-
-
-									<div class="d-flex justify-content-between">
-										<h4 class="font-weight-bold">Main-Contractor Company Information</h4>
-										<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#subContractorForm"><i
-												class="icon-plus3"></i> Add More</button>
-									</div><br>
-									<table class="table datatable-basic mb-2">
-										<thead>
-											<tr>
-												<th>No.</th>
-												<th>Name</th>
-												<th>Email</th>
-												<th>Phone</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-
-												<td>Ezan Saidul</td>
-												<td>016-111 1111</td>
-												<td>EzranSaidul1&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-
-												<td>Michael John</td>
-												<td>016-111 1111</td>
-												<td>Micahel_John&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-
-										</tbody>
-									</table>
-
-									<div class="d-flex justify-content-between">
-										<h4 class="font-weight-bold">Sub-Contractor Company Information</h4>
-										<button type="button" class="btn bg-success-400 btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#subContractorForm"><i
-												class="icon-plus3"></i> Add More</button>
-									</div><br>
-									<table class="table datatable-basic mb-2">
-										<thead>
-											<tr>
-												<th>No.</th>
-												<th>Name</th>
-												<th>Email</th>
-												<th>Phone</th>
-												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-
-												<td>Lim Chung Yang</td>
-												<td>016-111 1111</td>
-												<td>LCY1233&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-
-												<td>Muhammad Ismail</td>
-												<td>016-111 1111</td>
-												<td>Ismail&gmail.com</td>
-												<td>
-													<button type="button" class="btn btn-primary btn-icon"><i
-															class="icon-compose" data-popup="tooltip" title=""
-															data-original-title="Edit"></i></button>
-													<button type="button" class="btn btn-danger btn-icon"
-														data-popup="tooltip" title="" data-original-title="Remove"><i
-															class="icon-trash-alt"></i></button>
-												</td>
-												</td>
-											</tr>
-
-										</tbody>
-									</table>
-								</form>
-								<h7 class="card-title font-weight-semibold text-danger">Please Note:
-								</h7><br>
-								<h7 class="card-title font-weight-semibold">When the Person-In-Charge information is
-									keyed-in, the User Credentials will be Auto created and sent to the
-									Person-In-Charge.</h7>
-								<div class="text-right">
-									<button type="submit" class="btn btn-light"
+								<div class="text-right" style="margin-top: 65px;">
+									<button class="btn btn-light"
 										onClick="location.href='sc-project-list.html'">Back</button>
-									<button type="submit" class="btn btn-success">Submit</button>
+									<button class="btn btn-primary">Edit</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-5">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Company Information</h4>
+							</div>
+
+							<div class="card-body">
+
+								<div class="form-group">
+									<label>Company Name:</label>
+									<h6 class="card-title font-weight-semibold">Gamuda Berhad</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Person-in-Charge:</label>
+									<h6 class="card-title font-weight-semibold">Khairul Zamin</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Person-in-Charge Phone:</label>
+									<h6 class="card-title font-weight-semibold">016-111 1111</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Person-in-Charge Email:</label>
+									<h6 class="card-title font-weight-semibold">KhairulZamin@Gamuda.com.</h6>
+								</div>
+
+								<div class="form-group">
+									<div class="card-group-control card-group-control-right"
+										id="accordion-control-right">
+										<div class="card" style="border-radius: 0px;">
+											<div class="card-header bg-dark" style="border-radius: 0px;">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="collapsed text-default text-white"
+														href="#accordion-control-right-group1">Tier 1 Sub-Contractor
+														Company</a>
+												</h6>
+											</div>
+
+											<div id="accordion-control-right-group1" class="collapse"
+												data-parent="#accordion-control-right">
+												<div class="card-body">
+													<h6 class="card-title font-weight-semibold">1.
+														Company 1
+													</h6>
+													<h6 class="card-title font-weight-semibold">2.
+														Company 2
+													</h6>
+													<h6 class="card-title font-weight-semibold">3.
+														Company 3
+													</h6>
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="border-radius: 0px;">
+											<div class="card-header bg-dark" style="border-radius: 0px;">
+												<h6 class="card-title">
+													<a class="collapsed text-default text-white" data-toggle="collapse"
+														href="#accordion-control-right-group2">Tier 2 Sub-Contractor
+														Company</a>
+												</h6>
+											</div>
+
+											<div id="accordion-control-right-group2" class="collapse"
+												data-parent="#accordion-control-right">
+												<div class="card-body">
+													<h6 class="card-title font-weight-semibold">1.
+														Company 1
+													</h6>
+													<h6 class="card-title font-weight-semibold">2.
+														Company 2
+													</h6>
+													<h6 class="card-title font-weight-semibold">3.
+														Company 3
+													</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ card content placement -->
 				</div>
 			</div>
 			<!-- /content area -->

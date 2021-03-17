@@ -69,7 +69,7 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-			<a href="index.html" class="d-inline-block">
+				<a href="index.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
@@ -78,7 +78,7 @@
 			<div class="navbar-brand navbar-brand-xs">
 				<a href="index.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
-						style="width:50px; height: 35px; ">
+						style="width:40px; height: 25px; ">
 				</a>
 			</div>
 		</div>
@@ -146,7 +146,7 @@
 					</div>
 				</li>
 				<li class="nav-item dropdown">
-					
+
 
 					<div class="dropdown-menu dropdown-content wmin-md-300">
 						<div class="dropdown-content-header">
@@ -260,6 +260,7 @@
 							<div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
+						<!-- Home -->
 						<li class="nav-item">
 							<a href="./home-recent-activity.html" class="nav-link active">
 								<i class="icon-home4"></i>
@@ -268,33 +269,48 @@
 								</span>
 							</a>
 						</li>
+						<!-- /Home -->
+						<!-- Project -->
 						<li class="nav-item">
-							<a href="./sc-project-list.html" class="nav-link">
+							<a href="./project-list.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
 								</span>
 							</a>
 						</li>
-
+						<!-- /Project -->
+						<!-- Company -->
 						<li class="nav-item">
-							<a href="./sc-company-list.html" class="nav-link">
+							<a href="./company-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Company
 								</span>
 							</a>
 						</li>
-
+						<!-- /Company -->
+						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./report-list.html" class="nav-link">
+							<a href="./sub-contractor.html" class="nav-link">
+								<i class="icon-collaboration"></i>
+								<span>
+									Sub-Contractor
+								</span>
+							</a>
+						</li>
+						<!-- /Sub-Contractor -->
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./export-csv.html" class="nav-link">
 								<i class="icon-paste2"></i>
 								<span>
 									Export CSV
 								</span>
 							</a>
 						</li>
-					
+						<!-- /Export-CSV -->
+						<!-- User Management -->
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User Management</span></a>
 
@@ -306,7 +322,8 @@
 								</li>
 							</ul>
 						</li>
-
+						<!-- /User Management -->
+						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -336,287 +353,249 @@
 
 
 			<!-- Content area -->
-			<div class="content2 pt-0">
-				<!-- My messages -->
-				<!-- Basic table -->
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h4 class="card-title font-weight-bold">Recent Activities</h4>
-						<div class="header-elements">
-							<div class="list-icons">
-								<a class="list-icons-item" data-action="reload"></a>
+			<div class="content pt-0">
+				<!-- /basic table -->
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h4 class="card-title font-weight-bold">Recent Activities</h4>
+								<div class="header-elements">
+									<div class="list-icons">
+										<a class="list-icons-item mr-2" data-action="reload"></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-25">Username</th>
+											<th>Activity</th>
+											<th>Date & Time</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u1.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Aidan
+														Chong </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add Company & Resource
+															Information
+															Data Entry</div>
+														<span class="text-muted">Gamuda Sdn Bhd</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 3:30PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u2.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Michael
+														James </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add Sub-Contractor Data Entry
+														</div>
+														<span class="text-muted">UEM Group Berhad</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 5:02PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u3.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Sophia
+														Lim
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Comment</div>
+														<span class="text-muted">Project ABC2 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 12:32PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u4.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Azleen
+														Roman
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Company
+															List</div>
+														<span class="text-muted">Gamuda Sdn Bhd</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 1:42PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Suzan
+														Heng
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Company
+															List</div>
+														<span class="text-muted">WCT Holdings Berhad</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 9:00AM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u6.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Johan
+														Abdullah </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Project
+															List</div>
+														<span class="text-muted">Project ABC1 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 8:00PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u7.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Jordan
+														Kim
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Comment
+														</div>
+														<span class="text-muted">Project ABC3 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 10:00PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u8.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Lim
+														Wong Lee </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Project
+															List</div>
+														<span class="text-muted">Project ABC4 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 2:00AM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
 
-					<div class="table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>Username</th>
-									<th>Role</th>
-									<th>Activity</th>
-									<th>Date & Time</th>
-									<th>Action</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u1.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Aidan
-												Chong <span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add Company & Resource Information
-													Data Entry</div>
-												<span class="text-muted">Gamuda Sdn Bhd</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 3:30PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u2.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Michael
-												James <span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add Sub-Contractor Data Entry</div>
-												<span class="text-muted">UEM Group Berhad</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 5:02PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u3.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Sophia Lim
-												<span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Comment</div>
-												<span class="text-muted">Project ABC2 2021</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 12:32PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u4.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Azleen Roman
-												<span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Company
-													List</div>
-												<span class="text-muted">Gamuda Sdn Bhd</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 1:42PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Suzan Heng
-												<span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Company
-													List</div>
-												<span class="text-muted">WCT Holdings Berhad</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 9:00AM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u6.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Johan
-												Abdullah <span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Project
-													List</div>
-												<span class="text-muted">Project ABC1 2021</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 8:00PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u7.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#"
-												class="text-default font-weight-semibold letter-icon-title">Jordan Kim
-												<span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Comment
-												</div>
-												<span class="text-muted">Project ABC3 2021</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 10:00PM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-								<tr>
-									<td>
-										<div>
-											<img src="./global_assets/images/placeholders/placeholder_u8.jpg"
-												class="rounded-circle mr-2" width="36" height="36" alt="">
-											<a href="#" class="text-default font-weight-semibold letter-icon-title">Lim
-												Wong Lee <span class="badge badge-mark border-success"></span></a>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Industry Intelligent</div>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div class="mr-1">
-											<h href="#" class="text-default">
-												<div class="font-weight-semibold">Add New Project
-													List</div>
-												<span class="text-muted">Project ABC4 2021</span>
-											</h>
-										</div>
-									</td>
-									<td>
-										<div>Jan 18, 2021 at 2:00AM</div>
-									</td>
-									<td><button class="btn btn-light">View</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 				</div>
 				<!-- /basic table -->
 			</div>
@@ -624,7 +603,7 @@
 
 
 			<!-- Footer -->
-		<div class="navbar navbar-expand-lg navbar-light2">
+			<div class="navbar navbar-expand-lg navbar-light2">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
 						data-target="#navbar-footer">

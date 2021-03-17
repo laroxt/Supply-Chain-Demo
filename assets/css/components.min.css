@@ -4082,7 +4082,6 @@ input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
     backface-visibility: hidden;
     border-bottom-right-radius: .1875rem;
     border-bottom-left-radius: .1875rem;
-    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1)
 }
 
 .trumbowyg-modal-box .trumbowyg-modal-title {
