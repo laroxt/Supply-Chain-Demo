@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Projet List | Add</title>
+	<title>Add Project</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -265,6 +265,16 @@
 							</a>
 						</li>
 						<!-- /Home -->
+						<!-- Company -->
+						<li class="nav-item">
+							<a href="./company-list.html" class="nav-link">
+								<i class="icon-briefcase"></i>
+								<span>
+									Company
+								</span>
+							</a>
+						</li>
+						<!-- /Company -->
 						<!-- Project -->
 						<li class="nav-item">
 							<a href="./project-list.html" class="nav-link active">
@@ -275,19 +285,9 @@
 							</a>
 						</li>
 						<!-- /Project -->
-						<!-- Company -->
-						<li class="nav-item">
-							<a href="./company-list.html" class="nav-link">
-								<i class="icon-collaboration"></i>
-								<span>
-									Company
-								</span>
-							</a>
-						</li>
-						<!-- /Company -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./sub-contractor.html" class="nav-link">
+							<a href="./sub-contrator-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Sub-Contractor
@@ -377,12 +377,13 @@
 
 									<div class="form-group">
 										<label>Project/Contract Name:</label>
-										<input type="text" class="form-control" placeholder="Example. Ismail Kumar">
+										<input type="text" class="form-control"
+											placeholder="Example. Advance City 2021">
 									</div>
 
 									<div class="form-group">
 										<label>Project/Contract Reference Number:</label>
-										<input type="text" class="form-control" placeholder="Example. FQ12012021">
+										<input type="text" class="form-control" placeholder="Example. FQ21022021">
 									</div>
 
 									<div class="d-flex justify-content-between">
@@ -505,10 +506,15 @@
 										<input type="text" class="form-control" placeholder="Example. Gamuda Berhad">
 									</div>
 
+									<div class="form-group">
+										<label>Company Registration Number(SSM)/ Unique ID:</label>
+										<input type="text" class="form-control" placeholder="Example. 201901000005">
+									</div>
+
 									<div class="d-flex justify-content-between">
 										<h5 class="font-weight-bold">Main-Contractor Information</h5>
 										<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#mContractorInfo"><i
+											data-toggle="modal" data-target="#ContractorInfo"><i
 												class="icon-plus3"></i></button>
 									</div><br>
 
@@ -575,7 +581,7 @@
 			<!-- /content area -->
 
 			<!-- Full width modal/ Sector & Business Area -->
-			<div id="mContractorInfo" class="modal fade" tabindex="-1">
+			<div id="ContractorInfo" class="modal fade" tabindex="-1">
 				<div class="modal-dialog modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -587,7 +593,7 @@
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Sector & Business Area</h4>
+											<h4 class="card-title font-weight-bold">Contractor Information</h4>
 										</div>
 										<div class="card-body">
 											<form action="#">
