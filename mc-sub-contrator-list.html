@@ -261,7 +261,7 @@
 						</li>
 						<!-- Home -->
 						<li class="nav-item">
-							<a href="./mc-home-sc-introduction.html" class="nav-link">
+							<a href="./mc-home-mc-introduction.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Home
@@ -349,7 +349,7 @@
 								<h4 class="card-title font-weight-bold">Sub-Contractor Information</h4>
 								<div class="list-icons">
 									<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-										onClick="location.href='mc-sub-contractor.html'"><i
+										data-toggle="modal" data-target="#SubContractorInfo"><i
 											class="icon-plus3"></i></button>
 								</div>
 							</div>
@@ -420,7 +420,7 @@
 			<!-- /content area -->
 
 			<!-- Full width modal/ Sector & Business Area -->
-			<div id="ContractorInfo" class="modal fade" tabindex="-1">
+			<div id="SubContractorInfo" class="modal fade" tabindex="-1">
 				<div class="modal-dialog modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -436,6 +436,16 @@
 										</div>
 										<div class="card-body">
 											<form action="#">
+												<div class="form-group">
+													<label>Project/Contract Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Construction Maintenance 1M">
+												</div>
+												<div class="form-group">
+													<label>Project/Contract Reference Number:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. 1M020220212">
+												</div>
 												<div class="form-group">
 													<label>Full Name:</label>
 													<input type="text" class="form-control"
