@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>User Management | User</title>
+	<title>Admin User Management | Role</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -262,7 +262,7 @@
 						</li>
 						<!-- Home -->
 						<li class="nav-item">
-							<a href="./home-recent-activity.html" class="nav-link">
+							<a href="./admin-home-sc-introduction.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Home
@@ -270,47 +270,21 @@
 							</a>
 						</li>
 						<!-- /Home -->
-						<!-- Company -->
-						<li class="nav-item">
-							<a href="./company-list.html" class="nav-link">
-								<i class="icon-briefcase"></i>
-								<span>
-									Company
-								</span>
-							</a>
+						<!-- User Management -->
+						<li class="nav-item nav-item-submenu nav-item-open">
+							<a href="#" class="nav-link active"><i class="icon-user"></i> <span>User
+									Management</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts" style="display: block;">
+								<li class="nav-item active"><a href="./admin-um-role.html"
+										class="nav-link active">Role<br>Add/Edit/Update
+										Roles</a></li>
+								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+										<br>Add/Edit/Update User</a>
+								</li>
+							</ul>
 						</li>
-						<!-- /Company -->
-						<!-- Project -->
-						<li class="nav-item">
-							<a href="./project-list.html" class="nav-link">
-								<i class="icon-calendar3"></i>
-								<span>
-									Project
-								</span>
-							</a>
-						</li>
-						<!-- /Project -->
-						<!-- Sub-Contractor -->
-						<li class="nav-item">
-							<a href="./sub-contrator-list.html" class="nav-link">
-								<i class="icon-collaboration"></i>
-								<span>
-									Sub-Contractor
-								</span>
-							</a>
-						</li>
-						<!-- /Sub-Contractor -->
-						<!-- Export-CSV -->
-						<li class="nav-item">
-							<a href="./export-csv.html" class="nav-link">
-								<i class="icon-paste2"></i>
-								<span>
-									Export CSV
-								</span>
-							</a>
-						</li>
-						<!-- /Export-CSV -->
-					
+						<!-- /User Management -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -332,7 +306,7 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<h href="#" class="breadcrumb-item"> User Management</h>
-							<a href="./um-role.html" class="breadcrumb-item"> Role</a>
+							<a href="./um-user.html" class="breadcrumb-item"> User</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -345,11 +319,11 @@
 			<div class="content2 pt-0">
 				<div class="card">
 					<div class="card-header header-elements-inline bg-white">
-						<h4 class="card-title font-weight-bold">User List</h4>
+						<h4 class="card-title font-weight-bold">Roles</h4>
 						<div class="header-elements">
 							<div class="list-icons">
 								<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-									data-toggle="modal" data-target="#formUser"><i class="icon-plus3"></i></button>
+									data-target="#formRole" data-toggle="modal"><i class="icon-plus3"></i></button>
 							</div>
 						</div>
 					</div>
@@ -358,108 +332,87 @@
 						<thead>
 							<tr>
 								<th>No.</th>
-								<th>Name</th>
-								<th>Email</th>
 								<th>Role</th>
-								<th>Status</th>
+								<th>Created By</th>
 								<th>Action</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td>Ezan Saidul</td>
-								<td>EzranSaidul1@gmail.com</td>
-								<td>TDA</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>Industry Intelligent</td>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
 								</td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Muhammad Ismail</td>
-								<td>Ismail@gmail.com</td>
 								<td>Industry Intelligent</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" d><i
-											class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
 								</td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Aidan Chong</td>
-								<td>AidanChong@gmail.com</td>
 								<td>Industry Intelligent</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
 								</td>
 							</tr>
 							<tr>
 								<td>4</td>
-								<td>Michael John</td>
-								<td>Micahel_John@gmail.com</td>
-								<td>Industry Intelligent</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>TDA</td>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
 								</td>
 							</tr>
 							<tr>
 								<td>5</td>
-								<td>Lim Chung Yang</td>
-								<td>LCY1233@gmail.com</td>
 								<td>TDA</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
 								</td>
 							</tr>
 							<tr>
 								<td>6</td>
-								<td>Shaiful Abidin</td>
-								<td>SA19963@gmail.com</td>
 								<td>TDA</td>
-								<td><span class="badge bg-success-400 my-3 my-md-0 ml-md-3 mr-md-auto ">Active</span>
-								</td>
-								<td><button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-										title="View"><i class="icon-eye"></i></button> <span> <button type="button"
-											class="btn btn-light btn-icon" data-popup="tooltip" title="Edit"><i
-												class="icon-compose"></i></button>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
 									</span>
-									<span> <button type="button" class="btn btn-light btn-icon" data-popup="tooltip"
-											title="Remove"><i class="icon-trash-alt"></i></button> </span>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>Industry Intelligent</td>
+								<td>TDA Admin</td>
+								<td><button type="button" class="btn btn-light btn-icon"><i class="icon-compose"
+											data-popup="tooltip" title="Edit"></i></button> <span> <button type="button"
+											class="btn btn-light btn-icon" data-popup="tooltip" title="Remove"><i
+												class="icon-trash-alt"></i></button>
+									</span>
 								</td>
 							</tr>
 						</tbody>
@@ -469,7 +422,7 @@
 			<!-- /content area -->
 
 			<!-- Full width modal/ Sub-Contractor-->
-			<div id="formUser" class="modal fade" tabindex="-1">
+			<div id="formRole" class="modal fade" tabindex="-1">
 				<div class="modal-dialog modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -485,29 +438,6 @@
 										</div>
 										<div class="card-body">
 											<form action="#">
-												<div class="form-group">
-													<label>Name:</label>
-													<select name="location" data-placeholder="Select country of origin"
-														class="form-control select-search" data-fouc>
-														<option></option>
-														<option value="">-- select one --</option>
-														<option value="Suzan">Suzan
-														</option>
-														<option value="Ismail">Ismail</option>
-														<option value="John">John</option>
-													</select>
-												</div>
-												<div class="form-group">
-													<label>Email:</label>
-													<select name="location" data-placeholder="Select country of origin"
-														class="form-control select-search" data-fouc disabled>
-														<option></option>
-														<option value="">-- select one --</option>
-														<option value="Gamuda" selected>Ismail@Gamuda.com
-														</option>
-														<option value="TDA">TDA</option>
-													</select>
-												</div>
 												<div class="form-group">
 													<label>Role:</label>
 													<select name="location" data-placeholder="Select country of origin"
@@ -534,6 +464,7 @@
 				</div>
 			</div>
 			<!-- /full width modal -->
+
 
 			<!-- Footer -->
 			<div class="navbar navbar-expand-lg navbar-light2">

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Home</title>
+	<title>Admin | Company List | View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -53,10 +53,6 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
-	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
-
-	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -64,19 +60,19 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-light ">
+	<div class="navbar navbar-expand-md navbar-light">
 
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -88,7 +84,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="index.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -257,12 +253,12 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"
-								title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">Admin Main</div> <i
+								class="icon-menu" title="Main"></i>
 						</li>
 						<!-- Home -->
 						<li class="nav-item">
-							<a href="./home-recent-activity.html" class="nav-link active">
+							<a href="./admin-home-recent-activity.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Home
@@ -270,19 +266,24 @@
 							</a>
 						</li>
 						<!-- /Home -->
-						<!-- Company -->
-						<li class="nav-item">
-							<a href="./company-list.html" class="nav-link">
-								<i class="icon-briefcase"></i>
-								<span>
-									Company
-								</span>
-							</a>
+						<!-- User Management -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User
+									Management</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item active"><a href="./admin-um-role.html"
+										class="nav-link">Role<br>Add/Remove/Update
+										Roles</a></li>
+								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+										<br>Add/Remove/Update User</a>
+								</li>
+							</ul>
 						</li>
-						<!-- /Company -->
+						<!-- /User Management -->
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./project-list.html" class="nav-link">
+							<a href="./admin-project-list.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -290,9 +291,19 @@
 							</a>
 						</li>
 						<!-- /Project -->
+						<!-- Company -->
+						<li class="nav-item">
+							<a href="./admin-company-list.html" class="nav-link active">
+								<i class="icon-briefcase"></i>
+								<span>
+									Company
+								</span>
+							</a>
+						</li>
+						<!-- /Company -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./sub-contrator-list.html" class="nav-link">
+							<a href="./admin-sub-contrator-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Sub-Contractor
@@ -302,7 +313,7 @@
 						<!-- /Sub-Contractor -->
 						<!-- Export-CSV -->
 						<li class="nav-item">
-							<a href="./export-csv.html" class="nav-link">
+							<a href="./admin-export-csv.html" class="nav-link">
 								<i class="icon-paste2"></i>
 								<span>
 									Export CSV
@@ -310,7 +321,6 @@
 							</a>
 						</li>
 						<!-- /Export-CSV -->
-						
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -331,8 +341,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-spinner10 mr-1"></i> Welcome to
-								Supply Chain</a>
+							<a href="./sc-company-list.html" class="breadcrumb-item"> Company
+								List</a>
+							<a href="./sc-company-list-view.html" class="breadcrumb-item"> View Company</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -342,32 +353,242 @@
 
 
 			<!-- Content area -->
-			<div class="content pt-0">
-				<!-- My messages -->
-				<!-- Basic table -->
+			<div class="content2 pt-0">
 				<div class="row">
+					<!-- card content placement -->
 					<div class="col-md-8 offset-md-2">
-						<!-- Bottom placement -->
 						<div class="card">
-							<div class="card-img-actions">
-								<img class="img-fluid card-img-top "
-									src="./global_assets/images/tda-logo/tda-introduction-banner.jpg" alt=""
-									style=" width: 100%;">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Company Information</h4>
 							</div>
 							<div class="card-body">
-								<h7 class="text-muted">Introduction</h7>
-								<h3 class="font-weight-bold">Our Supply Chain System</h3>
-								<p class="card-text">TDA Supply Chain System (SCS) is a web application system designed
-									to cater the needs of recording and storing information of projects, company profile
-									and materials.</p>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Name:</label>
+											<h6 class="card-title font-weight-semibold">Gamuda Sdn Bhd</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Registration Number(SSM)/ Unique ID:</label>
+											<h6 class="card-title font-weight-semibold">201901000005</h6>
+										</div>
+									</div>
+
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Type:</label>
+											<h6 class="card-title font-weight-semibold">Corporation</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<label>Date of Incorporation:</label>
+										<h6 class="card-title font-weight-semibold">01/01/2021</h6>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Supply Chain Type:</label>
+											<h6 class="card-title font-weight-semibold">Construction</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Origin:</label>
+											<h6 class="card-title font-weight-semibold">Malaysia</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Status:</label>
+											<h6 class="card-title font-weight-semibold">Bumiputera</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Address:</label>
+											<h6 class="card-title font-weight-semibold">Menara Gamuda
+												D-16-01, Block D,<br>
+												PJ Trade Centre
+												No. 8, Jalan PJU 8/8A <br>
+												Bandar Damansara Perdana<br>
+												47820 Petaling Jaya
+												Selangor Darul Ehsan,<br> Malaysia</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Email:</label>
+											<h6 class="card-title font-weight-semibold">info@gamuda.com</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Telephone:</label>
+											<h6 class="card-title font-weight-semibold">03-7491 8288</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Level of Services:</label>
+											<h6 class="card-title font-weight-semibold">Multi-Level SLA</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Trade Scope</label>
+											<h6 class="card-title font-weight-semibold">Advanced Works</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Phase</label>
+											<h6 class="card-title font-weight-semibold">Construction</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Project Involved</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Project/Contract Reference Number</th>
+														<th>Project/Contract Name</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>FQ01012021</th>
+														<td>Contruction Maintenance</td>
+
+													</tr>
+													<tr>
+														<th>FZ01022021</th>
+														<td>Contruction Renovation</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Sector/Business Area</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Sector</th>
+														<th>Business Area</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Aerospace & Aviation</th>
+														<td>Design</td>
+
+													</tr>
+													<tr>
+														<th>Automotive</th>
+														<td>MRO</td>
+
+													</tr>
+													<tr>
+														<th>Aerospace & Aviation</th>
+														<td>MRO</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Accreditation</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Titlte</th>
+														<th>File</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Professional International MRO</th>
+														<td><a href="#">MRO_Accreditation.pdf</a></td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">Contact Person</h6>
+
+									</div>
+									<div class="table-responsive mb-4">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Email</th>
+													<th>Contact Number</th>
+													<th>Designation</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Ezan Saidul</td>
+													<td>EzranSaidul1&gmail.com</td>
+													<td>016-111 1111</td>
+													<td>Project Manager</td>
+
+													</td>
+												</tr>
+												<tr>
+													<td>Michael John</td>
+													<td>Micahel_John&gmail.com</td>
+													<td>016-111 1111</td>
+													<td>Project Manager Assistance</td>
+
+												</tr>
+										</table>
+									</div>
+								</div>
 							</div>
-
-
 						</div>
-						<!-- /bottom placement -->
 					</div>
+					<!--/ card content placement -->
 				</div>
-				<!-- /basic table -->
 			</div>
 			<!-- /content area -->
 

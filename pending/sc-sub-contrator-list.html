@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Company List</title>
+	<title>SC Sub-Contract List</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -23,7 +23,6 @@
 	<script src="./global_assets/js/main/jquery.min.js"></script>
 	<script src="./global_assets/js/main/bootstrap.bundle.min.js"></script>
 	<script src="./global_assets/js/plugins/loaders/blockui.min.js"></script>
-
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -53,6 +52,10 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -60,7 +63,7 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-light">
+	<div class="navbar navbar-expand-md navbar-light ">
 
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
@@ -189,7 +192,7 @@
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="./user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i> Account
 							Settings</a>
-						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
+						<a href="./sc-index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
 			</ul>
@@ -258,7 +261,7 @@
 						</li>
 						<!-- Home -->
 						<li class="nav-item">
-							<a href="./home-recent-activity.html" class="nav-link">
+							<a href="./sc-home-mc-introduction.html" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Home
@@ -268,7 +271,7 @@
 						<!-- /Home -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./company-list.html" class="nav-link active">
+							<a href="./sc-company-list.html" class="nav-link">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -276,9 +279,19 @@
 							</a>
 						</li>
 						<!-- /Company -->
+						<!-- My Company Details -->
+						<li class="nav-item">
+							<a href="./sc-update-profile.html" class="nav-link">
+								<i class="icon-briefcase"></i>
+								<span>
+									My Company Details
+								</span>
+							</a>
+						</li>
+						<!-- /My Company Details -->
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./project-list.html" class="nav-link">
+							<a href="./sc-project-list.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -288,7 +301,7 @@
 						<!-- /Project -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./sub-contrator-list.html" class="nav-link">
+							<a href="./sc-sub-contrator-list.html" class="nav-link active">
 								<i class="icon-collaboration"></i>
 								<span>
 									Sub-Contractor
@@ -296,18 +309,8 @@
 							</a>
 						</li>
 						<!-- /Sub-Contractor -->
-						<!-- Export-CSV -->
-						<li class="nav-item">
-							<a href="./export-csv.html" class="nav-link">
-								<i class="icon-paste2"></i>
-								<span>
-									Export CSV
-								</span>
-							</a>
-						</li>
-						<!-- /Export-CSV -->
-
 						<!-- /Main -->
+
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -327,8 +330,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<h href="#" class="breadcrumb-item"> Supply Chain</h>
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -339,183 +341,162 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-						</div>
-
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
-					</div>
-				</div>
-
 				<div class="row">
 					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-12">
 						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Sub-Contractor Information</h4>
+								<div class="list-icons">
+									<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+										data-toggle="modal" data-target="#SubContractorInfo"><i
+											class="icon-plus3"></i></button>
+								</div>
+							</div>
 
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./company-list-view.html" class="btn bg-light mr-1">View More</a>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="table-responsive mb-4">
+										<table class="table datatable-basic">
+											<thead>
+												<tr>
+													<th>Project/Contract Name</th>
+													<th>Project/Contract Reference Number</th>
+													<th>Sub-Contractor Company Name</th>
+													<th>Company Registration Number(SSM)/ Unique ID</th>
+													<th>Full Name</th>
+													<th>Email</th>
+													<th>Contact Number</th>
+													<th>Designation</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>Advance City 2021</th>
+													<td>FQ210212012</td>
+													<td>WCT Berhad</td>
+													<td>W4392304</td>
+													<th>Juhan</th>
+													<td>Juhan@gmail.com</td>
+													<td>011-111 1111</td>
+													<td>Project Manager</td>
+													<td>
+														<button type="button" class="btn btn-light btn-icon"><i
+																class="icon-compose" data-popup="tooltip" title=""
+																data-original-title="Edit"></i></button>
+
+														<button type="button" class="btn btn-light btn-icon"><i
+																class="icon-trash-alt" data-popup="tooltip" title=""
+																data-original-title="Remove"></i></button>
+													</td>
+													</td>
+												</tr>
+												<tr>
+													<th>Advance City 2021</th>
+													<td>FQ210212012</td>
+													<td>WCT Berhad</td>
+													<td>W4392304</td>
+													<th>Michael Lee</th>
+													<td>Michael_Lee@gmail.com</td>
+													<td>012-161 5123</td>
+													<td>Project Manager</td>
+													<td>
+														<button type="button" class="btn btn-light btn-icon"><i
+																class="icon-compose" data-popup="tooltip" title=""
+																data-original-title="Edit"></i></button>
+
+														<button type="button" class="btn btn-light btn-icon"><i
+																class="icon-trash-alt" data-popup="tooltip" title=""
+																data-original-title="Remove"></i></button>
+													</td>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-company-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./sc-project-list-view.html" class="btn bg-light mr-1">View More</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
 				</div>
-
 			</div>
-
 			<!-- /content area -->
+
+			<!-- Full width modal/ Sector & Business Area -->
+			<div id="SubContractorInfo" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<div class="card">
+										<div class="card-header bg-white header-elements-inline">
+											<h4 class="card-title font-weight-bold">Sub-Contractor Information</h4>
+										</div>
+										<div class="card-body">
+											<form action="#">
+												<div class="form-group">
+													<label>Project/Contract Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Construction Maintenance 1M">
+												</div>
+												<div class="form-group">
+													<label>Project/Contract Reference Number:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. 1M020220212">
+												</div>
+												<div class="form-group">
+													<label>Sub-Contractor Company Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Gamuda Berhad">
+												</div>
+												<div class="form-group">
+													<label>Company Registration Number(SSM)/ Unique ID:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. 2091901000005">
+												</div>
+												<div class="form-group">
+													<label>Full Name:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Ismail Kumar">
+												</div>
+												<div class="form-group">
+													<label>Email:</label>
+													<input type="email" class="form-control"
+														placeholder="Example. IsmailKumair@gmail.com">
+												</div>
+												<div class="form-group">
+													<label>Contact Number:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. 016-111 1111">
+												</div>
+												<div class="form-group">
+													<label>Designation:</label>
+													<input type="text" class="form-control"
+														placeholder="Example. Project Manager">
+												</div>
+											</form>
+											<div class="text-right">
+												<button type="submit" class="btn btn-light" class="remove"
+													data-dismiss="modal">Back</button>
+												<button type="submit" class="btn btn-success">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /full width modal -->
 
 
 			<!-- Footer -->
