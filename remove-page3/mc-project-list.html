@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>mc | Project List | View</title>
+	<title>mc | Project List</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -16,7 +16,6 @@
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/form_hide.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -53,10 +52,6 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
-	<script src="./global_assets/js/demo_pages/components_collapsible.js"></script>
-	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
-	<script src="./global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
-
 	<!-- /theme JS files -->
 
 </head>
@@ -254,33 +249,31 @@
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
-
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">mc Main</div> <i
-								class="icon-menu" title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">mc Main</div> <i class="icon-menu"
+								title="Main"></i>
 						</li>
-						
-						<!-- Project -->
+						<!-- Home -->
 						<li class="nav-item">
-							<a href="./mc-project-list.html" class="nav-link active">
+							<a href="./mc-home-sc-introduction.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
-									Project
+									Home
 								</span>
 							</a>
 						</li>
-						<!-- /Project -->
-						<!-- Company -->
+						<!-- /Home -->
+						<!-- Supply Chain Data Entry -->
 						<li class="nav-item">
-							<a href="./mc-company-list.html" class="nav-link">
+							<a href="./mc-supply-chain-data-entry.html" class="nav-link ">
 								<i class="icon-briefcase"></i>
 								<span>
-									Company
+									Supply Chain Data Entry
 								</span>
 							</a>
 						</li>
-						<!-- /Company -->
+						<!-- /Supply Chain Data Entry -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
 							<a href="./mc-sub-contrator-list.html" class="nav-link">
@@ -291,7 +284,7 @@
 							</a>
 						</li>
 						<!-- /Sub-Contractor -->
-					
+
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -312,9 +305,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-project-list.html" class="breadcrumb-item"> Project
-								List</a>
-							<a href="./sc-project-list-view.html" class="breadcrumb-item"> View Project</a>
+							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -325,223 +316,51 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header bg-white header-elements-inline">
+							<h4 class="card-title font-weight-bold">Project List</h4>
+
+						</div>
+
+						<form>
+							<div class="card-body row no-gutters align-items-center">
+								<div class="col-auto ">
+
+								</div>
+								<!--end of col-->
+								<div class="col">
+									<input class="form-control form-control-lg form-control-borderless m-2"
+										type="search" placeholder="Search topics or keywords">
+								</div>
+								<!--end of col-->
+								<div class="col-auto">
+									<button class="btn btn-lg btn-primary" type="submit">Search</button>
+								</div>
+								<!--end of col-->
+							</div>
+						</form>
+					</div>
+				</div>
+
 				<div class="row">
 					<!-- card content placement -->
-					<div class="col-md-6">
+					<div class="col-md-3">
 						<div class="card">
-							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Project Information</h4>
-							</div>
-							<div class="card-body">
 
-								<div class="form-group">
-									<label>Project/Contract Name:</label>
-									<h6 class="card-title font-weight-semibold">Construction Maintenance 1M</h6>
-								</div>
+							<img class="card-img-top img-fluid"
+								src="./global_assets/images/card-content-project/abc1.jpg" alt="">
+							<div class="card-img-actions-overlay card-img-top">
 
-								<div class="form-group">
-									<label>Project/Contract Reference Number:</label>
-									<h6 class="card-title font-weight-semibold">1M020220212</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Sector/Business Area:</label>
-									<h6 class="card-title font-weight-semibold">Civil & Construction</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Contract Value:</label>
-									<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
-								</div>
-
-								<div class="form-group">
-									<label>ICP Credit Value(ICV):</label>
-									<h6 class="card-title font-weight-semibold">RM3,200,000.00</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Project Timeline:</label>
-									<h6 class="card-title font-weight-semibold">01/01/2021 - 31/01/2021 </h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Main-Contractor Information</h4>
 							</div>
 
-							<div class="card-body">
-
-								<div class="form-group">
-									<label>Main-Contractor Company Name:</label>
-									<h6 class="card-title font-weight-semibold">Gamuda Berhad</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Company Registration Number(SSM)/ Unique ID:</label>
-									<h6 class="card-title font-weight-semibold">201901000005</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Main-Contractor Name:</label>
-									<h6 class="card-title font-weight-semibold">Ezan Saidul</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Main-Contractor Email:</label>
-									<h6 class="card-title font-weight-semibold">EzranSaidul1@gmail.com</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Main-Contractor Contact Number:</label>
-									<h6 class="card-title font-weight-semibold">016-111 1111</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Main-Contractor Designation:</label>
-									<h6 class="card-title font-weight-semibold">Project Manager</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Trade Scope:</label>
-									<h6 class="card-title font-weight-semibold">Advanced Works</h6>
-								</div>
-
-								<div class="form-group">
-									<label>Phases:</label>
-									<h6 class="card-title font-weight-semibold">Construction</h6>
-								</div>
-
-								<div class="form-group">
-									<div class="card-group-control card-group-control-right"
-										id="accordion-control-right">
-										<div class="card" style="border-radius: 0px;">
-											<div class="card-header bg-dark" style="border-radius: 0px;">
-												<h6 class="card-title">
-													<a data-toggle="collapse" class="collapsed text-default text-white"
-														href="#accordion-control-right-group1">Tier 1 Sub-Contractor
-														Company</a>
-												</h6>
-											</div>
-
-											<div id="accordion-control-right-group1" class="collapse"
-												data-parent="#accordion-control-right">
-												<div class="card-body">
-													<div class="form-group">
-														<label>Sub-Contractor Company Name:</label>
-														<h6 class="card-title font-weight-semibold">UEM Group Berhad
-														</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Company Registration Number(SSM)/ Unique
-															ID:</label>
-														<h6 class="card-title font-weight-semibold">201301043205</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Name:</label>
-														<h6 class="card-title font-weight-semibold">Juhaidi Faizal</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Email:</label>
-														<h6 class="card-title font-weight-semibold">
-															JuhaidiFaizal@gmail.com</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Contact Number:</label>
-														<h6 class="card-title font-weight-semibold">016-111 1111</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Designation:</label>
-														<h6 class="card-title font-weight-semibold">Project Manager</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Trade Scope:</label>
-														<h6 class="card-title font-weight-semibold">Advanced Works</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Phases:</label>
-														<h6 class="card-title font-weight-semibold">Construction</h6>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="card" style="border-radius: 0px;">
-											<div class="card-header bg-dark" style="border-radius: 0px;">
-												<h6 class="card-title">
-													<a class="collapsed text-default text-white" data-toggle="collapse"
-														href="#accordion-control-right-group2">Tier 2 Sub-Contractor
-														Company</a>
-												</h6>
-											</div>
-
-											<div id="accordion-control-right-group2" class="collapse"
-												data-parent="#accordion-control-right">
-												<div class="card-body">
-													<div class="form-group">
-														<label>Sub-Contractor Company Name:</label>
-														<h6 class="card-title font-weight-semibold">IJM Group
-															Berhad
-														</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Company Registration Number(SSM)/
-															Unique
-															ID:</label>
-														<h6 class="card-title font-weight-semibold">201511042205
-														</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Name:</label>
-														<h6 class="card-title font-weight-semibold">Jordan
-															Michael</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Email:</label>
-														<h6 class="card-title font-weight-semibold">
-															JordanMichael@gmail.com</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Contact Number:</label>
-														<h6 class="card-title font-weight-semibold">016-111 1111
-														</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Sub-Contractor Designation:</label>
-														<h6 class="card-title font-weight-semibold">Project
-															Manager</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Trade Scope:</label>
-														<h6 class="card-title font-weight-semibold">Advanced Works</h6>
-													</div>
-
-													<div class="form-group">
-														<label>Phases:</label>
-														<h6 class="card-title font-weight-semibold">Construction</h6>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+							<div class="card-body-content2">
+								<h5 class="card-title font-weight-bold">Construction Maintenance 1M</h5>
+								<label>Contract Value:</label>
+								<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
+								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
+								<a href="./mc-project-list-view.html" class="btn bg-primary mr-1">View</a>
+								<a href="./mc-supply-chain-data-entry.html" class="btn bg-primary mr-1">SC Data Entry</a>
 							</div>
 						</div>
 					</div>

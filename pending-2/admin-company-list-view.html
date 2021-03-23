@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company List</title>
+	<title>Admin | Company List | View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -65,14 +65,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -84,7 +84,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -253,13 +253,47 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">tda Main</div> <i class="icon-menu"
-								title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">Admin Main</div> <i
+								class="icon-menu" title="Main"></i>
 						</li>
+						<!-- Home -->
+						<li class="nav-item">
+							<a href="./admin-home-recent-activity.html" class="nav-link">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<!-- /Home -->
+						<!-- User Management -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User
+									Management</span></a>
 
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item active"><a href="./admin-um-role.html"
+										class="nav-link">Role<br>Add/Remove/Update
+										Roles</a></li>
+								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+										<br>Add/Remove/Update User</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /User Management -->
+						<!-- Project -->
+						<li class="nav-item">
+							<a href="./admin-project-list.html" class="nav-link">
+								<i class="icon-calendar3"></i>
+								<span>
+									Project
+								</span>
+							</a>
+						</li>
+						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./tda-company-list.html" class="nav-link active">
+							<a href="./admin-company-list.html" class="nav-link active">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -267,7 +301,26 @@
 							</a>
 						</li>
 						<!-- /Company -->
-
+						<!-- Sub-Contractor -->
+						<li class="nav-item">
+							<a href="./admin-sub-contrator-list.html" class="nav-link">
+								<i class="icon-collaboration"></i>
+								<span>
+									Sub-Contractor
+								</span>
+							</a>
+						</li>
+						<!-- /Sub-Contractor -->
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./admin-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
+								<span>
+									Export CSV
+								</span>
+							</a>
+						</li>
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -288,7 +341,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="./sc-company-list.html" class="breadcrumb-item"> Company
+								List</a>
+							<a href="./sc-company-list-view.html" class="breadcrumb-item"> View Company</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -299,190 +354,242 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-						</div>
-
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
-					</div>
-				</div>
-
 				<div class="row">
 					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-8 offset-md-2">
 						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Company Information</h4>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Name:</label>
+											<h6 class="card-title font-weight-semibold">Gamuda Sdn Bhd</h6>
+										</div>
+									</div>
 
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Registration Number(SSM)/ Unique ID:</label>
+											<h6 class="card-title font-weight-semibold">201901000005</h6>
+										</div>
+									</div>
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
 
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Company Type:</label>
+											<h6 class="card-title font-weight-semibold">Corporation</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<label>Date of Incorporation:</label>
+										<h6 class="card-title font-weight-semibold">01/01/2021</h6>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Supply Chain Type:</label>
+											<h6 class="card-title font-weight-semibold">Construction</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Origin:</label>
+											<h6 class="card-title font-weight-semibold">Malaysia</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Status:</label>
+											<h6 class="card-title font-weight-semibold">Bumiputera</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Company Address:</label>
+											<h6 class="card-title font-weight-semibold">Menara Gamuda
+												D-16-01, Block D,<br>
+												PJ Trade Centre
+												No. 8, Jalan PJU 8/8A <br>
+												Bandar Damansara Perdana<br>
+												47820 Petaling Jaya
+												Selangor Darul Ehsan,<br> Malaysia</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Email:</label>
+											<h6 class="card-title font-weight-semibold">info@gamuda.com</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Telephone:</label>
+											<h6 class="card-title font-weight-semibold">03-7491 8288</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Level of Services:</label>
+											<h6 class="card-title font-weight-semibold">Multi-Level SLA</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Trade Scope</label>
+											<h6 class="card-title font-weight-semibold">Advanced Works</h6>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Phase</label>
+											<h6 class="card-title font-weight-semibold">Construction</h6>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Project Involved</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Project/Contract Reference Number</th>
+														<th>Project/Contract Name</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>FQ01012021</th>
+														<td>Contruction Maintenance</td>
+
+													</tr>
+													<tr>
+														<th>FZ01022021</th>
+														<td>Contruction Renovation</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Sector/Business Area</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Sector</th>
+														<th>Business Area</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Aerospace & Aviation</th>
+														<td>Design</td>
+
+													</tr>
+													<tr>
+														<th>Automotive</th>
+														<td>MRO</td>
+
+													</tr>
+													<tr>
+														<th>Aerospace & Aviation</th>
+														<td>MRO</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="d-flex justify-content-between">
+											<h6 class="font-weight-bold">Accreditation</h6>
+
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Titlte</th>
+														<th>File</th>
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Professional International MRO</th>
+														<td><a href="#">MRO_Accreditation.pdf</a></td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">Contact Person</h6>
+
+									</div>
+									<div class="table-responsive mb-4">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Email</th>
+													<th>Contact Number</th>
+													<th>Designation</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Ezan Saidul</td>
+													<td>EzranSaidul1&gmail.com</td>
+													<td>016-111 1111</td>
+													<td>Project Manager</td>
+
+													</td>
+												</tr>
+												<tr>
+													<td>Michael John</td>
+													<td>Micahel_John&gmail.com</td>
+													<td>016-111 1111</td>
+													<td>Project Manager Assistance</td>
+
+												</tr>
+										</table>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-
 				</div>
-
 			</div>
-
 			<!-- /content area -->
 
 

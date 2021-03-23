@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>mc | Add Company</title>
+	<title>ii | Update Company Profile</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -70,14 +70,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -89,7 +89,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -258,13 +258,13 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">mc Main</div> <i
+							<div class="text-uppercase font-size-xs line-height-xs">ii Main</div> <i
 								class="icon-menu" title="Main"></i>
 						</li>
-						
+					
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./mc-project-list.html" class="nav-link">
+							<a href="./ii-project-list.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -274,7 +274,7 @@
 						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./mc-company-list.html" class="nav-link active">
+							<a href="./ii-company-list.html" class="nav-link active">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -282,17 +282,16 @@
 							</a>
 						</li>
 						<!-- /Company -->
-						<!-- Sub-Contractor -->
+						<!-- Export-CSV -->
 						<li class="nav-item">
-							<a href="./mc-sub-contrator-list.html" class="nav-link">
-								<i class="icon-collaboration"></i>
+							<a href="./ii-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
 								<span>
-									Sub-Contractor
+									Export CSV
 								</span>
 							</a>
 						</li>
-						<!-- /Sub-Contractor -->
-					
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -314,7 +313,7 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<h href="#" class="breadcrumb-item"> Company List</h>
-							<a href="./data-entry-mcontractor-form.html" class="breadcrumb-item"> Add New Company</a>
+							<a href="./data-entry-mcontractor-form.html" class="breadcrumb-item"> Update Info</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -336,7 +335,7 @@
 									<h6>Company<br>Information</h6>
 									<hr class="solid solid-form-divider">
 									<fieldset class="mb-5">
-										<h3 class="font-size-xs mb-1">1/4</h3>
+										<h3 class="font-size-xs mb-1">1/2</h3>
 										<h4 class="font-weight-bold">Company Information</h4>
 										<div class="row">
 
@@ -679,16 +678,52 @@
 												</div>
 											</div>
 
-											<div class="col-md-12">
+											<div class="col-md-6">
 												<div class="form-group">
-													<label>Company Collaboration:</label>
-													<select name="position"
-														data-placeholder="Select company collaboration"
+													<label>Trade Scope</label>
+													<select name="position" data-placeholder="Select position"
 														class="form-control select-search" data-fouc>
 														<option></option>
-														<option value="NGO">NGO</option>
-														<option value="Academia">Academia</option>
-														<option value="Government">Government</option>
+														<option value="Advanceced Works" selected>Advanced Works
+														</option>
+														<option value="Guideways" selected>Guideways
+														</option>
+														<option value="Depots" selected>Depots
+														</option>
+														<option value="Underground" selected>Underground
+														</option>
+														<option value="MSPR" selected>MSPR
+														</option>
+														<option value="Systems" selected>Systems
+														</option>
+														<option value="Stations" selected>Stations
+														</option>
+														<option value="Centralised Procurement" selected>Centralised
+															Procurement
+														</option>
+														<option value="Others" selected>Others
+														</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Phase</label>
+													<select class="form-control select-multiple-tags"
+														multiple="multiple" data-fouc>
+														<option value="Design" selected>Design
+														</option>
+														<option value="Manufacture">Manufacture
+														</option>
+														<option value="Supply">Supply
+														</option>
+														<option value="Construction">Construction
+														</option>
+														<option value="Test & Comm.">Test & Comm.
+														</option>
+														<option value="Maintenance">Maintenance
+														</option>
 													</select>
 												</div>
 											</div>
@@ -934,7 +969,7 @@
 
 									<h6>Manpower <br>Information</h6>
 									<fieldset>
-										<h3 class="font-size-xs mb-1">2/4</h3>
+										<h3 class="font-size-xs mb-1">2/2</h3>
 										<h4 class="font-weight-bold">Manpower Information</h4>
 										<div class="row">
 
@@ -953,7 +988,7 @@
 												<div class="form-group">
 													<label>No. of Manpower:</label>
 													<input type="number" name="text" class="form-control"
-														placeholder="Example. 250">
+														placeholder="250">
 													</select>
 												</div>
 											</div>
@@ -962,7 +997,7 @@
 												<div class="form-group">
 													<label>Number of Bumiputera(%):</label>
 													<input type="number" name="number" class="form-control"
-														placeholder="Example. 80">
+														placeholder="80">
 												</div>
 											</div>
 
@@ -970,7 +1005,7 @@
 												<div class="form-group">
 													<label>Number of Non-Bumiputera(%):</label>
 													<input type="number" name="number" class="form-control"
-														placeholder="Example. 15">
+														placeholder="15">
 												</div>
 											</div>
 
@@ -978,7 +1013,7 @@
 												<div class="form-group">
 													<label>Number of Foreigner(%):</label>
 													<input type="number" name="number" class="form-control"
-														placeholder="Example. 5">
+														placeholder="5">
 												</div>
 											</div>
 										</div>

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company List</title>
+	<title>Admin | Home</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -53,6 +53,10 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -60,19 +64,19 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-light">
+	<div class="navbar navbar-expand-md navbar-light ">
 
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -84,7 +88,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -253,13 +257,47 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">tda Main</div> <i class="icon-menu"
-								title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">Admin Main</div> <i
+								class="icon-menu" title="Main"></i>
 						</li>
+						<!-- Home -->
+						<li class="nav-item">
+							<a href="./admin-home-recent-activity.html" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<!-- /Home -->
+						<!-- User Management -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User
+									Management</span></a>
 
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item active"><a href="./admin-um-role.html"
+										class="nav-link">Role<br>Add/Remove/Update
+										Roles</a></li>
+								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+										<br>Add/Remove/Update User</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /User Management -->
+						<!-- Project -->
+						<li class="nav-item">
+							<a href="./admin-project-list.html" class="nav-link">
+								<i class="icon-calendar3"></i>
+								<span>
+									Project
+								</span>
+							</a>
+						</li>
+						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./tda-company-list.html" class="nav-link active">
+							<a href="./admin-company-list.html" class="nav-link">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -267,7 +305,26 @@
 							</a>
 						</li>
 						<!-- /Company -->
-
+						<!-- Sub-Contractor -->
+						<li class="nav-item">
+							<a href="./admin-sub-contrator-list.html" class="nav-link">
+								<i class="icon-collaboration"></i>
+								<span>
+									Sub-Contractor
+								</span>
+							</a>
+						</li>
+						<!-- /Sub-Contractor -->
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./admin-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
+								<span>
+									Export CSV
+								</span>
+							</a>
+						</li>
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -288,7 +345,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -298,191 +355,252 @@
 
 
 			<!-- Content area -->
-			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-						</div>
-
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
-					</div>
-				</div>
-
+			<div class="content pt-0">
+				<!-- /basic table -->
 				<div class="row">
-					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-10 offset-md-1">
 						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h4 class="card-title font-weight-bold">Recent Activities</h4>
+								<div class="header-elements">
+									<div class="list-icons">
+										<a class="list-icons-item mr-2" data-action="reload"></a>
+									</div>
+								</div>
+							</div>
 
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="w-25">Username</th>
+											<th>Activity</th>
+											<th>Date & Time</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u1.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Aidan
+														Chong </a>
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
+												</div>
+											</td>
 
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add Company & Resource
+															Information
+															Data Entry</div>
+														<span class="text-muted">Gamuda Sdn Bhd</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 3:30PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u2.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Michael
+														James </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add Sub-Contractor Data Entry
+														</div>
+														<span class="text-muted">UEM Group Berhad</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 5:02PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u3.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Sophia
+														Lim
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Comment</div>
+														<span class="text-muted">Project ABC2 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 12:32PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u4.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Azleen
+														Roman
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Company
+															List</div>
+														<span class="text-muted">Gamuda Sdn Bhd</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 1:42PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u5.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Suzan
+														Heng
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Company
+															List</div>
+														<span class="text-muted">WCT Holdings Berhad</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 9:00AM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u6.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Johan
+														Abdullah </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Project
+															List</div>
+														<span class="text-muted">Project ABC1 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 8:00PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u7.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Jordan
+														Kim
+													</a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Comment
+														</div>
+														<span class="text-muted">Project ABC3 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 10:00PM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+										<tr>
+											<td>
+												<div>
+													<img src="./global_assets/images/placeholders/placeholder_u8.jpg"
+														class="rounded-circle mr-2" width="36" height="36" alt="">
+													<a href="#"
+														class="text-default font-weight-semibold letter-icon-title">Lim
+														Wong Lee </a>
+
+												</div>
+											</td>
+
+											<td>
+												<div class="mr-1">
+													<h href="#" class="text-default">
+														<div class="font-weight-semibold">Add New Project
+															List</div>
+														<span class="text-muted">Project ABC4 2021</span>
+													</h>
+												</div>
+											</td>
+											<td>
+												<div>Jan 18, 2021 at 2:00AM</div>
+											</td>
+											<td><button class="btn btn-light">View</button></td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
 
 				</div>
-
+				<!-- /basic table -->
 			</div>
-
 			<!-- /content area -->
 
 

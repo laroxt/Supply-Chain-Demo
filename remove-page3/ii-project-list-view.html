@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company List</title>
+	<title>ii | Project List | View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -53,6 +53,10 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/components_collapsible.js"></script>
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
+
 	<!-- /theme JS files -->
 
 </head>
@@ -65,14 +69,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -84,7 +88,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -253,13 +257,24 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">tda Main</div> <i class="icon-menu"
-								title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">ii Main</div> <i
+								class="icon-menu" title="Main"></i>
 						</li>
-
+					
+						
+						<!-- Project -->
+						<li class="nav-item">
+							<a href="./ii-project-list.html" class="nav-link active">
+								<i class="icon-calendar3"></i>
+								<span>
+									Project
+								</span>
+							</a>
+						</li>
+						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./tda-company-list.html" class="nav-link active">
+							<a href="./ii-company-list.html" class="nav-link">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -267,7 +282,17 @@
 							</a>
 						</li>
 						<!-- /Company -->
-
+					
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./ii-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
+								<span>
+									Export CSV
+								</span>
+							</a>
+						</li>
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -288,7 +313,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="./sc-project-list.html" class="breadcrumb-item"> Project
+								List</a>
+							<a href="./sc-project-list-view.html" class="breadcrumb-item"> View Project</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -299,190 +326,229 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-						</div>
-
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
-					</div>
-				</div>
-
 				<div class="row">
 					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Project Information</h4>
+							</div>
+							<div class="card-body">
 
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
+								<div class="form-group">
+									<label>Project/Contract Name:</label>
+									<h6 class="card-title font-weight-semibold">Construction Maintenance 1M</h6>
+								</div>
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
+								<div class="form-group">
+									<label>Project/Contract Reference Number:</label>
+									<h6 class="card-title font-weight-semibold">1M020220212</h6>
+								</div>
 
+								<div class="form-group">
+									<label>Sector/Business Area:</label>
+									<h6 class="card-title font-weight-semibold">Civil & Construction</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Contract Value:</label>
+									<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
+								</div>
+
+								<div class="form-group">
+									<label>ICP Credit Value(ICV):</label>
+									<h6 class="card-title font-weight-semibold">RM3,200,000.00</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Project Timeline:</label>
+									<h6 class="card-title font-weight-semibold">01/01/2021 - 31/01/2021 </h6>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--/ card content placement -->
 					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Main-Contractor Information</h4>
+							</div>
 
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
+							<div class="card-body">
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
+								<div class="form-group">
+									<label>Main-Contractor Company Name:</label>
+									<h6 class="card-title font-weight-semibold">Gamuda Berhad</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Company Registration Number(SSM)/ Unique ID:</label>
+									<h6 class="card-title font-weight-semibold">201901000005</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Main-Contractor Name:</label>
+									<h6 class="card-title font-weight-semibold">Ezan Saidul</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Main-Contractor Email:</label>
+									<h6 class="card-title font-weight-semibold">EzranSaidul1@gmail.com</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Main-Contractor Contact Number:</label>
+									<h6 class="card-title font-weight-semibold">016-111 1111</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Main-Contractor Designation:</label>
+									<h6 class="card-title font-weight-semibold">Project Manager</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Trade Scope:</label>
+									<h6 class="card-title font-weight-semibold">Advanced Works</h6>
+								</div>
+
+								<div class="form-group">
+									<label>Phases:</label>
+									<h6 class="card-title font-weight-semibold">Construction</h6>
+								</div>
+
+								<div class="form-group">
+									<div class="card-group-control card-group-control-right"
+										id="accordion-control-right">
+										<div class="card" style="border-radius: 0px;">
+											<div class="card-header bg-dark" style="border-radius: 0px;">
+												<h6 class="card-title">
+													<a data-toggle="collapse" class="collapsed text-default text-white"
+														href="#accordion-control-right-group1">Tier 1 Sub-Contractor
+														Company</a>
+												</h6>
+											</div>
+
+											<div id="accordion-control-right-group1" class="collapse"
+												data-parent="#accordion-control-right">
+												<div class="card-body">
+													<div class="form-group">
+														<label>Sub-Contractor Company Name:</label>
+														<h6 class="card-title font-weight-semibold">UEM Group Berhad
+														</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Company Registration Number(SSM)/ Unique
+															ID:</label>
+														<h6 class="card-title font-weight-semibold">201301043205</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Name:</label>
+														<h6 class="card-title font-weight-semibold">Juhaidi Faizal</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Email:</label>
+														<h6 class="card-title font-weight-semibold">
+															JuhaidiFaizal@gmail.com</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Contact Number:</label>
+														<h6 class="card-title font-weight-semibold">016-111 1111</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Designation:</label>
+														<h6 class="card-title font-weight-semibold">Project Manager</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Trade Scope:</label>
+														<h6 class="card-title font-weight-semibold">Advanced Works</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Phases:</label>
+														<h6 class="card-title font-weight-semibold">Construction</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card" style="border-radius: 0px;">
+											<div class="card-header bg-dark" style="border-radius: 0px;">
+												<h6 class="card-title">
+													<a class="collapsed text-default text-white" data-toggle="collapse"
+														href="#accordion-control-right-group2">Tier 2 Sub-Contractor
+														Company</a>
+												</h6>
+											</div>
+
+											<div id="accordion-control-right-group2" class="collapse"
+												data-parent="#accordion-control-right">
+												<div class="card-body">
+													<div class="form-group">
+														<label>Sub-Contractor Company Name:</label>
+														<h6 class="card-title font-weight-semibold">IJM Group
+															Berhad
+														</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Company Registration Number(SSM)/
+															Unique
+															ID:</label>
+														<h6 class="card-title font-weight-semibold">201511042205
+														</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Name:</label>
+														<h6 class="card-title font-weight-semibold">Jordan
+															Michael</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Email:</label>
+														<h6 class="card-title font-weight-semibold">
+															JordanMichael@gmail.com</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Contact Number:</label>
+														<h6 class="card-title font-weight-semibold">016-111 1111
+														</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Sub-Contractor Designation:</label>
+														<h6 class="card-title font-weight-semibold">Project
+															Manager</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Trade Scope:</label>
+														<h6 class="card-title font-weight-semibold">Advanced Works</h6>
+													</div>
+
+													<div class="form-group">
+														<label>Phases:</label>
+														<h6 class="card-title font-weight-semibold">Construction</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-
 				</div>
-
 			</div>
-
 			<!-- /content area -->
 
 

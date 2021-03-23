@@ -288,7 +288,7 @@
 						<!-- /User Management -->
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./admin-project-list.html" class="nav-link">
+							<a href="./admin-project-list-add.html" class="nav-link">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -306,16 +306,7 @@
 							</a>
 						</li>
 						<!-- /Company -->
-						<!-- Sub-Contractor -->
-						<li class="nav-item">
-							<a href="./admin-sub-contrator-list.html" class="nav-link">
-								<i class="icon-collaboration"></i>
-								<span>
-									Sub-Contractor
-								</span>
-							</a>
-						</li>
-						<!-- /Sub-Contractor -->
+					
 						<!-- Export-CSV -->
 						<li class="nav-item">
 							<a href="./admin-export-csv.html" class="nav-link">
@@ -396,17 +387,13 @@
 													<select name="location" data-placeholder="Select company type"
 														class="form-control select-search" data-fouc>
 														<option></option>
-														<option value="Sole Proprietorship">Sole Proprietorship
+														<option value="Agency">Agency
 														</option>
-														<option value="Partnership">Partnership</option>
-														<option value="imited Partnership">Limited Partnership
+														<option value="Company">Company</option>
+														<option value="Faculty">Faculty
 														</option>
-														<option value="Corporation">Corporation</option>
-														<option value="Limited Liability Company (LLC)">Limited
-															Liability Company (LLC)</option>
-														<option value="Nonprofit Organization">Nonprofit
-															Organization</option>
-														<option value="Cooperative (Co-op)">Cooperative (Co-op)
+														<option value="Government">Government</option>
+														<option value="Others">Others</option>
 														</option>
 													</select>
 												</div>
@@ -429,7 +416,11 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-md-12">
+
+
+
+
+											<!-- <div class="col-md-12">
 												<div class="form-group">
 													<label>Company Image(Logo):</label>
 													<div class="custom-file">
@@ -442,9 +433,9 @@
 														size
 														15Mb</span>
 												</div>
-											</div>
+											</div> -->
 
-											<div class="col-md-12">
+											<!-- <div class="col-md-12">
 												<div class="form-group">
 													<label>Supply Chain Type:</label>
 													<select name="position" data-placeholder="Select supply chain type"
@@ -455,7 +446,7 @@
 														<option value="manufacturer">Manufacturer</option>
 													</select>
 												</div>
-											</div>
+											</div> -->
 
 											<div class="col-md-12">
 												<div class="form-group">
@@ -701,22 +692,9 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Level of Services:</label>
-													<select name="position" data-placeholder="Select level of services"
-														class="form-control select-search" data-fouc>
-														<option></option>
-														<option value="Customer-Based SLA">Customer-Based SLA</option>
-														<option value="Service-Based SLA">Service-Based SLA</option>
-														<option value="Multi-Level SLA">Multi-Level SLA</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="col-md-12">
-												<div class="form-group">
-													<label>Company Collaboration:</label>
+													<label>Cooperated Academia:</label>
 													<select name="position"
-														data-placeholder="Select company collaboration"
+														data-placeholder="Select cooperated academia"
 														class="form-control select-search" data-fouc>
 														<option></option>
 														<option value="NGO">NGO</option>
@@ -726,7 +704,7 @@
 												</div>
 											</div>
 
-											<div class="col-md-12">
+											<!-- <div class="col-md-12">
 												<div class="d-flex justify-content-between">
 													<h6 class="font-weight-bold">Project Involved</h6>
 													<button type="button"
@@ -783,9 +761,9 @@
 														</tbody>
 													</table>
 												</div>
-											</div>
+											</div> -->
 
-											<div class="col-md-12">
+											<!-- <div class="col-md-12">
 												<div class="d-flex justify-content-between">
 													<h6 class="font-weight-bold">Sector/Business Area</h6>
 													<button type="button"
@@ -860,7 +838,7 @@
 														</tbody>
 													</table>
 												</div>
-											</div>
+											</div> -->
 
 											<div class="col-md-12">
 												<div class="d-flex justify-content-between">
@@ -902,9 +880,90 @@
 													</table>
 												</div>
 											</div>
+
+											<div class="col-md-12">
+												<div class="d-flex justify-content-between">
+													<h6 class="font-weight-bold">Company Experience</h6>
+													<button type="button"
+														class="btn bg-light btn-icon rounded-round mt-1"
+														data-toggle="modal" data-target="#sectorBArea"><i
+															class="icon-plus3"></i></button>
+												</div><br>
+												<div class="table-responsive mb-4">
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Project Name</th>
+																<th>Brief Description</th>
+																<th>Project Duration</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th>Construction Building 1</th>
+																<td>Construct Building for SMART City Area 1</td>
+																<td>2 years</td>
+																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-compose" data-popup="tooltip"
+																			title=""
+																			data-original-title="Edit"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-trash-alt" data-popup="tooltip"
+																			title=""
+																			data-original-title="Remove"></i></button>
+																</td>
+																</td>
+															</tr>
+															<tr>
+																<th>Construction Building 2</th>
+																<td>Construct Building for SMART City Area 2</td>
+																<td>2 years</td>
+																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-compose" data-popup="tooltip"
+																			title=""
+																			data-original-title="Edit"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-trash-alt" data-popup="tooltip"
+																			title=""
+																			data-original-title="Remove"></i></button>
+																</td>
+																</td>
+															</tr>
+															<tr>
+																<th>Construction Building 3</th>
+																<td>Construct Building for SMART City Area 3</td>
+																<td>2 years</td>
+																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-compose" data-popup="tooltip"
+																			title=""
+																			data-original-title="Edit"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-trash-alt" data-popup="tooltip"
+																			title=""
+																			data-original-title="Remove"></i></button>
+																</td>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
 										</div>
 
-										<div class="col-md-12">
+										<!-- <div class="col-md-12">
 											<div class="d-flex justify-content-between">
 												<h6 class="font-weight-bold">Contact Person</h6>
 												<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
@@ -961,8 +1020,39 @@
 														</tr>
 												</table>
 											</div>
+										</div> -->
+									</fieldset>
+
+									<h6>Level of Services</h6>
+									<fieldset>
+										<h3 class="font-size-xs mb-1">2/4</h3>
+										<h4 class="font-weight-bold">Level of Services</h4>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<select name="location" data-placeholder="Select level of services"
+														class="form-control select-search" data-fouc>
+														<option></option>
+														<option value="Design">Design
+														</option>
+														<option value="Assembly & Testing">Assembly & Testing</option>
+														<option value="Refurbishment">Refurbishment
+														</option>
+														<option value="Services">Services</option>
+														<option value="MRO">MRO</option>
+														<option value="Consctruction & Manufacturing">Consctruction &
+															Manufacturing</option>
+														<option value="System Engineering / Intergration">System
+															Engineering / Intergration
+														</option>
+													</select>
+												</div>
+											</div>
+
+
 										</div>
 									</fieldset>
+
 
 
 									<h6>Manpower <br>Information</h6>
@@ -970,6 +1060,17 @@
 										<h3 class="font-size-xs mb-1">2/4</h3>
 										<h4 class="font-weight-bold">Manpower Information</h4>
 										<div class="row">
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Skills:</label>
+													<select class="form-control select-multiple-tags"
+														multiple="multiple" data-fouc>
+														<option value="Expertise 1" selected>Skill 1</option>
+														<option value="Expertise 2" selected>Skill 2</option>
+													</select>
+												</div>
+											</div>
 
 											<div class="col-md-12">
 												<div class="form-group">
@@ -982,18 +1083,18 @@
 												</div>
 											</div>
 
-											<div class="col-md-12">
+											<!-- <div class="col-md-12">
 												<div class="form-group">
 													<label>No. of Manpower:</label>
 													<input type="number" name="text" class="form-control"
 														placeholder="Example. 250">
 													</select>
 												</div>
-											</div>
+											</div> -->
 
 											<div class="col-4">
 												<div class="form-group">
-													<label>Number of Bumiputera(%):</label>
+													<label>Percentage of Bumiputera(%):</label>
 													<input type="number" name="number" class="form-control"
 														placeholder="Example. 80">
 												</div>
@@ -1001,17 +1102,17 @@
 
 											<div class="col-4">
 												<div class="form-group">
-													<label>Number of Non-Bumiputera(%):</label>
+													<label>Percentage of Non-Bumiputera(%):</label>
 													<input type="number" name="number" class="form-control"
-														placeholder="Example. 15">
+														placeholder="Example. 80">
 												</div>
 											</div>
 
 											<div class="col-4">
 												<div class="form-group">
-													<label>Number of Foreigner(%):</label>
+													<label>Percentage of Foreign(%):</label>
 													<input type="number" name="number" class="form-control"
-														placeholder="Example. 5">
+														placeholder="Example. 20">
 												</div>
 											</div>
 										</div>

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company List</title>
+	<title>ii | Project List</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -16,7 +16,6 @@
 	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/form_hide.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -65,14 +64,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -84,7 +83,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -253,13 +252,24 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">tda Main</div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">ii Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
+					
 
+						<!-- Project -->
+						<li class="nav-item">
+							<a href="./ii-project-list.html" class="nav-link active">
+								<i class="icon-calendar3"></i>
+								<span>
+									Project
+								</span>
+							</a>
+						</li>
+						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./tda-company-list.html" class="nav-link active">
+							<a href="./ii-company-list.html" class="nav-link">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -268,6 +278,16 @@
 						</li>
 						<!-- /Company -->
 
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./ii-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
+								<span>
+									Export CSV
+								</span>
+							</a>
+						</li>
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
@@ -288,7 +308,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-company-list.html" class="breadcrumb-item"> Company List</a>
+							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -302,7 +322,13 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
+							<h4 class="card-title font-weight-bold">Project List</h4>
+							<div class="header-elements">
+								<div class="list-icons">
+									<button type="button" onClick="location.href='ii-project-list-add.html'"
+										class="btn bg-light btn-icon rounded-round"><i class="icon-plus3"></i>
+								</div>
+							</div>
 						</div>
 
 						<form>
@@ -331,158 +357,23 @@
 						<div class="card">
 
 							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
+								src="./global_assets/images/card-content-project/abc1.jpg" alt="">
+							<div class="card-img-actions-overlay card-img-top">
 
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 8/8, Damansara Perdana, 47820
-									Petaling Jaya, Selangor</h6>
+							</div>
+
+							<div class="card-body-content2">
+								<h5 class="card-title font-weight-bold">Construction Maintenance 1M</h5>
+								<label>Contract Value:</label>
+								<h6 class="card-title font-weight-semibold">RM5,000,000.00</h6>
 								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-
+								<a href="./ii-project-list-view.html" class="btn bg-primary mr-1">View</a>
 							</div>
 						</div>
 					</div>
 					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 17-2 Mercu UEM, Jalan Stesen Sentral 5
-									Kuala Lumpur Sentral, Wilayah Persekutuan, 50470
-									Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Bukit Bintang, 55100 Kuala Lumpur, Federal
-									Territory of Kuala Lumpur</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Wisma Ijm, Jalan Yong Shook Lin, Seksyen 7,
-									46050 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> B-30-01 The Ascent, Paradigm No. 1, Jalan
-									SS7/26A, Kelana Jaya, Paradigm, 47301 Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan Meru/KU5, Bandar Bukit Raja, 41050
-									Klang, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5><br>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> Jalan PJU 7/3, Mutiara Damansara, 47810
-									Petaling Jaya, Selangor</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering<br>(M) Bhd</h5>
-
-								<label>Addres:</label>
-								<h6 class="card-title font-weight-semibold"> 1st Floor, Wisma Muhibbah, No. 10, Jalan
-									222,, 46100, Petaling Jaya, Selangor, 46100</h6>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-
 				</div>
-
 			</div>
-
 			<!-- /content area -->
 
 

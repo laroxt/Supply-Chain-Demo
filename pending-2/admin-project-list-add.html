@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>mc | Add Project</title>
+	<title>Admin | Add Project</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -64,14 +64,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -83,7 +83,7 @@
 		<!-- Mobile controls -->
 		<div class="d-flex flex-1 d-md-none">
 			<div class="navbar-brand mr-auto">
-				<a href="./mc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/logo_dark.png" alt="">
 				</a>
 			</div>
@@ -252,13 +252,37 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">mc Main</div> <i class="icon-menu"
-								title="Main"></i>
+							<div class="text-uppercase font-size-xs line-height-xs">Admin Main</div> <i
+								class="icon-menu" title="Main"></i>
 						</li>
+						<!-- Home -->
+						<li class="nav-item">
+							<a href="./admin-home-recent-activity.html" class="nav-link">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<!-- /Home -->
+						<!-- User Management -->
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-user"></i> <span>User
+									Management</span></a>
 
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item active"><a href="./admin-um-role.html"
+										class="nav-link">Role<br>Add/Remove/Update
+										Roles</a></li>
+								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+										<br>Add/Remove/Update User</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /User Management -->
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./mc-project-list.html" class="nav-link active">
+							<a href="./admin-project-list.html" class="nav-link active">
 								<i class="icon-calendar3"></i>
 								<span>
 									Project
@@ -268,7 +292,7 @@
 						<!-- /Project -->
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./mc-company-list.html" class="nav-link">
+							<a href="./admin-company-list.html" class="nav-link">
 								<i class="icon-briefcase"></i>
 								<span>
 									Company
@@ -278,7 +302,7 @@
 						<!-- /Company -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./mc-sub-contrator-list.html" class="nav-link">
+							<a href="./admin-sub-contrator-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Sub-Contractor
@@ -286,7 +310,16 @@
 							</a>
 						</li>
 						<!-- /Sub-Contractor -->
-
+						<!-- Export-CSV -->
+						<li class="nav-item">
+							<a href="./admin-export-csv.html" class="nav-link">
+								<i class="icon-paste2"></i>
+								<span>
+									Export CSV
+								</span>
+							</a>
+						</li>
+						<!-- /Export-CSV -->
 						<!-- /Main -->
 					</ul>
 				</div>
