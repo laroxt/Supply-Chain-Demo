@@ -57,7 +57,7 @@
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 
-	<script src="./global_assets/js/demo_pages/form_checkboxes_radios.js"></script>
+
 	<!-- /theme JS files -->
 
 </head>
@@ -303,7 +303,8 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<a href="./data-entry-scontractor-form.html" class="breadcrumb-item"> Project List</a>
-							<a href="./data-entry-scontractor-form.html" class="breadcrumb-item"> Main-Contractor</a>
+							<a href="./data-entry-scontractor-form.html" class="breadcrumb-item"> Supply Chain Data
+								Entry</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -659,13 +660,16 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<label>Competencies:</label>
-													<input type="text" class="form-control"
-														placeholder="Example. 03-7491 8288">
+													<select class="form-control select-multiple-tags"
+														multiple="multiple" data-fouc>
+														<option value="Expertise 1" selected>Competencies 1</option>
+														<option value="Expertise 2" selected>Competencies 2</option>
+													</select>
 												</div>
 											</div>
 
 
-											<div class="col-12">
+											<div class="col-md-12">
 												<div class="d-flex justify-content-between">
 													<h6 class="font-weight-bold">Sector/Business Area</h6>
 													<button type="button"
@@ -692,19 +696,13 @@
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
-
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-trash-alt" data-popup="tooltip"
-																			title=""
-																			data-original-title="Remove"></i></button>
-																</td>
 																</td>
 															</tr>
 														</tbody>
 													</table>
 												</div>
 											</div>
+
 
 											<!-- <div class="col-md-12">
 												<div class="d-flex justify-content-between">
@@ -870,48 +868,7 @@
 																<td>FaizulKhalid@UM.com.my</td>
 																<td>011-111 1111</td>
 																<td>
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-compose" data-popup="tooltip"
-																			title=""
-																			data-original-title="Edit"></i></button>
 
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-trash-alt" data-popup="tooltip"
-																			title=""
-																			data-original-title="Remove"></i></button>
-																</td>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-
-
-											<div class="col-md-12">
-												<div class="d-flex justify-content-between">
-													<h6 class="font-weight-bold">Accreditation</h6>
-													<button type="button"
-														class="btn bg-light btn-icon rounded-round mt-1"
-														data-toggle="modal" data-target="#sectorBArea"><i
-															class="icon-plus3"></i></button>
-												</div><br>
-												<div class="table-responsive mb-4">
-													<table class="table">
-														<thead>
-															<tr>
-																<th>Titlte</th>
-																<th>File</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>Professional International MRO</th>
-																<td><a href="#">MRO_Accreditation.pdf</a></td>
-																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1124,11 +1081,11 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Expert Level:</label>
+													<label>Expertise:</label>
 													<select class="form-control select-multiple-tags"
 														multiple="multiple" data-fouc>
-														<option value="Expert Level 1" selected>Expertise 1</option>
-														<option value="Expert Level 2" selected>Expertise 2</option>
+														<option value="Expertise 1" selected>Expertise 1</option>
+														<option value="Expertise 2" selected>Expertise 2</option>
 													</select>
 												</div>
 											</div>
@@ -1200,6 +1157,13 @@
 																<td>E1002021</td>
 																<td>On-Site Equipment</td>
 																<td>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1220,6 +1184,13 @@
 																<td>E2002021</td>
 																<td>On-Site Equipment</td>
 																<td>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1240,6 +1211,12 @@
 																<td>E3002021</td>
 																<td>On-Site Equipment</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1288,6 +1265,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1308,6 +1291,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1326,6 +1315,12 @@
 																<td>T3002021</td>
 																<td>On-Site Tools</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1373,6 +1368,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1393,6 +1394,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1411,6 +1418,12 @@
 																<td>M1002021</td>
 																<td>On-Site Machineries</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1456,6 +1469,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1475,6 +1494,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1492,6 +1517,12 @@
 																<td>Facilities 3</td>
 																<td>On-Site Facilities</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1547,6 +1578,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1568,6 +1605,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1587,6 +1630,12 @@
 																<td>P1002021</td>
 																<td>On-Site Product</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1635,6 +1684,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1655,6 +1710,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1673,6 +1734,12 @@
 																<td>S1002021</td>
 																<td>On-Site Sub-Assembly</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1721,6 +1788,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1741,6 +1814,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1759,6 +1838,12 @@
 																<td>C1002021</td>
 																<td>On-Site Components</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1806,6 +1891,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1826,6 +1917,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1844,6 +1941,12 @@
 																<td>P1002021</td>
 																<td>On-Site Parts</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -1889,6 +1992,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1908,6 +2017,12 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
 																			title=""
 																			data-original-title="Edit"></i></button>
@@ -1925,6 +2040,12 @@
 																<td>Catalogue 3</td>
 																<td>Catalogue Reference</td>
 																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-eye" data-popup="tooltip"
+																			title=""
+																			data-original-title="View"></i></button>
+
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
 																			class="icon-compose" data-popup="tooltip"
@@ -3787,8 +3908,6 @@
 	</div>
 	<!-- /page content -->
 
-	<!-- /Form DOM -->
-	<script src="./global_assets/js/main/formDOM.js"></script>
 </body>
 
 </html>

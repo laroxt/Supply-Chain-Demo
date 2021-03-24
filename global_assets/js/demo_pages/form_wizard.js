@@ -33,7 +33,9 @@ var FormWizard = (function () {
         finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
       },
       onFinished: function (event, currentIndex) {
-        alert("Form submitted.");
+        alert(
+          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+        );
       },
     });
 
@@ -58,7 +60,9 @@ var FormWizard = (function () {
         _componentUniform();
       },
       onFinished: function (event, currentIndex) {
-        alert("Form submitted.");
+        alert(
+          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+        );
       },
     });
 
@@ -76,7 +80,9 @@ var FormWizard = (function () {
       saveState: true,
       autoFocus: true,
       onFinished: function (event, currentIndex) {
-        alert("Form submitted.");
+        alert(
+          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+        );
       },
     });
 
@@ -94,7 +100,9 @@ var FormWizard = (function () {
       startIndex: 0,
       autoFocus: true,
       onFinished: function (event, currentIndex) {
-        alert("Form submitted.");
+        alert(
+          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+        );
       },
     });
 
@@ -111,7 +119,9 @@ var FormWizard = (function () {
         finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
       },
       onFinished: function (event, currentIndex) {
-        alert("Form submitted.");
+        alert(
+          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+        );
       },
     });
 
