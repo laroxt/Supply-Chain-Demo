@@ -192,7 +192,8 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i> Account
+						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
 							Settings</a>
 						<a href="./sc-index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
@@ -228,7 +229,7 @@
 			<!-- Sidebar content -->
 			<div class="sidebar-content">
 
-				
+
 
 
 				<!-- Main navigation -->
@@ -1057,29 +1058,72 @@
 
 									<h6>Manpower <br>Information</h6>
 									<fieldset>
-										<h3 class="font-size-xs mb-1">2/4</h3>
+										<h3 class="font-size-xs mb-1">3/5</h3>
 										<h4 class="font-weight-bold">Manpower Information</h4>
 										<div class="row">
-
 											<div class="col-md-12">
-												<div class="form-group">
-													<label>Skills:</label>
-													<select class="form-control select-multiple-tags"
-														multiple="multiple" data-fouc>
-														<option value="Expertise 1" selected>Skill 1</option>
-														<option value="Expertise 2" selected>Skill 2</option>
-													</select>
-												</div>
-											</div>
+												<div class="d-flex justify-content-between">
+													<h6 class="font-weight-bold">Manpower List</h6>
+													<button type="button"
+														class="btn bg-light btn-icon rounded-round mt-1"
+														data-toggle="modal" data-target="#addManpower"><i
+															class="icon-plus3"></i></button>
+												</div><br>
+												<div class="table-responsive mb-4">
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Skill</th>
+																<th>No. of Manpower</th>
+																<th>% of Bumiputera</th>
+																<th>% of Non-Bumiputera</th>
+																<th>% of Foreign</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th>Mobile Crane Operator</th>
+																<td>100</td>
+																<td>40</td>
+																<td>40</td>
+																<td>20</td>
+																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-compose" data-popup="tooltip"
+																			title=""
+																			data-original-title="Edit"></i></button>
 
-											<div class="col-md-12">
-												<div class="form-group">
-													<label>Expertise:</label>
-													<select class="form-control select-multiple-tags"
-														multiple="multiple" data-fouc>
-														<option value="Expertise 1" selected>Expertise 1</option>
-														<option value="Expertise 2" selected>Expertise 2</option>
-													</select>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-trash-alt" data-popup="tooltip"
+																			title=""
+																			data-original-title="Remove"></i></button>
+																</td>
+															</tr>
+															<tr>
+																<th>Earthwork Plant Operator</th>
+																<td>120</td>
+																<td>35</td>
+																<td>50</td>
+																<td>15</td>
+																<td>
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-compose" data-popup="tooltip"
+																			title=""
+																			data-original-title="Edit"></i></button>
+
+																	<button type="button"
+																		class="btn btn-light btn-icon"><i
+																			class="icon-trash-alt" data-popup="tooltip"
+																			title=""
+																			data-original-title="Remove"></i></button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
 												</div>
 											</div>
 
@@ -1092,29 +1136,17 @@
 												</div>
 											</div> -->
 
-											<div class="col-4">
+											<!-- <div class="col-md-12">
 												<div class="form-group">
-													<label>Percentage of Bumiputera(%):</label>
-													<input type="number" name="number" class="form-control"
-														placeholder="Example. 80">
+													<label>Expertise:</label>
+													<select class="form-control select-multiple-tags"
+														multiple="multiple" data-fouc>
+														<option value="Expertise 1" selected>Expertise 1</option>
+														<option value="Expertise 2" selected>Expertise 2</option>
+													</select>
 												</div>
-											</div>
+											</div> -->
 
-											<div class="col-4">
-												<div class="form-group">
-													<label>Percentage of Non-Bumiputera(%):</label>
-													<input type="number" name="number" class="form-control"
-														placeholder="Example. 80">
-												</div>
-											</div>
-
-											<div class="col-4">
-												<div class="form-group">
-													<label>Percentage of Foreign(%):</label>
-													<input type="number" name="number" class="form-control"
-														placeholder="Example. 20">
-												</div>
-											</div>
 										</div>
 									</fieldset>
 
@@ -4085,6 +4117,81 @@
 														<option value="MRO">MRO</option>
 														<option value="Other">Other</option>
 													</select>
+												</div>
+											</form>
+											<div class="text-right">
+												<button type="submit" class="btn btn-light" class="remove"
+													data-dismiss="modal">Back</button>
+												<button type="submit" class="btn btn-success">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /full width modal -->
+
+			<!-- Full width modal/ Manpower -->
+			<div id="addManpower" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<div class="card">
+										<div class="card-header bg-white header-elements-inline">
+											<h4 class="card-title font-weight-bold">Add Manpower</h4>
+										</div>
+										<div class="card-body">
+											<form action="#">
+												<div class="row">
+													<div class="col-12">
+														<div class="form-group">
+															<label>Skill:</label>
+															<input type="number" name="number" class="form-control"
+																placeholder="Example. Tower Crane Operator">
+														</div>
+													</div>
+
+													<div class="col-12">
+														<div class="form-group">
+															<label>No. of Manpower:</label>
+															<input type="number" name="number" class="form-control"
+																placeholder="Example. 100">
+														</div>
+													</div>
+
+
+													<div class="col-4">
+														<div class="form-group">
+															<label>% of Bumiputera:</label>
+															<input type="number" name="number" class="form-control"
+																placeholder="Example. 80">
+														</div>
+													</div>
+
+													<div class="col-4">
+														<div class="form-group">
+															<label>% of Non-Bumiputera:</label>
+															<input type="number" name="number" class="form-control"
+																placeholder="Example. 80">
+														</div>
+													</div>
+
+													<div class="col-4">
+														<div class="form-group">
+															<label>% of Foreign:</label>
+															<input type="number" name="number" class="form-control"
+																placeholder="Example. 20">
+														</div>
+													</div>
 												</div>
 											</form>
 											<div class="text-right">
