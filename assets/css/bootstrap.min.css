@@ -1474,9 +1474,10 @@ pre code {
 }
 
 .table td, .table th {
-    padding: .75rem 1.25rem;
+    padding: .95rem .45rem;
     vertical-align: top;
-    border-top: 1px solid #ddd
+    border-top: 1px solid #ddd;
+    font-size: 12px;
 }
 
 .table thead th {
