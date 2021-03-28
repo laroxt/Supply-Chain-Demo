@@ -80,23 +80,24 @@
 		<!-- /header with logos -->
 
 
-		<!-- Mobile controls -->
-		<div class="d-flex flex-1 d-md-none">
-			<div class="navbar-brand mr-auto">
-				<a href="./ii-home-sc-introduction.html" class="d-inline-block">
-					<img src="./global_assets/images/logo_dark.png" alt="">
-				</a>
-			</div>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-				<i class="icon-tree5"></i>
-			</button>
-
-			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-				<i class="icon-paragraph-justify3"></i>
-			</button>
+	<!-- Mobile controls -->
+	<div class="d-flex flex-1 d-md-none">
+		<div class="navbar-brand mr-auto">
+			<a href="./admin-home-sc-introduction.html" class="d-inline-block">
+				<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+					alt="">
+			</a>
 		</div>
-		<!-- /mobile controls -->
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+			<i class="icon-tree5"></i>
+		</button>
+
+		<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+			<i class="icon-paragraph-justify3"></i>
+		</button>
+	</div>
+	<!-- /mobile controls -->
 
 
 		<!-- Navbar content -->
@@ -289,8 +290,8 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="./sc-project-list.html" class="breadcrumb-item"> Project List</a>
-							<a href="./sc-project-list-add.html" class="breadcrumb-item"> Create Supply Chain</a>
+							<a href="#" class="breadcrumb-item"> Project List</a>
+							<a href="#" class="breadcrumb-item"> Create Supply Chain</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -487,7 +488,7 @@
 
 			<!-- Full width modal/ Sector & Business Area -->
 			<div id="ContractorInfo" class="modal fade" tabindex="-1">
-				<div class="modal-dialog modal-full">
+				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -541,7 +542,7 @@
 
 			<!-- Full width modal/ Main-Contractor Information -->
 			<div id="sectorBArea" class="modal fade" tabindex="-1">
-				<div class="modal-dialog modal-full">
+				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -558,7 +559,7 @@
 											<form action="#">
 												<div class="form-group">
 													<label>Sector:</label>
-													<select name="location" data-placeholder="Select Sector"
+													<select data-placeholder="Select Sector"
 														class="form-control select-search" data-fouc>
 														<option></option>
 														<option value="">-- select one --</option>
@@ -586,17 +587,17 @@
 														<option value="Energy">Energy</option>
 														<option value="Trading & Distribution">Trading & Distribution
 														</option>
-														<option value="Other">Other</option>
+														<option value="Others">Other</option>
 													</select>
 												</div>
+
 												<div class="form-group">
 													<label>Business Area:</label>
-													<select multiple=""
-														class="form-control select select2-hidden-accessible"
-														data-fouc="" data-select2-id="25" tabindex="-1"
-														aria-hidden="true">
+													<select data-placeholder="Select Business Area"
+														class="form-control select-search" data-fouc id="BAOptions"
+														onchange="check();">
 														<option></option>
-														<option value="Design" selected>Design</option>
+														<option value="Design">Design</option>
 														<option value="Manufacturing">Construction & Manufacturing
 														</option>
 														<option value="Services">Services</option>
@@ -605,9 +606,31 @@
 														<option value="System Engineering/ Integration">System
 															Engineering/ Integration</option>
 														<option value="MRO">MRO</option>
-														<option value="Other">Other</option>
+														<option value="Others">Others</option>
 													</select>
 												</div>
+
+												<div id=BAForms>
+													<div class="form-group">
+														<label>Other Business Area:</label>
+														<input type="text" class="form-control"
+															placeholder="Example. Heavy Construction">
+													</div>
+												</div>
+
+												<script>
+													function check() {
+														var dropdown = document.getElementById("BAOptions");
+														var current_value = dropdown.options[dropdown.selectedIndex].value;
+
+														if (current_value == "Others") {
+															document.getElementById("BAForms").style.display = "block";
+														}
+														else {
+															document.getElementById("BAForms").style.display = "none";
+														}
+													}
+												</script>
 											</form>
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"

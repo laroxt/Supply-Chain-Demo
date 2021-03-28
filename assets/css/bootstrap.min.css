@@ -5363,11 +5363,11 @@ a.close.disabled {
     width: 100%;
     pointer-events: auto;
     /* background-color: #fff; */
-    background-clip: padding-box;
+    /* background-clip: padding-box; */
     /* border: 1px solid rgba(0, 0, 0, .2); */
-    border-radius: .25rem;
+    /* border-radius: .25rem;
     box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
-    outline: 0
+    outline: 0 */
 }
 
 .modal-backdrop {
@@ -5396,9 +5396,9 @@ a.close.disabled {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1.25rem 1.25rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    /* border-bottom: 1px solid rgba(0, 0, 0, .125);
     border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem
+    border-top-right-radius: .25rem */
 }
 
 .modal-header .close {
@@ -5426,9 +5426,9 @@ a.close.disabled {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 1.25rem;
-    border-top: 1px solid rgba(0, 0, 0, .125);
+    /* border-top: 1px solid rgba(0, 0, 0, .125);
     border-bottom-right-radius: .25rem;
-    border-bottom-left-radius: .25rem
+    border-bottom-left-radius: .25rem */
 }
 
 .modal-footer>:not(:first-child) {
@@ -5464,9 +5464,9 @@ a.close.disabled {
     .modal-dialog-centered::before {
         height: calc(100vh - 3.5rem)
     }
-    .modal-content {
+    /* .modal-content {
         box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1)
-    }
+    } */
     .modal-sm {
         max-width: 400px
     }
@@ -6067,7 +6067,7 @@ a.close.disabled {
 }
 
 .bg-dark {
-    background-color: #2a3140!important
+    background-color: #30353b!important
 }
 
 .bg-white {
