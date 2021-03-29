@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company List</title>
+	<title>MC | Supply Chain System Introduction</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -53,6 +53,10 @@
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
+	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
+
+	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -60,19 +64,19 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-light">
+	<div class="navbar navbar-expand-md navbar-light ">
 
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./tda-home-sc-introduction.html" class="d-inline-block">
+				<a href="./home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -188,7 +192,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="./tda-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
 							Account
 							Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
@@ -231,23 +235,32 @@
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
-
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">tda Main</div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">mc Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
 
-						<!-- Company -->
+						<!-- Supply Chain Data Entry -->
 						<li class="nav-item">
-							<a href="./tda-company-list.html" class="nav-link active">
+							<a href="./sc-supply-chain-data-entry.html" class="nav-link ">
 								<i class="icon-briefcase"></i>
 								<span>
-									View Company
+									Sub-Contractor
 								</span>
 							</a>
 						</li>
-						<!-- /Company -->
+						<!-- /Supply Chain Data Entry -->
+						<!-- Sub-Contractor -->
+						<li class="nav-item">
+							<a href="./sc-sub-contrator-list.html" class="nav-link">
+								<i class="icon-collaboration"></i>
+								<span>
+									Manage Sub-Contractor
+								</span>
+							</a>
+						</li>
+						<!-- /Sub-Contractor -->
 
 						<!-- /Main -->
 					</ul>
@@ -269,7 +282,8 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"> Company List</a>
+							<a href="#" class="breadcrumb-item"><i class="icon-spinner10 mr-1"></i> Welcome to
+								Supply Chain</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -279,156 +293,39 @@
 
 
 			<!-- Content area -->
-			<div class="content2 pt-0">
-				<div class="col-md-12">
-					<div class="card">
-
-						<div class="card-header bg-white header-elements-inline">
-							<h4 class="card-title font-weight-bold">Company List</h4>
-						</div>
-
-						<form>
-							<div class="card-body row no-gutters align-items-center">
-								<div class="col-auto ">
-
-								</div>
-								<!--end of col-->
-								<div class="col">
-									<input class="form-control form-control-lg form-control-borderless m-2"
-										type="search" placeholder="Search topics or keywords">
-								</div>
-								<!--end of col-->
-								<div class="col-auto">
-									<button class="btn btn-lg btn-primary" type="submit">Search</button>
-								</div>
-								<!--end of col-->
-							</div>
-						</form>
-					</div>
-				</div>
-
+			<div class="content pt-0">
+				<!-- My messages -->
+				<!-- Basic table -->
 				<div class="row">
-					<!-- card content placement -->
-					<div class="col-md-3">
+					<div class="col-md-8 offset-md-2">
+						<!-- Bottom placement -->
 						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Gamuda Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
+							<div class="card-img-actions">
+								<img class="img-fluid card-img-top "
+									src="./global_assets/images/tda-logo/tda-introduction-banner.jpg" alt=""
+									style=" width: 100%;">
 							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/UEM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">UEM Group Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
+							<div class="card-body">
+								<h7 class="text-muted">Introduction</h7>
+								<h3 class="font-weight-bold">Our Supply Chain System</h3>
+								<p class="card-text">
+									A supply chain is a system of producing and delivering a product or service, from
+									the very beginning stage of sourcing the raw materials to the final delivery of the
+									product or service to end-users.
+								<div class="d-md-block"></div>The supply chain lays out all aspects of the
+								production process, including the activities involved at each stage, information
+								that is being communicated, natural resources that are transformed into useful
+								materials, human resources, and other components that go into the finished product
+								or service.
+								</p>
 							</div>
+
+
 						</div>
+						<!-- /bottom placement -->
 					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/YTL.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">YTL Corporation Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/IJM.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">IJM Corporation Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCT.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCT Holdings Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid" src="./global_assets/images/card-content-logo/WCE.jpg"
-								alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">WCE Holdings Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Mudajaya Group Berhad</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-3">
-						<div class="card">
-
-							<img class="card-img-top img-fluid"
-								src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-							<div class="card-body-content">
-								<h5 class="card-title font-weight-bold">Muhibbah Engineering (M) Bhd</h5>
-								<p class="card-text text-muted">Jan 18, 2021 . 3:30PM</p>
-								<a href="./tda-company-list-view.html" class="btn bg-primary mr-1">View</a>
-							</div>
-						</div>
-					</div>
-					<!--/ card content placement -->
 				</div>
+				<!-- /basic table -->
 			</div>
 			<!-- /content area -->
 
