@@ -51,7 +51,8 @@
 	<script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
 
-
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -237,21 +238,22 @@
 								title="Main"></i>
 						</li>
 
-						<!-- Home -->
+
+						<!-- Company -->
 						<li class="nav-item">
-							<a href="./spu-home-recent-activity.html" class="nav-link ">
-								<i class="icon-home4"></i>
+							<a href="./spu-company-list.html" class="nav-link">
+								<i class="icon-magazine"></i>
 								<span>
-									Home
+									View Company
 								</span>
 							</a>
 						</li>
-						<!-- /Home -->
+						<!-- /Company -->
 
 						<!-- Project -->
 						<li class="nav-item">
 							<a href="./spu-project-list-add.html" class="nav-link active">
-								<i class="icon-calendar3"></i>
+								<i class="icon-pencil7"></i>
 								<span>
 									Create Supply Chain
 								</span>
@@ -259,16 +261,7 @@
 						</li>
 						<!-- /Project -->
 
-						<!-- Company -->
-						<li class="nav-item">
-							<a href="./spu-company-list.html" class="nav-link">
-								<i class="icon-briefcase"></i>
-								<span>
-									View Company
-								</span>
-							</a>
-						</li>
-						<!-- /Company -->
+
 
 						<!-- /Main -->
 					</ul>
@@ -314,31 +307,32 @@
 								<form action="#">
 
 									<div class="form-group">
-										<label>Programme Name:</label>
+										<label>Programme Name:<span class="text-danger">*</span></label>
 										<input type="text" class="form-control" placeholder="Example. Programme 1">
 									</div>
 
 									<div class="form-group">
-										<label>Programme Reference Number:</label>
+										<label>Programme Reference Number:<span class="text-danger">*</span></label>
 										<input type="text" class="form-control" placeholder="Example. FQ2021213">
 									</div>
 
 									<div class="form-group">
-										<label>Project/Contract Name:</label>
+										<label>Project/Contract Name:<span class="text-danger">*</span></label>
 										<input type="text" class="form-control"
 											placeholder="Example. Construction Maintenance LRT 5">
 									</div>
 
 									<div class="form-group">
-										<label>Project/Contract Reference Number:</label>
+										<label>Project/Contract Reference Number:<span
+												class="text-danger">*</span></label>
 										<input type="text" class="form-control" placeholder="Example. FQ21022021">
 									</div>
 
 									<div class="d-flex justify-content-between">
 										<h6 class="font-weight-bold">Sector/Business Area</h6>
 										<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#sectorBArea"><i
-												class="icon-plus3"></i></button>
+											data-toggle="modal" data-target="#sectorBArea" data-popup="tooltip" title=""
+											data-original-title="Add"><i class="icon-plus3"></i></button>
 									</div><br>
 									<div class="table-responsive mb-4">
 										<table class="table">
@@ -372,7 +366,7 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-12">
-												<label>Contract Value:</label>
+												<label>Project/Contract Value:<span class="text-danger">*</span></label>
 												<div class="input-group">
 													<span class="input-group-prepend">
 														<span class="input-group-text">RM</span>
@@ -397,7 +391,8 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-6">
-												<label>Project Start:</label>
+												<label>Project/Contract Start Date:<span
+														class="text-danger">*</span></label>
 												<div class="input-group">
 													<span class="input-group-prepend">
 														<span class="input-group-text"><i
@@ -408,7 +403,8 @@
 												</div>
 											</div>
 											<div class="col-6">
-												<label>Project End:</label>
+												<label>Project/Contract End Date:<span
+														class="text-danger">*</span></label>
 												<div class="input-group">
 													<span class="input-group-prepend">
 														<span class="input-group-text"><i
@@ -422,23 +418,27 @@
 									</div>
 
 									<div class="d-flex justify-content-between mb-2">
-										<h6 class="font-weight-bold">Main-Contractor General Information</h6>
+										<h6 class="font-weight-bold">Main-Contractor General Information<span
+												class="text-danger">*</span></h6>
 									</div>
 									<div class="form-group">
-										<label>Main Contractor Company Name:</label>
+										<label>Main Organization / Main-Contractor Name:<span
+												class="text-danger">*</span></label>
 										<input type="text" class="form-control" placeholder="Example. Gamuda Berhad">
 									</div>
 
 									<div class="form-group">
-										<label>Company Registration Number(SSM)/ Unique ID:</label>
+										<label>Company Registration Number(SSM)/ Unique ID:<span
+												class="text-danger">*</span></label>
 										<input type="text" class="form-control" placeholder="Example. 201901000005">
 									</div>
 
 									<div class="d-flex justify-content-between">
-										<h6 class="font-weight-bold">Main-Contractor User Information</h6>
+										<h6 class="font-weight-bold">Organization / Main-Contractor User Information
+										</h6>
 										<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-											data-toggle="modal" data-target="#ContractorInfo"><i
-												class="icon-plus3"></i></button>
+											data-toggle="modal" data-target="#ContractorInfo" data-popup="tooltip"
+											title="" data-original-title="Add"><i class="icon-plus3"></i></button>
 									</div><br>
 
 									<div class="row">
@@ -476,7 +476,7 @@
 									</div>
 								</form>
 								<div class="text-right">
-									<button type="submit" class="btn btn-success">Submit</button>
+									<button type="submit" class="btn btn-success" id="sweet_combine">Submit</button>
 								</div>
 							</div>
 						</div>
@@ -526,7 +526,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Submit</button>
+												<button type="submit" class="btn btn-success">Save</button>
 											</div>
 										</div>
 									</div>
@@ -591,7 +591,160 @@
 												</div>
 
 												<div class="form-group">
-													<label>Business Area:</label>
+													<label>Sub-sector:</label>
+													<select data-placeholder="Select sub-sector"
+														class="form-control select-search" data-fouc>
+														<option></option>
+														<option value="">-- select one --</option>
+														<option value="Livestock">Livestock</option>
+														<option value="Farming">Farming</option>
+														<option value="v">Fisheries</option>
+														<option value="Fruits & Vegetables">Fruits & Vegetables
+														</option>
+														<option value="Floriculture">Floriculture
+														</option>
+														<option value="Machinery & Equipment">Machinery & Equipment
+														</option>
+														<option value="Basic Metal Products">Basic Metal Products
+														</option>
+														<option value="Engineering Support Industry">Engineering Support
+															Industry
+														</option>
+														<option value="Fabricated Metal Products">Fabricated Metal
+															Products
+														</option>
+														<option value="Inorganic Chemicals">Inorganic Chemicals
+														</option>
+														<option value="Agricultural Chemicals">Agricultural Chemicals
+														</option>
+														<option value="Industrial Gases">Industrial Gases
+														</option>
+														<option value="Fertilisers">Fertilisers
+														</option>
+														<option value="Paint and Printing Ink">Paint and Printing Ink
+														</option>
+														<option value="Non-metallic Mineral">Non-metallic Mineral
+														</option>
+														<option value="Industrial Building System (IBS)">Industrial
+															Building System (IBS)
+														</option>
+														<option value="Food">Food
+														</option>
+														<option value="Drink ">Drink
+														</option>
+														<option value="Wood">Wood
+														</option>
+														<option value="Furniture and Fixtures">Furniture and Fixtures
+
+														</option>
+														<option value="Pulp and Paper">Pulp and Paper
+
+														</option>
+														<option value="Catering">Catering
+
+														</option>
+														<option value="Hotel">Hotel
+
+														</option>
+														<option value="Medical Devices/Equipment/Services">Medical
+															Devices/Equipment/Services
+
+														</option>
+														<option value="Biotechnology">Biotechnology
+
+														</option>
+														<option value="Healthcare Provider">Healthcare Provider
+
+														</option>
+														<option value="Pharmaceutical">Pharmaceuticals
+
+														</option>
+														<option value="Electronic Components">Electronic Components
+
+														</option>
+														<option value="Consumer Electronics">Consumer Electronics
+
+														</option>
+														<option value="Electrical Products">Electrical Products
+
+														</option>
+														<option value="Industrial Electronics">Industrial Electronics
+
+														</option>
+														<option value="Clothing">Clothing
+
+														</option>
+														<option value="Footwear">Footwear
+
+														</option>
+														<option value="Leather">Leather
+
+														</option>
+														<option value="Textile">Textiles
+
+														</option>
+														<option value="Jeweller">Jewellery
+
+														</option>
+														<option value="Aerospace / Aviation">Aerospace / Aviation
+
+														</option>
+														<option value="Automotive">Automotive
+
+														</option>
+														<option value="Rail">Rail
+
+														</option>
+														<option value="Shipbuilding and Ship Repair">Shipbuilding and
+															Ship Repair
+
+														</option>
+														<option value="Water">Water
+
+														</option>
+														<option value="Electricity">Electricity
+
+														</option>
+														<option value="Gas">Gas
+
+														</option>
+														<option value="Digital Services">Digital Services
+
+														</option>
+														<option value="Semiconductor">Semiconductor
+
+														</option>
+														<option value="Big Data">Big Data
+
+														</option>
+														<option value="Software">Software
+
+														</option>
+														<option value="Technology Equipments">Technology Equipments
+
+														</option>
+														<option value="Education">Education
+
+														</option>
+														<option value="Biomass">Biomass
+
+														</option>
+														<option value="Nanoscience/ nanotechnology ">Nanoscience/
+															nanotechnology
+
+														</option>
+														<option value="Solar">Solar
+														</option>
+														<option value="Banking">Banking
+														</option>
+														<option value="Insuranc">Insurance
+														</option>
+
+													</select>
+												</div>
+
+												<div class="form-group">
+													<label>Product/Services:</label>
 													<select data-placeholder="Select Business Area"
 														class="form-control select-search" data-fouc id="BAOptions"
 														onchange="check();">
@@ -634,7 +787,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Submit</button>
+												<button type="submit" class="btn btn-success">Save</button>
 											</div>
 										</div>
 									</div>
