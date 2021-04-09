@@ -4111,7 +4111,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid rgba(0, 0, 0, .09);
     border-radius: 1.1875rem
 }
 
@@ -4179,7 +4179,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .card-footer:last-child {
-    border-radius: 0 0 .125rem .125rem
+    border-radius: 0 0 1.125rem 1.125rem
 }
 
 .card-header-tabs {
@@ -9147,7 +9147,7 @@ a.text-dark:focus, a.text-dark:hover {
 .card-body-content {
     flex: 1 1 auto;
     padding: 1.25rem;
-    /* height: 285px; */
+    height: 7rem;
     background-color: #373234;
     color: white;
     border-radius: 0px 0px 15px 15px;
@@ -9173,4 +9173,15 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #373234;
     outline: 1px solid slategrey;
+}
+
+.card-hover:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+    border-radius: 15px;
+}
+
+.tnc-scroll {
+    height: 420px;
+    overflow-y: scroll;
 }
