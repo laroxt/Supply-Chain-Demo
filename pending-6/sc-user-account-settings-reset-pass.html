@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SC | Supply Chain | Add New Project</title>
+	<title>SC | User Account Settings | Change Password</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -83,24 +83,25 @@
 		<!-- /header with logos -->
 
 
-	<!-- Mobile controls -->
-	<div class="d-flex flex-1 d-md-none">
-		<div class="navbar-brand mr-auto">
-			<a href="./admin-home-sc-introduction.html" class="d-inline-block">
-				<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
-					alt="">
-			</a>
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
 		</div>
+		<!-- /mobile controls -->
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-			<i class="icon-tree5"></i>
-		</button>
-
-		<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-			<i class="icon-paragraph-justify3"></i>
-		</button>
-	</div>
-	<!-- /mobile controls -->
 
 		<!-- Navbar content -->
 		<div class="collapse navbar-collapse" id="navbar-mobile">
@@ -189,7 +190,9 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
+						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
+							Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
@@ -232,7 +235,7 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Sub-Contractor</div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">sc Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
 
@@ -255,16 +258,13 @@
 								</span>
 							</a>
 						</li>
-						<!-- /Sub-Contractor -->q
+						<!-- /Sub-Contractor -->
 
 						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
-
 			</div>
-			<!-- /sidebar content -->
-
 		</div>
 		<!-- /main sidebar -->
 
@@ -278,6 +278,8 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<a href="#" class="breadcrumb-item"> Account Settings</a>
+							<a href="#" class="breadcrumb-item"> Change
+								Password</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -289,97 +291,42 @@
 			<!-- Content area -->
 			<div class="content2 pt-0">
 				<div class="row">
-
 					<!-- card content placement -->
 					<div class="col-md-8 offset-md-2">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Account Settings</h4>
-								<div class="header-elements">
-									<div class="list-icons">
-
-
-									</div>
-								</div>
+								<h4 class="card-title font-weight-bold">Change Password</h4>
 							</div>
 
+
 							<div class="card-body">
-								<!-- card content placement -->
-								<div class="row">
-									<div class="col-md-3">
-										<div class="card-user-profile-image" style="border-radius: 300px;">
-											<div class="card-img-actions">
-												<img class="card-img-top account-settings-user-profile-image"
-													src="./global_assets/images/placeholders/placeholder_u1.jpg" alt="">
-												<div
-													class="card-img-actions-overlay card-img-top account-settings-user-profile-image">
-													<a href="#"
-														class="btn btn-outline bg-primary text-white border-white border-2">
-														Upload Image
-													</a>
-												</div>
-											</div>
-										</div>
+								<form action="#">
+									<div class="form-group">
+										<label>Current Password:</label>
+										<input type="text" class="form-control" placeholder="Example. Kuala Lumpur">
+									</div>
+									<div class="form-group">
+										<label>New Password:</label>
+										<input type="text" class="form-control" placeholder="Example. Kuala Lumpur">
+									</div>
+									<div class="form-group">
+										<label>Confirm Password:</label>
+										<input type="text" class="form-control" placeholder="Example. Kuala Lumpur">
 									</div>
 
-									<!--/ card content placement -->
-									<div class="col-md-9">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Name:</label>
-													<h5 class="card-title font-weight-semibold">Aidan Chong</h5>
-												</div>
 
-												<div class="form-group">
-													<label>Role:</label>
-													<h5 class="card-title font-weight-semibold">Industry Intelligent
-													</h5>
-												</div>
-												<div class="form-group">
-													<label>Status:</label>
-													<h5 class="card-title font-weight-semibold">Active</h5>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Email:</label>
-													<h5 class="card-title font-weight-semibold">
-														Aidan@hummingsoft.com</h5>
-												</div>
-
-												<div class="form-group">
-													<label>Phone:</label>
-													<h5 class="card-title font-weight-semibold">
-														011-111 1111
-													</h5>
-												</div>
-
-												<div class="form-group">
-													<label>Address:</label>
-													<h5 class="card-title font-weight-semibold">Kuala Lumpur</h5>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="text-right mb-2 mt-2">
-									<button type="button" onClick="location.href='sc-user-account-settings-edit.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-compose"></i> Edit
-										Profile Details
-									</button>
-
-									<button type="button"
-										onClick="location.href='sc-user-account-settings-reset-pass.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-lock"></i> Change
-										Password
-									</button>
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light"
+										onClick="location.href='sc-user-account-settings.html'">Back</button>
+									<button type="submit" class="btn btn-success">Save</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!--/ card content placement -->
 				</div>
+
+
 			</div>
 			<!-- /content area -->
 

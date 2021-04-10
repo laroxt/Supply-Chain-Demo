@@ -9185,3 +9185,15 @@ body::-webkit-scrollbar-thumb {
     height: 420px;
     overflow-y: scroll;
 }
+
+.icon-search {
+    color: #333;
+}
+
+.icon-search:hover {
+    color: rgb(90, 90, 90);
+}
+
+.icon-search-active {
+    color: #1976D2;
+}

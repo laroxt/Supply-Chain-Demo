@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SC | Supply Chain | Add New Project</title>
+	<title>SPU | Company Grid View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -43,6 +43,7 @@
 	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
 	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
@@ -51,9 +52,6 @@
 	<script src="assets/js/app.js"></script>
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
-	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
 	<!-- /theme JS files -->
 
@@ -67,14 +65,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./sc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./sc-home-sc-introduction.html" class="d-inline-block">
+				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -83,24 +81,25 @@
 		<!-- /header with logos -->
 
 
-	<!-- Mobile controls -->
-	<div class="d-flex flex-1 d-md-none">
-		<div class="navbar-brand mr-auto">
-			<a href="./admin-home-sc-introduction.html" class="d-inline-block">
-				<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
-					alt="">
-			</a>
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="./admin-home-sc-introduction.html" class="d-inline-block">
+					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
+						alt="">
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
 		</div>
+		<!-- /mobile controls -->
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-			<i class="icon-tree5"></i>
-		</button>
-
-		<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-			<i class="icon-paragraph-justify3"></i>
-		</button>
-	</div>
-	<!-- /mobile controls -->
 
 		<!-- Navbar content -->
 		<div class="collapse navbar-collapse" id="navbar-mobile">
@@ -189,7 +188,9 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
+						<a href="./spu-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
+							Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
@@ -230,32 +231,36 @@
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Sub-Contractor</div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">Strategic Planning Unit </div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
 
-						<!-- Supply Chain Data Entry -->
+						<!-- Company -->
 						<li class="nav-item">
-							<a href="./sc-supply-chain-data-entry.html" class="nav-link ">
-								<i class="icon-briefcase"></i>
+							<a href="./spu-company-grid.html" class="nav-link active">
+								<i class="icon-magazine"></i>
 								<span>
-									Sub-Contractor
+									View Company
 								</span>
 							</a>
 						</li>
-						<!-- /Supply Chain Data Entry -->
-						<!-- Sub-Contractor -->
+						<!-- /Company -->
+
+						<!-- Project -->
 						<li class="nav-item">
-							<a href="./sc-sub-contrator-list.html" class="nav-link">
-								<i class="icon-collaboration"></i>
+							<a href="./spu-project-list-add.html" class="nav-link ">
+								<i class="icon-pencil7"></i>
 								<span>
-									Manage Sub-Contractor
+									Create Supply Chain
 								</span>
 							</a>
 						</li>
-						<!-- /Sub-Contractor -->q
+						<!-- /Project -->
+
+
 
 						<!-- /Main -->
 					</ul>
@@ -277,7 +282,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"> Account Settings</a>
+							<a href="#" class="breadcrumb-item"> Company List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -288,100 +293,232 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
+
+
 				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+
+							<div class="card-header bg-white header-elements-inline">
+								<h4 class="card-title font-weight-bold">Company List</h4>
+							</div>
+
+							<div class="card-header bg-white header-elements-inline pt-1 pb-1">
+								<div class="d-flex">
+									<div class="breadcrumb">
+										<a href="spu-company-grid.html" class="icon-grid2 icon-search-active"
+											data-popup="tooltip" title="" data-original-title="Grid"></a>
+										<a href="spu-company-list.html" class="icon-list2 ml-2 icon-search"
+											data-popup="tooltip" title="" data-original-title="List"></a>
+
+									</div>
+
+									<a href="#" class="header-elements-toggle text-default d-md-none"><i
+											class="icon-more"></i></a>
+								</div>
+
+								<div class="header-elements d-none">
+									<div class="breadcrumb justify-content-center">
+										<div href="#" class="breadcrumb-elements-item"> <span class="mr-2">Sort
+												By:</span>
+										</div>
+
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+
+													<option value="opt2">A-Z</option>
+													<option value="opt3">Z-A</option>
+
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+													<option value="opt2">25</option>
+													<option value="opt3">50</option>
+													<option value="opt4">75</option>
+													<option value="opt5">100</option>
+												</select>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="col-md-12">
+								<div class="card-body row no-gutters align-items-center">
+
+									<div class="col">
+										<input class="form-control form-control-lg form-control-borderless m-1"
+											type="search" placeholder="Search topics or keywords">
+									</div>
+
+									<div class="col-auto">
+										<button class="btn btn-lg btn-primary" type="submit">Search</button>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
 
 					<!-- card content placement -->
-					<div class="col-md-8 offset-md-2">
+					<div class="col-md-2">
 						<div class="card">
-							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Account Settings</h4>
-								<div class="header-elements">
-									<div class="list-icons">
+							<a href="./spu-company-grid-view.html" class="card-hover" data-popup="tooltip" title=""
+								data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
 
-
-									</div>
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">Gamuda Berhad</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
 								</div>
-							</div>
-
-							<div class="card-body">
-								<!-- card content placement -->
-								<div class="row">
-									<div class="col-md-3">
-										<div class="card-user-profile-image" style="border-radius: 300px;">
-											<div class="card-img-actions">
-												<img class="card-img-top account-settings-user-profile-image"
-													src="./global_assets/images/placeholders/placeholder_u1.jpg" alt="">
-												<div
-													class="card-img-actions-overlay card-img-top account-settings-user-profile-image">
-													<a href="#"
-														class="btn btn-outline bg-primary text-white border-white border-2">
-														Upload Image
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--/ card content placement -->
-									<div class="col-md-9">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Name:</label>
-													<h5 class="card-title font-weight-semibold">Aidan Chong</h5>
-												</div>
-
-												<div class="form-group">
-													<label>Role:</label>
-													<h5 class="card-title font-weight-semibold">Industry Intelligent
-													</h5>
-												</div>
-												<div class="form-group">
-													<label>Status:</label>
-													<h5 class="card-title font-weight-semibold">Active</h5>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Email:</label>
-													<h5 class="card-title font-weight-semibold">
-														Aidan@hummingsoft.com</h5>
-												</div>
-
-												<div class="form-group">
-													<label>Phone:</label>
-													<h5 class="card-title font-weight-semibold">
-														011-111 1111
-													</h5>
-												</div>
-
-												<div class="form-group">
-													<label>Address:</label>
-													<h5 class="card-title font-weight-semibold">Kuala Lumpur</h5>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="text-right mb-2 mt-2">
-									<button type="button" onClick="location.href='sc-user-account-settings-edit.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-compose"></i> Edit
-										Profile Details
-									</button>
-
-									<button type="button"
-										onClick="location.href='sc-user-account-settings-reset-pass.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-lock"></i> Change
-										Password
-									</button>
-								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/UEM.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">UEM Group Berhad</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/IJM.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">IJM Corporation</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/YTL.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">YTL Corporation</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/WCT.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">WCT Holdings Berhad</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">Mudajaya Group Berhad</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="./spu-company-list-view.html" class="card-hover" data-popup="tooltip" title=""
+								data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/WCE.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">WCE Holdings Berhad</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+					<!-- card content placement -->
+					<div class="col-md-2">
+						<div class="card">
+							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
+								<img class="card-img-top img-fluid"
+									src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
+
+								<div class="card-body-content">
+									<h7 class="card-title font-weight-bold">Muhibbah Bhd</h7>
+									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--/ card content placement -->
+
+					<div class="col-md-12">
+						<div class="card card-body text-center">
+							<ul class="pagination pagination-flat pagination-rounded align-self-center">
+								<li class="page-item"><a href="#" class="page-link"><i
+											class="icon-arrow-left12"></i></a>
+								</li>
+								<li class="page-item rounded active"><a href="#" class="page-link">1</a></li>
+								<li class="page-item"><a href="#" class="page-link">2</a></li>
+								<li class="page-item"><a href="#" class="page-link">3</a></li>
+								<li class="page-item"><a href="#" class="page-link">4</a></li>
+								<li class="page-item"><a href="#" class="page-link"><i
+											class="icon-arrow-right13"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<!-- /content area -->
+
 
 
 			<!-- Footer -->

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>MC | Supply Chain Data Entry</title>
+	<title>SC | Supply Chain Data Entry</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -193,7 +193,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="./mc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+						<a href="./sc-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
 							Account
 							Settings</a>
 						<a href="./sc-index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
@@ -238,23 +238,23 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Main-Contractor</div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">sc Main</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
 
 						<!-- Supply Chain Data Entry -->
 						<li class="nav-item">
-							<a href="./mc-supply-chain-data-entry.html" class="nav-link active">
+							<a href="./sc-supply-chain-data-entry.html" class="nav-link active">
 								<i class="icon-briefcase"></i>
 								<span>
-									Main-Contractor
+									Sub-Contractor
 								</span>
 							</a>
 						</li>
 						<!-- /Supply Chain Data Entry -->
 						<!-- Sub-Contractor -->
 						<li class="nav-item">
-							<a href="./mc-sub-contrator-list.html" class="nav-link">
+							<a href="./sc-sub-contrator-list.html" class="nav-link">
 								<i class="icon-collaboration"></i>
 								<span>
 									Manage Sub-Contractor
@@ -313,13 +313,13 @@
 									<h6>Company<br>Information</h6>
 									<hr class="solid solid-form-divider">
 									<fieldset class="mb-5">
-										<h3 class="font-size-xs mb-1">1/3</h3>
+										<h3 class="font-size-xs mb-1">1/4</h3>
 										<h4 class="font-weight-bold">Company Information</h4>
 										<div class="row">
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Organization / Company Name:</label>
+													<label>Company Name:</label>
 													<input type="text" class="form-control" placeholder="Gamuda Sdn Bhd"
 														disabled>
 												</div>
@@ -327,7 +327,7 @@
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Company Registration Number(SSM) / Unique ID:</label>
+													<label>Company Registration Number(SSM)/ Unique ID:</label>
 													<input type="text" class="form-control" placeholder="201901000005"
 														disabled>
 												</div>
@@ -335,7 +335,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Image (Logo):</label>
+													<label>Company Image(Logo):</label>
 													<div class="custom-file">
 														<input type="file" class="custom-file-input" id="customFile">
 														<label class="custom-file-label" for="customFile">Choose
@@ -350,9 +350,8 @@
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Organization / Company Type:</label>
-													<select name="location"
-														data-placeholder="Select organization / company type"
+													<label>Company Type:</label>
+													<select name="location" data-placeholder="Select company type"
 														class="form-control select-search" data-fouc>
 														<option></option>
 														<option value="Agency">Agency
@@ -399,9 +398,8 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Status:</label>
-													<select name="position"
-														data-placeholder="Select organization / company status"
+													<label>Company Status:</label>
+													<select name="position" data-placeholder="Select company status"
 														class="form-control select-search" data-fouc>
 														<option></option>
 														<option value="distributor">Bumiputera</option>
@@ -413,7 +411,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization/Company Address:</label>
+													<label>Company Address:</label>
 													<textarea type="text" class="form-control"
 														placeholder="Example. Menara Gamuda D-16-01, Block D, PJ Trade CentreNo. 8, Jalan PJU 8/8A Bandar Damansara Perdana"
 														rows="4"></textarea>
@@ -668,41 +666,22 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization/Company Core Competencies :</label>
+													<label>Company Competencies:</label>
 													<select class="form-control select-multiple-tags"
 														multiple="multiple" data-fouc>
-														<option value="Logistic Management " selected>Logistic
-															Management </option>
-														<option value="System Integration" selected>System Integration
-														</option>
-														<option value="Miniaturization" selected>Miniaturization
-														</option>
-														<option value="Wireless Communication">Wireless Communication
-														</option>
-														<option value="Engine">Engine
-														</option>
-														<option value="Microelectronic ">Microelectronic
-														</option>
+														<option value="Expertise 1" selected>Competencies 1</option>
+														<option value="Expertise 2" selected>Competencies 2</option>
 													</select>
 												</div>
 											</div>
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Area of Company Specialist/Expertise:</label>
+													<label>Company Manpower Skill:</label>
 													<select class="form-control select-multiple-tags"
 														multiple="multiple" data-fouc>
-														<option value="Sensor Networks" selected>Sensor Networks
-														</option>
-														<option value="Aerospace Structures" selected>Aerospace
-															Structures</option>
-														<option value="Machine Design">Machine Design</option>
-														<option value="Radio Frequency (Rf) And Microwaves">Radio
-															Frequency (Rf) And Microwaves</option>
-														<option value="Geographical Information System (GIS)">
-															Geographical Information System (GIS)</option>
-														<option value="Biomass Energy Technology ">Biomass Energy
-															Technology </option>
+														<option value="Skill 1" selected>Skill 1</option>
+														<option value="Skill 2" selected>Skill 2</option>
 													</select>
 												</div>
 											</div>
@@ -759,7 +738,6 @@
 														<thead>
 															<tr>
 																<th>Sector</th>
-																<th>Sub-Sector</th>
 																<th>Business Area</th>
 																<th>Action</th>
 															</tr>
@@ -767,7 +745,6 @@
 														<tbody>
 															<tr>
 																<th>Civil & Construction</th>
-																<th>Rail</th>
 																<td>Construction & Manufacturing</td>
 																<td>
 																	<button type="button"
@@ -921,10 +898,10 @@
 
 											<div class="col-md-12">
 												<div class="d-flex justify-content-between">
-													<h6 class="font-weight-bold">Collaborated Academia</h6>
+													<h6 class="font-weight-bold">Cooperated Academia</h6>
 													<button type="button"
 														class="btn bg-light btn-icon rounded-round mt-1"
-														data-toggle="modal" data-target="#addCollaboratedAcademia"><i
+														data-toggle="modal" data-target="#addCooperatedAcademia"><i
 															class="icon-plus3" data-popup="tooltip"
 															data-original-title="Add"></i></button>
 												</div><br>
@@ -937,7 +914,6 @@
 																<th>Contact Name</th>
 																<th>Contact Email</th>
 																<th>Contact Number</th>
-																<th>Add Name of Program / Event</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -948,7 +924,6 @@
 																<th>Faizul Khalid</th>
 																<td>FaizulKhalid@UM.com.my</td>
 																<td>011-111 1111</td>
-																<td>Supply Chain Evolution 2021</td>
 																<td>
 
 																	<button type="button"
@@ -1113,7 +1088,7 @@
 										</div> -->
 									</fieldset>
 
-									<!-- <h6>Level of Services</h6>
+									<h6>Level of Services</h6>
 									<fieldset>
 										<h3 class="font-size-xs mb-1">2/4</h3>
 										<h4 class="font-weight-bold">Level of Services</h4>
@@ -1139,12 +1114,12 @@
 												</div>
 											</div>
 										</div>
-									</fieldset> -->
+									</fieldset>
 
 
 									<h6>Machineries & Facilities<br> Information</h6>
 									<fieldset>
-										<h3 class="font-size-xs mb-1">2/3</h3>
+										<h3 class="font-size-xs mb-1">3/4</h3>
 										<h4 class="font-weight-bold">Machineries & Facilities Information</h4>
 										<div class="row">
 
@@ -1388,13 +1363,13 @@
 
 									<h6>Materials<br> Information</h6>
 									<fieldset>
-										<h3 class="font-size-xs mb-1">3/3</h3>
+										<h3 class="font-size-xs mb-1">4/4</h3>
 										<h4 class="font-weight-bold">Material Information</h4>
 
 										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">System:</h6>
+											<h6 class="font-weight-bold">Finish Product:</h6>
 											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-												data-toggle="modal" data-target="#addSystem"><i class="icon-plus3"
+												data-toggle="modal" data-target="#addProduct"><i class="icon-plus3"
 													data-popup="tooltip" data-original-title="Add"></i></button>
 										</div>
 										<div class="row">
@@ -1417,13 +1392,13 @@
 														<tbody>
 															<tr>
 																<td>SP123-21</td>
-																<td>System 1</td>
+																<td>Steel Pipe</td>
 																<td>Malaysia</td>
 																<td>Youfa Cooperation</td>
 																<td>For underground construction</td>
 																<td>Youfa</td>
 																<td>YSP3123</td>
-																<td>21</td>
+																<td>21,000</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
@@ -1446,13 +1421,13 @@
 															</tr>
 															<tr>
 																<td>SP123-22</td>
-																<td>System 2</td>
+																<td>Steel Pipe</td>
 																<td>Malaysia</td>
 																<td>Youfa Cooperation</td>
 																<td>For underground construction</td>
 																<td>Youfa</td>
 																<td>YSP3124</td>
-																<td>11</td>
+																<td>11,000</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
@@ -1480,10 +1455,11 @@
 										</div>
 
 										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Sub-System:</h6>
+											<h6 class="font-weight-bold">Components/Parts:</h6>
 											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-												data-toggle="modal" data-target="#addSubSystem"><i class="icon-plus3"
-													data-popup="tooltip" data-original-title="Add"></i></button>
+												data-toggle="modal" data-target="#addComponentsParts"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
 										</div>
 										<div class="row">
 											<div class="col-md-12">
@@ -1505,10 +1481,10 @@
 														<tbody>
 															<tr>
 																<td>HMT132</td>
-																<td>Sub-System 1</td>
+																<td>Machine Tire 1</td>
 																<td>Malaysia</td>
 																<td>Mitsubishi</td>
-																<td>Sub-System for general contruction use</td>
+																<td>Spare tires for Heavy Machine X</td>
 																<td>Mitsubishi</td>
 																<td>TM3000x</td>
 																<td>10</td>
@@ -1534,10 +1510,10 @@
 															</tr>
 															<tr>
 																<td>HMT133-x</td>
-																<td>Sub-System 2</td>
+																<td>Machine Tire 2</td>
 																<td>Malaysia</td>
 																<td>Mitsubishi</td>
-																<td>Sub-System for general contruction use</td>
+																<td>Spare tires for Heavy Machine Y</td>
 																<td>Mitsubishi</td>
 																<td>TM3300x</td>
 																<td>13</td>
@@ -1568,10 +1544,11 @@
 										</div>
 
 										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Component:</h6>
+											<h6 class="font-weight-bold">Sub-Components/Sub-Parts:</h6>
 											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-												data-toggle="modal" data-target="#addComponent"><i class="icon-plus3"
-													data-popup="tooltip" data-original-title="Add"></i></button>
+												data-toggle="modal" data-target="#addSubComponentsParts"><i
+													class="icon-plus3" data-popup="tooltip"
+													data-original-title="Add"></i></button>
 										</div>
 										<div class="row">
 											<div class="col-md-12">
@@ -1593,10 +1570,10 @@
 														<tbody>
 															<tr>
 																<td>T10202123</td>
-																<td>Component 1</td>
+																<td>T30 Screw</td>
 																<td>Malaysia</td>
 																<td>KENENG</td>
-																<td>Component for general purpose</td>
+																<td>Screw for general purpose</td>
 																<td>KENENG</td>
 																<td>T10</td>
 																<td>30,000</td>
@@ -1623,10 +1600,10 @@
 															</tr>
 															<tr>
 																<td>T1020233x</td>
-																<td>Component 2</td>
+																<td>T32x Screw</td>
 																<td>Malaysia</td>
 																<td>KENENG</td>
-																<td>Component for general purpose</td>
+																<td>Screw for general purpose underground</td>
 																<td>KENENG</td>
 																<td>T32</td>
 																<td>31,000</td>
@@ -1656,9 +1633,9 @@
 										</div>
 
 										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Sub-Component:</h6>
+											<h6 class="font-weight-bold">Sub-Assembly:</h6>
 											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-												data-toggle="modal" data-target="#addSubComponent"><i class="icon-plus3"
+												data-toggle="modal" data-target="#addSubAssembly"><i class="icon-plus3"
 													data-popup="tooltip" data-original-title="Add"></i></button>
 										</div>
 										<div class="row">
@@ -1681,10 +1658,10 @@
 														<tbody>
 															<tr>
 																<td>Gx3000</td>
-																<td>Sub-Component 1</td>
+																<td>GearX</td>
 																<td>Malaysia</td>
 																<td>Grimonprez Transmission Gears</td>
-																<td>Sub-Component for Machine Y</td>
+																<td>Gears for Machine Y</td>
 																<td>Grimonprez</td>
 																<td>Gx300-Y</td>
 																<td>100</td>
@@ -1710,99 +1687,10 @@
 															</tr>
 															<tr>
 																<td>Gx3200</td>
-																<td>Sub-Component 2</td>
+																<td>GearXP</td>
 																<td>Malaysia</td>
 																<td>Grimonprez Transmission Gears</td>
-																<td>Sub-Component for Machine X</td>
-																<td>Grimonprez</td>
-																<td>Gx320-X</td>
-																<td>130</td>
-																<td>
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
-																			title=""
-																			data-original-title="View"></i></button>
-
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-compose" data-popup="tooltip"
-																			title=""
-																			data-original-title="Edit"></i></button>
-
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-trash-alt" data-popup="tooltip"
-																			title=""
-																			data-original-title="Remove"></i></button>
-																</td>
-
-															</tr>
-														<tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-
-										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Part:</h6>
-											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-												data-toggle="modal" data-target="#addPart"><i class="icon-plus3"
-													data-popup="tooltip" data-original-title="Add"></i></button>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<div>
-													<table class="table datatable-basic ">
-														<thead>
-															<tr>
-																<th>Code</th>
-																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
-																<th>Brand</th>
-																<th>Model</th>
-																<th>Quantity</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>Px34z</td>
-																<td>Part</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Part for Machine Y</td>
-																<td>Grimonprez</td>
-																<td>Gx300-Y</td>
-																<td>100</td>
-																<td>
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
-																			title=""
-																			data-original-title="View"></i></button>
-
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-compose" data-popup="tooltip"
-																			title=""
-																			data-original-title="Edit"></i></button>
-
-																	<button type="button"
-																		class="btn btn-light btn-icon"><i
-																			class="icon-trash-alt" data-popup="tooltip"
-																			title=""
-																			data-original-title="Remove"></i></button>
-																</td>
-															</tr>
-															<tr>
-																<td>Px34z</td>
-																<td>Part 1</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Part for Machine X</td>
+																<td>Gears for Machine X</td>
 																<td>Grimonprez</td>
 																<td>Gx320-X</td>
 																<td>130</td>
@@ -2204,7 +2092,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -2600,7 +2488,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -2720,7 +2608,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -2733,7 +2621,7 @@
 			<!-- /full width modal -->
 
 			<!-- Full width modal/ Product -->
-			<div id="addSystem" class="modal fade" tabindex="-1">
+			<div id="addProduct" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 
@@ -2743,7 +2631,7 @@
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add System
+											<h4 class="card-title font-weight-bold">Add Finish Product
 											</h4>
 										</div>
 										<div class="card-body">
@@ -2753,16 +2641,16 @@
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>System Code:</label>
+															<label>Product Code:</label>
 															<input type="text" class="form-control"
 																placeholder="Example. SP123-21">
 														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>System Name:</label>
+															<label>Product Name:</label>
 															<input type="text" class="form-control"
-																placeholder="Example. System 1">
+																placeholder="Example. Steel Pipe">
 														</div>
 													</div>
 
@@ -2866,7 +2754,7 @@
 														<div class="row">
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>System Brand:</label>
+																	<label>Product Brand:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. Youfa">
 																</div>
@@ -2874,7 +2762,7 @@
 
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>System Model:</label>
+																	<label>Product Model:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. YSP3123">
 																</div>
@@ -2884,7 +2772,7 @@
 																<div class="form-group">
 																	<label>Quantity:</label>
 																	<input type="text" class="form-control"
-																		placeholder="Example. 21">
+																		placeholder="Example. 21,000">
 																</div>
 															</div>
 														</div>
@@ -3125,7 +3013,7 @@
 													<div class="col-md-12">
 
 														<div class="d-flex justify-content-between">
-															<h6 class="font-weight-bold">System Picture:</h6>
+															<h6 class="font-weight-bold">Product Picture:</h6>
 															<button type="button"
 																class="btn bg-light btn-icon rounded-round mb-1"
 																data-toggle="modal" data-target="#"><i
@@ -3136,8 +3024,8 @@
 															<table class="table">
 																<thead>
 																	<tr>
-																		<th>System Picture Description</th>
-																		<th>System Picture File</th>
+																		<th>Product Picture Description</th>
+																		<th>Product Picture File</th>
 
 																	</tr>
 																</thead>
@@ -3198,7 +3086,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -3211,7 +3099,7 @@
 			<!-- /full width modal -->
 
 			<!-- Full width modal/ SubAssembly -->
-			<div id="addSubComponent" class="modal fade" tabindex="-1">
+			<div id="addSubAssembly" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 
@@ -3221,7 +3109,7 @@
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Sub-Component
+											<h4 class="card-title font-weight-bold">Add Sub-Assembly
 											</h4>
 										</div>
 										<div class="card-body">
@@ -3231,18 +3119,23 @@
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Sub-Component Code:</label>
+															<label>Sub-Assembly Code:</label>
 															<input type="text" class="form-control"
 																placeholder="Example. Gx3000">
 														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Sub-Component Name:</label>
+															<label>Sub-Assembly Name:</label>
 															<input type="text" class="form-control"
-																placeholder="Example. Sub-Compnent 1">
+																placeholder="Example. GearX">
 														</div>
 													</div>
+
+
+
+
+
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -3325,7 +3218,7 @@
 														<div class="form-group">
 															<label>Description:</label>
 															<textarea type="text" class="form-control"
-																placeholder="Example. Sub-Compnent 1 for Machine Y"
+																placeholder="Example. Gears for Machine Y"
 																rows="4"></textarea>
 														</div>
 													</div>
@@ -3342,7 +3235,7 @@
 														<div class="row">
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Sub-Component Brand:</label>
+																	<label>Sub-Assembly Brand:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. Grimonprez">
 																</div>
@@ -3350,7 +3243,7 @@
 
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Sub-Component Model:</label>
+																	<label>Sub-Assembly Model:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. Gx300-Y">
 																</div>
@@ -3601,7 +3494,7 @@
 													<div class="col-md-12">
 
 														<div class="d-flex justify-content-between">
-															<h6 class="font-weight-bold">Sub-Component Picture:</h6>
+															<h6 class="font-weight-bold">Sub-Assembly Picture:</h6>
 															<button type="button"
 																class="btn bg-light btn-icon rounded-round mb-1"
 																data-toggle="modal" data-target="#"><i
@@ -3612,8 +3505,8 @@
 															<table class="table">
 																<thead>
 																	<tr>
-																		<th>Sub-Component Picture Description</th>
-																		<th>Sub-Component Picture File</th>
+																		<th>Sub-Assembly Picture Description</th>
+																		<th>Sub-Assembly Picture File</th>
 
 																	</tr>
 																</thead>
@@ -3674,7 +3567,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -3687,7 +3580,7 @@
 			<!-- /full width modal -->
 
 			<!-- Full width modal/ Components -->
-			<div id="addSubSystem" class="modal fade" tabindex="-1">
+			<div id="addComponentsParts" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 
@@ -3697,7 +3590,7 @@
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Sub-System
+											<h4 class="card-title font-weight-bold">Add Components/Parts
 											</h4>
 										</div>
 										<div class="card-body">
@@ -3707,16 +3600,16 @@
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Sub-System Code:</label>
+															<label>Components/Parts Code:</label>
 															<input type="text" class="form-control"
 																placeholder="Example. HMT132">
 														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Sub-System Name:</label>
+															<label>Components/Parts Name:</label>
 															<input type="text" class="form-control"
-																placeholder="Example. Sub-System 1">
+																placeholder="Example. Heavy Machine Tire">
 														</div>
 													</div>
 
@@ -3805,7 +3698,7 @@
 														<div class="form-group">
 															<label>Description:</label>
 															<textarea type="text" class="form-control"
-																placeholder="Example. Sub-System for general contruction use"
+																placeholder="Example. Spare tires for Heavy Machine X"
 																rows="4"></textarea>
 														</div>
 													</div>
@@ -3822,7 +3715,7 @@
 														<div class="row">
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Sub-System Brand:</label>
+																	<label>Components/Parts Brand:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. Mitsubishi">
 																</div>
@@ -3830,7 +3723,7 @@
 
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Sub-System Model:</label>
+																	<label>Components/Parts Model:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. TM3000x">
 																</div>
@@ -4081,7 +3974,7 @@
 													<div class="col-md-12">
 
 														<div class="d-flex justify-content-between">
-															<h6 class="font-weight-bold">Sub-System Picture:</h6>
+															<h6 class="font-weight-bold">Components/Parts Picture:</h6>
 															<button type="button"
 																class="btn bg-light btn-icon rounded-round mb-1"
 																data-toggle="modal" data-target="#"><i
@@ -4092,8 +3985,8 @@
 															<table class="table">
 																<thead>
 																	<tr>
-																		<th>Sub-System Picture Description</th>
-																		<th>Sub-System Picture File</th>
+																		<th>Components/Parts Picture Description</th>
+																		<th>Components/Parts Picture File</th>
 
 																	</tr>
 																</thead>
@@ -4155,7 +4048,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -4168,34 +4061,44 @@
 			<!-- /full width modal -->
 
 			<!-- Full width modal/ Parts -->
-			<div id="addComponent" class="modal fade" tabindex="-1">
+			<div id="addSubComponentsParts" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
+
+
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Component
+											<h4 class="card-title font-weight-bold">Add Sub-Components/Sub-Parts
 											</h4>
 										</div>
 										<div class="card-body">
 											<form action="#">
+
+
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Component Code:</label>
+															<label>Sub-Components/Sub-Parts Code:</label>
 															<input type="text" class="form-control"
 																placeholder="Example. T10202121">
 														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Component Name:</label>
+															<label>Sub-Components/Sub-Parts Name:</label>
 															<input type="text" class="form-control"
-																placeholder="Example. Component 1">
+																placeholder="Example. T10 Screw">
 														</div>
 													</div>
+
+
+
+
+
+
 													<div class="col-md-12">
 														<div class="form-group">
 															<label>Country Origin:</label>
@@ -4277,7 +4180,7 @@
 														<div class="form-group">
 															<label>Description:</label>
 															<textarea type="text" class="form-control"
-																placeholder="Example. Component 1 for general purpose"
+																placeholder="Example. Screw for general purpose"
 																rows="4"></textarea>
 														</div>
 													</div>
@@ -4294,7 +4197,7 @@
 														<div class="row">
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Component Brand:</label>
+																	<label>Sub-Components/Sub-Parts Brand:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. KENENG">
 																</div>
@@ -4302,7 +4205,7 @@
 
 															<div class="col-md-4">
 																<div class="form-group">
-																	<label>Component Model:</label>
+																	<label>Sub-Components/Sub-Parts Model:</label>
 																	<input type="text" class="form-control"
 																		placeholder="Example. T10">
 																</div>
@@ -4553,7 +4456,7 @@
 													<div class="col-md-12">
 
 														<div class="d-flex justify-content-between">
-															<h6 class="font-weight-bold">Component
+															<h6 class="font-weight-bold">Sub-Components/Sub-Parts
 																Picture:
 															</h6>
 															<button type="button"
@@ -4566,9 +4469,9 @@
 															<table class="table">
 																<thead>
 																	<tr>
-																		<th>Component Picture Description
+																		<th>Sub-Components/Sub-Parts Picture Description
 																		</th>
-																		<th>Component Picture File</th>
+																		<th>Sub-Components/Sub-Parts Picture File</th>
 
 																	</tr>
 																</thead>
@@ -4629,7 +4532,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -4641,482 +4544,10 @@
 			</div>
 			<!-- /full width modal -->
 
-			<!-- Full width modal/ Parts -->
-			<div id="addPart" class="modal fade" tabindex="-1">
-				<div class="modal-dialog  modal-full">
-					<div class="modal-content">
-						<div class="modal-body">
-							<div class="row">
-								<div class="col-md-8 offset-md-2">
-									<div class="card">
-										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Part
-											</h4>
-										</div>
-										<div class="card-body">
-											<form action="#">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<label>Part Code:</label>
-															<input type="text" class="form-control"
-																placeholder="Example. T10202121">
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<label>Part Name:</label>
-															<input type="text" class="form-control"
-																placeholder="Example. Part 1">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
-														</div>
-													</div>
 
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Company Name:</label>
-															<input type="text" class="form-control"
-																placeholder="Example. KENENG">
-														</div>
-													</div>
-
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Description:</label>
-															<textarea type="text" class="form-control"
-																placeholder="Example. Part for general purpose"
-																rows="4"></textarea>
-														</div>
-													</div>
-
-													<!-- <div class="col-md-12">
-										<div class="form-group">
-											<label>Specifications:</label>
-											<textarea type="text" class="form-control"
-												placeholder="Example. Abc123" rows="4"></textarea>
-										</div>
-									</div> -->
-
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Part Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. KENENG">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Part Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. T10">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 30,000">
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<div class="d-flex justify-content-between">
-																<h6 class="font-weight-bold">Standard Certification:
-																</h6>
-																<button type="button"
-																	class="btn bg-light btn-icon rounded-round mb-1"
-																	data-toggle="modal" data-target="#"
-																	data-popup="tooltip" data-original-title="Add"><i
-																		class="icon-plus3"></i></button>
-															</div>
-															<div>
-																<table class="table">
-																	<thead>
-																		<tr>
-																			<th>Standard Certification Name</th>
-																			<th>Standard Certification File</th>
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. Standard Certification 3">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf.
-																						Max
-																						file
-																						size
-																						10Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. Standard Certification 4">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf.
-																						Max
-																						file
-																						size
-																						10Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																	</tbody>
-																</table>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<div class="d-flex justify-content-between">
-																<h6 class="font-weight-bold">Design Document:</h6>
-																<button type="button"
-																	class="btn bg-light btn-icon rounded-round mb-1"
-																	data-toggle="modal" data-target="#"><i
-																		class="icon-plus3" data-popup="tooltip"
-																		data-original-title="Add"></i></button>
-															</div>
-															<div>
-																<table class="table">
-																	<thead>
-																		<tr>
-																			<th>Design Document Name</th>
-																			<th>Design Document File</th>
-
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. DSS1100">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf. Max file size
-																						50Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. DSS2200">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf. Max file size
-																						50Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																</table>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<div class="d-flex justify-content-between">
-																<h6 class="font-weight-bold">Manual:</h6>
-																<button type="button"
-																	class="btn bg-light btn-icon rounded-round mb-1"
-																	data-toggle="modal" data-target="#"><i
-																		class="icon-plus3" data-popup="tooltip"
-																		data-original-title="Add"></i></button>
-															</div>
-															<div>
-																<table class="table">
-																	<thead>
-																		<tr>
-																			<th>Manual Name</th>
-																			<th>Manual File</th>
-
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. DSSM1100">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf. Max file size
-																						10Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																		<tr>
-																			<td>
-																				<div class="form-group">
-																					<input type="text"
-																						class="form-control"
-																						placeholder="Example. DSSM2200">
-																				</div>
-																			</td>
-																			<td>
-																				<div class="form-group">
-																					<div class="custom-file">
-																						<input type="file"
-																							class="custom-file-input"
-																							id="customFile">
-																						<label class="custom-file-label"
-																							for="customFile">Choose
-																							file</label>
-																					</div>
-																					<span
-																						class="form-text text-muted">Accepted
-																						formats: pdf. Max file size
-																						10Mb</span>
-																				</div>
-																			</td>
-																		</tr>
-																</table>
-															</div>
-														</div>
-													</div>
-
-													<div class="col-md-12">
-
-														<div class="d-flex justify-content-between">
-															<h6 class="font-weight-bold">Part
-																Picture:
-															</h6>
-															<button type="button"
-																class="btn bg-light btn-icon rounded-round mb-1"
-																data-toggle="modal" data-target="#"><i
-																	class="icon-plus3" data-popup="tooltip"
-																	data-original-title="Add"></i></button>
-														</div>
-														<div>
-															<table class="table">
-																<thead>
-																	<tr>
-																		<th>Part Picture Description
-																		</th>
-																		<th>Part Picture File</th>
-
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>
-																			<div class="form-group">
-																				<input type="text" class="form-control"
-																					placeholder="Example. Front View">
-																			</div>
-																		</td>
-																		<td>
-																			<div class="form-group">
-																				<div class="custom-file">
-																					<input type="file"
-																						class="custom-file-input"
-																						id="customFile">
-																					<label class="custom-file-label"
-																						for="customFile">Choose
-																						file</label>
-																				</div>
-																				<span
-																					class="form-text text-muted">Accepted
-																					formats: Jpg. Png. Max file size
-																					10Mb</span>
-																			</div>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td>
-																			<div class="form-group">
-																				<input type="text" class="form-control"
-																					placeholder="Example. Back View">
-																			</div>
-																		</td>
-																		<td>
-																			<div class="form-group">
-																				<div class="custom-file">
-																					<input type="file"
-																						class="custom-file-input"
-																						id="customFile">
-																					<label class="custom-file-label"
-																						for="customFile">Choose
-																						file</label>
-																				</div>
-																				<span
-																					class="form-text text-muted">Accepted
-																					formats: Jpg. Png. Max file size
-																					10Mb</span>
-																			</div>
-																		</td>
-																	</tr>
-															</table>
-														</div>
-													</div>
-												</div>
-											</form>
-											<div class="text-right">
-												<button type="submit" class="btn btn-light" class="remove"
-													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /full width modal -->
 
 			<!-- Full width modal/ Cooporated Academia -->
-			<div id="addCollaboratedAcademia" class="modal fade" tabindex="-1">
+			<div id="addCooperatedAcademia" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 
@@ -5126,7 +4557,7 @@
 								<div class="col-md-8 offset-md-2">
 									<div class="card">
 										<div class="card-header bg-white header-elements-inline">
-											<h4 class="card-title font-weight-bold">Add Collaborated Academia
+											<h4 class="card-title font-weight-bold">Add Cooperated Academia
 											</h4>
 										</div>
 										<div class="card-body">
@@ -5178,20 +4609,12 @@
 													</div>
 												</div>
 
-												<div class="col-md-12">
-													<div class="form-group">
-														<label>Name of Program / Event</label>
-														<input type="text" class="form-control"
-															placeholder="Example. Supply Chain Evolution 2021">
-													</div>
-												</div>
-
 
 											</form>
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -5259,7 +4682,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -5321,161 +4744,8 @@
 												</div>
 
 												<div class="form-group">
-													<label>Sub-sector:</label>
-													<select data-placeholder="Select sub-sector"
-														class="form-control select-search" data-fouc>
-														<option></option>
-														<option value="">-- select one --</option>
-														<option value="Livestock">Livestock</option>
-														<option value="Farming">Farming</option>
-														<option value="v">Fisheries</option>
-														<option value="Fruits & Vegetables">Fruits & Vegetables
-														</option>
-														<option value="Floriculture">Floriculture
-														</option>
-														<option value="Machinery & Equipment">Machinery & Equipment
-														</option>
-														<option value="Basic Metal Products">Basic Metal Products
-														</option>
-														<option value="Engineering Support Industry">Engineering Support
-															Industry
-														</option>
-														<option value="Fabricated Metal Products">Fabricated Metal
-															Products
-														</option>
-														<option value="Inorganic Chemicals">Inorganic Chemicals
-														</option>
-														<option value="Agricultural Chemicals">Agricultural Chemicals
-														</option>
-														<option value="Industrial Gases">Industrial Gases
-														</option>
-														<option value="Fertilisers">Fertilisers
-														</option>
-														<option value="Paint and Printing Ink">Paint and Printing Ink
-														</option>
-														<option value="Non-metallic Mineral">Non-metallic Mineral
-														</option>
-														<option value="Industrial Building System (IBS)">Industrial
-															Building System (IBS)
-														</option>
-														<option value="Food">Food
-														</option>
-														<option value="Drink ">Drink
-														</option>
-														<option value="Wood">Wood
-														</option>
-														<option value="Furniture and Fixtures">Furniture and Fixtures
-
-														</option>
-														<option value="Pulp and Paper">Pulp and Paper
-
-														</option>
-														<option value="Catering">Catering
-
-														</option>
-														<option value="Hotel">Hotel
-
-														</option>
-														<option value="Medical Devices/Equipment/Services">Medical
-															Devices/Equipment/Services
-
-														</option>
-														<option value="Biotechnology">Biotechnology
-
-														</option>
-														<option value="Healthcare Provider">Healthcare Provider
-
-														</option>
-														<option value="Pharmaceutical">Pharmaceuticals
-
-														</option>
-														<option value="Electronic Components">Electronic Components
-
-														</option>
-														<option value="Consumer Electronics">Consumer Electronics
-
-														</option>
-														<option value="Electrical Products">Electrical Products
-
-														</option>
-														<option value="Industrial Electronics">Industrial Electronics
-
-														</option>
-														<option value="Clothing">Clothing
-
-														</option>
-														<option value="Footwear">Footwear
-
-														</option>
-														<option value="Leather">Leather
-
-														</option>
-														<option value="Textile">Textiles
-
-														</option>
-														<option value="Jeweller">Jewellery
-
-														</option>
-														<option value="Aerospace / Aviation">Aerospace / Aviation
-
-														</option>
-														<option value="Automotive">Automotive
-
-														</option>
-														<option value="Rail">Rail
-
-														</option>
-														<option value="Shipbuilding and Ship Repair">Shipbuilding and
-															Ship Repair
-
-														</option>
-														<option value="Water">Water
-
-														</option>
-														<option value="Electricity">Electricity
-
-														</option>
-														<option value="Gas">Gas
-
-														</option>
-														<option value="Digital Services">Digital Services
-
-														</option>
-														<option value="Semiconductor">Semiconductor
-
-														</option>
-														<option value="Big Data">Big Data
-
-														</option>
-														<option value="Software">Software
-
-														</option>
-														<option value="Technology Equipments">Technology Equipments
-
-														</option>
-														<option value="Education">Education
-
-														</option>
-														<option value="Biomass">Biomass
-
-														</option>
-														<option value="Nanoscience/ nanotechnology ">Nanoscience/
-															nanotechnology
-
-														</option>
-														<option value="Solar">Solar
-														</option>
-														<option value="Banking">Banking
-														</option>
-														<option value="Insuranc">Insurance
-														</option>
-
-													</select>
-												</div>
-
-												<div class="form-group">
-													<label>Product / Services:</label>
-													<select data-placeholder="Select product / services "
+													<label>Business Area:</label>
+													<select data-placeholder="Select Business Area"
 														class="form-control select-search" data-fouc id="BAOptions2"
 														onchange="check2();">
 														<option></option>
@@ -5517,7 +4787,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
@@ -5648,7 +4918,7 @@
 											<div class="text-right">
 												<button type="submit" class="btn btn-light" class="remove"
 													data-dismiss="modal">Back</button>
-												<button type="submit" class="btn btn-success">Save</button>
+												<button type="submit" class="btn btn-success">Submit</button>
 											</div>
 										</div>
 									</div>
