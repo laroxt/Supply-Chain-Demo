@@ -620,6 +620,75 @@ var SweetAlert = (function () {
         });
     });
 
+    // Alert Delete 1
+    $("#sweet_delete1").on("click", function () {
+      swalInit
+        .fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes, delete checked selection!",
+          cancelButtonText: "No, cancel!",
+          confirmButtonClass: "btn btn-success",
+          cancelButtonClass: "btn btn-danger",
+          buttonsStyling: false,
+        })
+        .then(function (result) {
+          if (result.value) {
+            swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
+          } else if (result.dismiss === swal.DismissReason.cancel) {
+            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
+          }
+        });
+    });
+
+    // Alert Delete 2
+    $("#sweet_delete2").on("click", function () {
+      swalInit
+        .fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes, delete checked selection!",
+          cancelButtonText: "No, cancel!",
+          confirmButtonClass: "btn btn-success",
+          cancelButtonClass: "btn btn-danger",
+          buttonsStyling: false,
+        })
+        .then(function (result) {
+          if (result.value) {
+            swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
+          } else if (result.dismiss === swal.DismissReason.cancel) {
+            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
+          }
+        });
+    });
+
+    // Alert Delete 3
+    $("#sweet_delete3").on("click", function () {
+      swalInit
+        .fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes, delete checked selection!",
+          cancelButtonText: "No, cancel!",
+          confirmButtonClass: "btn btn-success",
+          cancelButtonClass: "btn btn-danger",
+          buttonsStyling: false,
+        })
+        .then(function (result) {
+          if (result.value) {
+            swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
+          } else if (result.dismiss === swal.DismissReason.cancel) {
+            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
+          }
+        });
+    });
+
     //
     // Positions
     //
