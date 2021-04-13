@@ -311,14 +311,18 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<div class="card">
-							<div class="card-header header-elements-inline">
+							<div class="card-header bg-white header-elements-inline">
 								<h4 class="card-title font-weight-bold">Recent Activities</h4>
 								<div class="header-elements">
 									<div class="list-icons">
-										<a class="list-icons-item mr-2" data-action="reload"></a>
+										<button type="button" class="btn btn-light rounded-round" data-toggle="modal"
+											data-target="#editAudittrail"><i class="icon-calendar22 mr-1"></i>
+											01/01/2021 - 01/02/2021</button>
 									</div>
 								</div>
 							</div>
+
+
 
 							<div class="table-responsive">
 								<table class="table  datatable-basic">
@@ -581,6 +585,67 @@
 
 		</div>
 		<!-- /main content -->
+
+		<!-- Full width modal/ Sub-Contractor-->
+		<div id="editAudittrail" class="modal fade" tabindex="-1">
+			<div class="modal-dialog  modal-full">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-8 offset-md-2">
+								<div class="card">
+									<div class="card-header bg-white header-elements-inline">
+										<h4 class="card-title font-weight-bold">Audit Trail Date Range</h4>
+									</div>
+									<div class="card-body">
+										<form action="#">
+											<div class="form-group">
+												<div class="row">
+													<div class="col-6">
+														<label>Audit Trail Start Date:<span
+																class="text-danger">*</span></label>
+														<div class="input-group">
+															<span class="input-group-prepend">
+																<span class="input-group-text"><i
+																		class="icon-calendar22"></i></span>
+															</span>
+															<input type="text" class="form-control daterange-single"
+																value="01/01/2021">
+														</div>
+													</div>
+													<div class="col-6">
+														<label>Audit Trail End Date:<span
+																class="text-danger">*</span></label>
+														<div class="input-group">
+															<span class="input-group-prepend">
+																<span class="input-group-text"><i
+																		class="icon-calendar22"></i></span>
+															</span>
+															<input type="text" class="form-control daterange-single"
+																value="01/01/2021">
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="text-right">
+											<button type="submit" class="btn btn-light" class="remove"
+												data-dismiss="modal">Back</button>
+											<button type="submit" class="btn btn-success">Save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /full width modal -->
 
 	</div>
 	<!-- /page content -->

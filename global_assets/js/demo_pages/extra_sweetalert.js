@@ -601,8 +601,8 @@ var SweetAlert = (function () {
     $("#sweet_combine").on("click", function () {
       swalInit
         .fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
+          title: "Are you sure to submit ?",
+          text: "Once submitted changes cannot be made",
           type: "warning",
           showCancelButton: true,
           confirmButtonText: "Yes, submit it!",
