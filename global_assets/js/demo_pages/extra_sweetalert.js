@@ -601,12 +601,12 @@ var SweetAlert = (function () {
     $("#sweet_combine").on("click", function () {
       swalInit
         .fire({
-          title: "Are you sure to submit ?",
+          title: "Are you sure you want to submit ?",
           text: "Once submitted changes cannot be made",
           type: "warning",
           showCancelButton: true,
-          confirmButtonText: "Yes, submit it!",
-          cancelButtonText: "No, cancel!",
+          confirmButtonText: "Yes, submit it",
+          cancelButtonText: "No, cancel",
           confirmButtonClass: "btn btn-success",
           cancelButtonClass: "btn btn-danger",
           buttonsStyling: false,
@@ -624,12 +624,12 @@ var SweetAlert = (function () {
     $("#sweet_delete1").on("click", function () {
       swalInit
         .fire({
-          title: "Are you sure?",
+          title: "Are you sure you want to delete ?",
           text: "You won't be able to revert this!",
           type: "warning",
           showCancelButton: true,
-          confirmButtonText: "Yes, delete checked selection!",
-          cancelButtonText: "No, cancel!",
+          confirmButtonText: "Yes, delete it",
+          cancelButtonText: "No, cancel",
           confirmButtonClass: "btn btn-success",
           cancelButtonClass: "btn btn-danger",
           buttonsStyling: false,
