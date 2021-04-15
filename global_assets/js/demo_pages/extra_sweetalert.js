@@ -645,12 +645,12 @@ var SweetAlert = (function () {
     $("#sweet_delete2").on("click", function () {
       swalInit
         .fire({
-          title: "Are you sure?",
+          title: "Are you sure you want to delete ?",
           text: "You won't be able to revert this!",
           type: "warning",
           showCancelButton: true,
-          confirmButtonText: "Yes, delete checked selection!",
-          cancelButtonText: "No, cancel!",
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
           confirmButtonClass: "btn btn-success",
           cancelButtonClass: "btn btn-danger",
           buttonsStyling: false,
@@ -658,8 +658,6 @@ var SweetAlert = (function () {
         .then(function (result) {
           if (result.value) {
             swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
-          } else if (result.dismiss === swal.DismissReason.cancel) {
-            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
           }
         });
     });
@@ -668,12 +666,12 @@ var SweetAlert = (function () {
     $("#sweet_delete3").on("click", function () {
       swalInit
         .fire({
-          title: "Are you sure?",
+          title: "Are you sure you want to delete ?",
           text: "You won't be able to revert this!",
           type: "warning",
           showCancelButton: true,
-          confirmButtonText: "Yes, delete checked selection!",
-          cancelButtonText: "No, cancel!",
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
           confirmButtonClass: "btn btn-success",
           cancelButtonClass: "btn btn-danger",
           buttonsStyling: false,
@@ -681,8 +679,6 @@ var SweetAlert = (function () {
         .then(function (result) {
           if (result.value) {
             swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
-          } else if (result.dismiss === swal.DismissReason.cancel) {
-            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
           }
         });
     });
