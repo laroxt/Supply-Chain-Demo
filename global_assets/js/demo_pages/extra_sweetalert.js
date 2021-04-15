@@ -637,8 +637,6 @@ var SweetAlert = (function () {
         .then(function (result) {
           if (result.value) {
             swalInit.fire("Deleted!", "Your selection has been deleted.", "success");
-          } else if (result.dismiss === swal.DismissReason.cancel) {
-            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
           }
         });
     });
