@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SPU | Company List | View</title>
+	<title>IMU | Company List View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -65,14 +65,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
+				<a href="./imu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
+				<a href="./imu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -188,7 +188,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="./spu-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+						<a href="./imu-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
 							Account
 							Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
@@ -234,13 +234,13 @@
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Strategic Planning Unit </div> <i
+							<div class="text-uppercase font-size-xs line-height-xs">TDA IMU</div> <i
 								class="icon-menu" title="Main"></i>
 						</li>
 
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./spu-company-grid.html" class="nav-link active">
+							<a href="./imu-company-grid.html" class="nav-link active">
 								<i class="icon-magazine"></i>
 								<span>
 									View Company
@@ -251,7 +251,7 @@
 
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./spu-project-list-add.html" class="nav-link ">
+							<a href="./imu-project-list-add.html" class="nav-link ">
 								<i class="icon-pencil7"></i>
 								<span>
 									Create Supply Chain
@@ -282,9 +282,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"> Company
-								List</a>
-							<a href="#" class="breadcrumb-item"> Company Information</a>
+							<a href="#" class="breadcrumb-item"> Company List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -295,317 +293,188 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
+
+
 				<div class="row">
-					<!-- card content placement -->
-					<div class="col-md-8 offset-md-2">
+					<div class="col-md-12">
 						<div class="card">
+
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Company Information</h4>
-								<div class="header-elements">
-									<button type="button" class="btn bg-light btn-icon rounded-round mr-2"><i
-											class="icon-printer2" data-popup="tooltip"
-											data-original-title="Print"></i></button>
-									<div class="list-icons">
+								<h4 class="card-title font-weight-bold">Company List</h4>
+							</div>
 
-										<div class="dropdown">
-											<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"
-												aria-expanded="true"><i class="icon-download4"></i></a>
-											<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
-												style="position: absolute; transform: translate3d(-147px, 19px, 0px); top: 0px; left: 0px; will-change: transform;">
-												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
-													As
-													PDF</a>
-												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
-													As
-													Excel</a>
-												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
-													AS
-													CSV</a>
+							<div class="card-header bg-white header-elements-inline pt-1 pb-1">
+								<div class="d-flex">
+									<div class="breadcrumb">
+										<a href="imu-company-grid.html" class="icon-grid2 icon-search"
+											data-popup="tooltip" title="" data-original-title="Grid"></a>
+										<a href="imu-company-list.html" class="icon-list2 ml-2 icon-search-active"
+											data-popup="tooltip" title="" data-original-title="List"></a>
 
-											</div>
+									</div>
+
+									<a href="#" class="header-elements-toggle text-default d-md-none"><i
+											class="icon-more"></i></a>
+								</div>
+
+								<div class="header-elements d-none">
+									<div class="breadcrumb justify-content-center">
+										<div href="#" class="breadcrumb-elements-item"> <span class="mr-2">Sort
+												By:</span>
 										</div>
+
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+
+													<option value="opt2">A-Z</option>
+													<option value="opt3">Z-A</option>
+
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<div href="#" class="breadcrumb-elements-item"> <span class="mr-2">Show:</span>
+										</div>
+
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+													<option value="25">25</option>
+													<option value="30">30</option>
+													<option value="50">50</option>
+													<option value="75">75</option>
+													<option value="100">100</option>
+												</select>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
+
+
+
+							<div class="col-md-12">
+								<div class="card-body row no-gutters align-items-center">
+
+									<div class="col">
+										<input class="form-control form-control-lg form-control-borderless m-1"
+											type="search" placeholder="Search topics or keywords">
+									</div>
+
+									<div class="col-auto">
+										<button class="btn btn-lg btn-primary" type="submit">Search</button>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="card">
 
 							<div class="card-body">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Company Name:</label>
-											<h6 class="card-title font-weight-semibold">Gamuda Sdn Bhd</h6>
-										</div>
-									</div>
 
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Company Registration Number(SSM)/ Unique ID:</label>
-											<h6 class="card-title font-weight-semibold">201901000005</h6>
-										</div>
-									</div>
+							</div>
 
+							<div class="table-responsive table-scrollable">
+								<table class="table">
+									<thead class="table-header-stick">
+										<tr>
+											<th>No.</th>
+											<th>Company Name</th>
+											<th>Published</th>
+											<th>Action</th>
+										</tr>
+										<style>
+											.table-header-stick th {
+												Cancelground: #373234;
+												position: sticky;
+												z-index: 1;
+												top: 0;
+												/* Don't forget this, required for the stickiness */
+												box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+											}
+										</style>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Gamuda berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Company Type:</label>
-											<h6 class="card-title font-weight-semibold">Corporation</h6>
-										</div>
-									</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>UEM Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-									<div class="col-md-6">
-										<label>Date of Incorporation:</label>
-										<h6 class="card-title font-weight-semibold">01/01/2021</h6>
-									</div>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>IJM Corporation</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-									<!-- <div class="col-md-12">
-										<div class="form-group">
-											<label>Supply Chain Type:</label>
-											<h6 class="card-title font-weight-semibold">Construction</h6>
-										</div>
-									</div> -->
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>WCT Holdings Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Mudajaya Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Company Status:</label>
-											<h6 class="card-title font-weight-semibold">Bumiputera</h6>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Company Address:</label>
-											<h6 class="card-title font-weight-semibold">Jalan PJU 8/8, Damansara
-												Perdana,<br>
-												47820 Petaling Jaya, Selangor</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>City:</label>
-											<h6 class="card-title font-weight-semibold">Petaling Jaya</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>State:</label>
-											<h6 class="card-title font-weight-semibold">Selangor</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Postal/ Zip Code:</label>
-											<h6 class="card-title font-weight-semibold">47820</h6>
-										</div>
-									</div>
-
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Company Origin:</label>
-											<h6 class="card-title font-weight-semibold">Malaysia</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Email:</label>
-											<h6 class="card-title font-weight-semibold">info@gamuda.com</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Telephone:</label>
-											<h6 class="card-title font-weight-semibold">03-7491 8288</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Competencies:</label>
-											<h6 class="card-title font-weight-semibold">Competencies 1, Competencies 2
-											</h6>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Level Services:</label>
-											<h6 class="card-title font-weight-semibold">Construction & Manufacturing
-											</h6>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Company Manpower Skill:</label>
-											<h6 class="card-title font-weight-semibold">Skill 1, Skill 2
-											</h6>
-										</div>
-									</div>
-
-									<div class="col-md-4">
-										<div class="form-group">
-											<label>% of Non-Bumiputera Manpower:</label>
-											<h6 class="card-title font-weight-semibold">80%
-											</h6>
-										</div>
-									</div>
-
-									<div class="col-md-4">
-										<div class="form-group">
-											<label>Company Manpower Skills:</label>
-											<h6 class="card-title font-weight-semibold">15%
-											</h6>
-										</div>
-									</div>
-
-									<div class="col-md-4">
-										<div class="form-group">
-											<label>% of Foreign Manpower:</label>
-											<h6 class="card-title font-weight-semibold">5%
-											</h6>
-										</div>
-									</div>
-
-
-									<div class="col-md-12">
-										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Sector / Product / Services</h6>
-
-										</div><br>
-										<div class="table-responsive mb-4">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Sector</th>
-														<th>Sub-Sector</th>
-														<th>Product / Services</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th>Civil & Construction</th>
-														<td>Industrial Building System (IBS)</td>
-														<td>Design</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Cooperation Academia</h6>
-
-										</div><br>
-										<div class="table-responsive mb-4">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>University Name</th>
-														<th>Faculty</th>
-														<th>Contact Name</th>
-														<th>Contact Email</th>
-														<th>Contact Number</th>
-
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th>University Malaysia</th>
-														<td>Information Technology Department</td>
-														<th>Faizul Khalid</th>
-														<td>FaizulKhalid@UM.com.my</td>
-														<td>011-111 1111</td>
-
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Company Experience</h6>
-
-										</div><br>
-										<div class="table-responsive mb-4">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Project Name</th>
-														<th>Brief Description</th>
-														<th>Project Duration</th>
-
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th>Construction Building 1</th>
-														<td>Construct Building for SMART City Area 1</td>
-														<td>2 years</td>
-
-													</tr>
-													<tr>
-														<th>Construction Building 2</th>
-														<td>Construct Building for SMART City Area 2</td>
-														<td>2 years</td>
-
-													</tr>
-													<tr>
-														<th>Construction Building 3</th>
-														<td>Construct Building for SMART City Area 3</td>
-														<td>2 years</td>
-
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-
-									<div class="col-md-12">
-										<div class="d-flex justify-content-between">
-											<h6 class="font-weight-bold">Project Involved</h6>
-
-										</div>
-										<div class="table-responsive mb-4">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Project/Contract Reference Number</th>
-														<th>Project/Contract Name</th>
-
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th><a href="./spu-company-view-detail.html"
-																target="_blank">FQ01012021</a></th>
-														<td>Construction Maintenance LRT 5</td>
-
-													</tr>
-													<tr>
-														<th><a href="#">FZ01022021</a></th>
-														<td>Construction Maintenance MRT-4</td>
-
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
+
 					</div>
-					<!--/ card content placement -->
+
+
+
+
+
+
 				</div>
 			</div>
 			<!-- /content area -->
+
 
 
 			<!-- Footer -->
@@ -619,8 +488,8 @@
 				</div>
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#" target="_blank">Technology Depository
-							Agency (TDA)</a>
+						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#"
+							target="_blank">Technology Depository Agency (TDA)</a>
 					</span>
 				</div>
 			</div>

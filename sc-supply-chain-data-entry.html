@@ -57,8 +57,14 @@
 	<script src="./global_assets/js/demo_pages/datatables_basic.js"></script>
 	<script src="./global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 
+	<script src="./global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+	<script src="./global_assets/js/demo_pages/extra_sweetalert.js"></script>
 
+	<script src="./global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
 
+	<script src="./global_assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script src="./global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="./global_assets/js/demo_pages/form_multiselect.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -318,8 +324,7 @@
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Organization / Company Name:<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Name:</label>
 													<input type="text" class="form-control" placeholder="Gamuda Sdn Bhd"
 														disabled>
 												</div>
@@ -327,8 +332,7 @@
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Company Registration Number(SSM) / Unique ID:<span
-															class="text-danger">*</span></label>
+													<label>Company Registration Number(SSM) / Unique ID:</label>
 													<input type="text" class="form-control" placeholder="201901000005"
 														disabled>
 												</div>
@@ -336,8 +340,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Image (Logo):<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Image (Logo):</label>
 													<div class="custom-file">
 														<input type="file" class="custom-file-input" id="customFile">
 														<label class="custom-file-label" for="customFile">Choose
@@ -352,8 +355,7 @@
 
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Organization / Company Type:<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Type:</label>
 													<select name="location"
 														data-placeholder="Select organization / company type"
 														class="form-control select-search" data-fouc>
@@ -402,8 +404,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Status:<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Status:</label>
 													<select name="position"
 														data-placeholder="Select organization / company status"
 														class="form-control select-search" data-fouc>
@@ -417,8 +418,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Address:<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Address:</label>
 													<textarea type="text" class="form-control"
 														placeholder="Example. Menara Gamuda D-16-01, Block D, PJ Trade CentreNo. 8, Jalan PJU 8/8A Bandar Damansara Perdana"
 														rows="4"></textarea>
@@ -673,8 +673,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Organization / Company Core Competencies:<span
-															class="text-danger">*</span></label>
+													<label>Organization / Company Core Competencies:</label>
 													<select class="form-control select-multiple-tags"
 														multiple="multiple" data-fouc>
 														<option value="Logistic Management " selected>Logistic
@@ -695,8 +694,7 @@
 
 											<div class="col-md-12">
 												<div class="form-group">
-													<label>Area of Company Specialist / Expertise:<span
-															class="text-danger">*</span></label>
+													<label>Area of Company Specialist / Expertise:</label>
 													<select class="form-control select-multiple-tags"
 														multiple="multiple" data-fouc>
 														<option value="Sensor Networks" selected>Sensor Networks
@@ -716,8 +714,7 @@
 
 											<div class="col-md-4">
 												<div class="form-group">
-													<label>% of Bumiputera Manpower:<span
-															class="text-danger">*</span></label>
+													<label>% of Bumiputera Manpower:</label>
 													<div class="input-group">
 														<input type="text" class="form-control" placeholder="80">
 														<span class="input-group-append">
@@ -729,8 +726,7 @@
 
 											<div class="col-md-4">
 												<div class="form-group">
-													<label>% of Non-Bumiputera Manpower:<span
-															class="text-danger">*</span></label>
+													<label>% of Non-Bumiputera Manpower:</label>
 													<div class="input-group">
 														<input type="text" class="form-control" placeholder="15">
 														<span class="input-group-append">
@@ -742,8 +738,7 @@
 
 											<div class="col-md-4">
 												<div class="form-group">
-													<label>% of Foreign Manpower:<span
-															class="text-danger">*</span></label>
+													<label>% of Foreign Manpower:</label>
 													<div class="input-group">
 														<input type="text" class="form-control" placeholder="5">
 														<span class="input-group-append">
@@ -1177,30 +1172,30 @@
 														<thead>
 															<tr>
 																<th>Name</th>
+																<th>Brand</th>
+																<th>Model</th>
+																<th>Quantity</th>
 																<th>Country Origin</th>
 																<th>Company Name</th>
 																<th>Model</th>
 																<th>Description</th>
-																<th>Brand</th>
-																<th>Model</th>
-																<th>Quantity</th>
 																<th>Action</th>
 															</tr>
 														</thead>
 														<tbody>
 															<tr>
 																<td>Heavy Crane Machine</td>
+																<td>Kato</td>
+																<td>CraneX123</td>
+																<td>15</td>
 																<td>Malaysia</td>
 																<td>Mitsubishi Motors</td>
 																<td>Mitsubishi</td>
 																<td>Transport heavy materials</td>
-																<td>Kato</td>
-																<td>CraneX123</td>
-																<td>15</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			data-original-title="View"></i></button>
 
 																	<button type="button"
@@ -1216,17 +1211,17 @@
 															</tr>
 															<tr>
 																<td>Heavy Crane Machine 2</td>
+																<td>Kato</td>
+																<td>CraneX122</td>
+																<td>30</td>
 																<td>Malaysia</td>
 																<td>Mitsubishi Motors</td>
 																<td>Mitsubishi</td>
 																<td>Transport heavy materials</td>
-																<td>Kato</td>
-																<td>CraneX122</td>
-																<td>30</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			data-original-title="View"></i></button>
 
 																	<button type="button"
@@ -1270,7 +1265,7 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1293,7 +1288,7 @@
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1329,12 +1324,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1342,16 +1337,16 @@
 															<tr>
 																<td>SW1000-x</td>
 																<td>Special Spana 1</td>
-																<td>Malaysia</td>
-																<td>Bahco</td>
-																<td>Used for fixing machine X</td>
 																<td>Bahco</td>
 																<td>SX3123</td>
 																<td>30</td>
+																<td>Malaysia</td>
+																<td>Bahco</td>
+																<td>Used for fixing machine X</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1371,16 +1366,16 @@
 															<tr>
 																<td>SW2000-x</td>
 																<td>Special Spana 2</td>
-																<td>Malaysia</td>
-																<td>Bahco</td>
-																<td>Used for fixing machine Y</td>
 																<td>Bahco</td>
 																<td>Sz4123</td>
 																<td>10</td>
+																<td>Malaysia</td>
+																<td>Bahco</td>
+																<td>Used for fixing machine Y</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1423,12 +1418,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1436,16 +1431,16 @@
 															<tr>
 																<td>SP123-21</td>
 																<td>System 1</td>
-																<td>Malaysia</td>
-																<td>Youfa Cooperation</td>
-																<td>For underground construction</td>
 																<td>Youfa</td>
 																<td>YSP3123</td>
 																<td>21</td>
+																<td>Malaysia</td>
+																<td>Youfa Cooperation</td>
+																<td>For underground construction</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1465,16 +1460,16 @@
 															<tr>
 																<td>SP123-22</td>
 																<td>System 2</td>
-																<td>Malaysia</td>
-																<td>Youfa Cooperation</td>
-																<td>For underground construction</td>
 																<td>Youfa</td>
 																<td>YSP3124</td>
 																<td>11</td>
+																<td>Malaysia</td>
+																<td>Youfa Cooperation</td>
+																<td>For underground construction</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1511,12 +1506,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1524,16 +1519,17 @@
 															<tr>
 																<td>HMT132</td>
 																<td>Sub-System 1</td>
-																<td>Malaysia</td>
-																<td>Mitsubishi</td>
-																<td>Sub-System for general contruction use</td>
 																<td>Mitsubishi</td>
 																<td>TM3000x</td>
 																<td>10</td>
+																<td>Malaysia</td>
+																<td>Mitsubishi</td>
+																<td>Sub-System for general contruction use</td>
+
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1553,16 +1549,16 @@
 															<tr>
 																<td>HMT133-x</td>
 																<td>Sub-System 2</td>
-																<td>Malaysia</td>
-																<td>Mitsubishi</td>
-																<td>Sub-System for general contruction use</td>
 																<td>Mitsubishi</td>
 																<td>TM3300x</td>
 																<td>13</td>
+																<td>Malaysia</td>
+																<td>Mitsubishi</td>
+																<td>Sub-System for general contruction use</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1599,12 +1595,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1612,16 +1608,16 @@
 															<tr>
 																<td>T10202123</td>
 																<td>Component 1</td>
-																<td>Malaysia</td>
-																<td>KENENG</td>
-																<td>Component for general purpose</td>
 																<td>KENENG</td>
 																<td>T10</td>
 																<td>30,000</td>
+																<td>Malaysia</td>
+																<td>KENENG</td>
+																<td>Component for general purpose</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1642,16 +1638,16 @@
 															<tr>
 																<td>T1020233x</td>
 																<td>Component 2</td>
-																<td>Malaysia</td>
-																<td>KENENG</td>
-																<td>Component for general purpose</td>
 																<td>KENENG</td>
 																<td>T32</td>
 																<td>31,000</td>
+																<td>Malaysia</td>
+																<td>KENENG</td>
+																<td>Component for general purpose</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1687,12 +1683,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1700,16 +1696,16 @@
 															<tr>
 																<td>Gx3000</td>
 																<td>Sub-Component 1</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Sub-Component for Machine Y</td>
 																<td>Grimonprez</td>
 																<td>Gx300-Y</td>
 																<td>100</td>
+																<td>Malaysia</td>
+																<td>Grimonprez Transmission Gears</td>
+																<td>Sub-Component for Machine Y</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1729,16 +1725,16 @@
 															<tr>
 																<td>Gx3200</td>
 																<td>Sub-Component 2</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Sub-Component for Machine X</td>
 																<td>Grimonprez</td>
 																<td>Gx320-X</td>
 																<td>130</td>
+																<td>Malaysia</td>
+																<td>Grimonprez Transmission Gears</td>
+																<td>Sub-Component for Machine X</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1776,12 +1772,12 @@
 															<tr>
 																<th>Code</th>
 																<th>Name</th>
-																<th>Country Origin</th>
-																<th>Company Name</th>
-																<th>Description</th>
 																<th>Brand</th>
 																<th>Model</th>
 																<th>Quantity</th>
+																<th>Country Origin</th>
+																<th>Company Name</th>
+																<th>Description</th>
 																<th>Action</th>
 															</tr>
 														</thead>
@@ -1789,16 +1785,16 @@
 															<tr>
 																<td>Px34z</td>
 																<td>Parts</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Parts for Machine Y</td>
 																<td>Grimonprez</td>
 																<td>Gx300-Y</td>
 																<td>100</td>
+																<td>Malaysia</td>
+																<td>Grimonprez Transmission Gears</td>
+																<td>Parts for Machine Y</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1818,16 +1814,16 @@
 															<tr>
 																<td>Px34z</td>
 																<td>Parts 1</td>
-																<td>Malaysia</td>
-																<td>Grimonprez Transmission Gears</td>
-																<td>Parts for Machine X</td>
 																<td>Grimonprez</td>
 																<td>Gx320-X</td>
 																<td>130</td>
+																<td>Malaysia</td>
+																<td>Grimonprez Transmission Gears</td>
+																<td>Parts for Machine X</td>
 																<td>
 																	<button type="button"
 																		class="btn btn-light btn-icon"><i
-																			class="icon-eye" data-popup="tooltip"
+																			class="icon-file-eye" data-popup="tooltip"
 																			title=""
 																			data-original-title="View"></i></button>
 
@@ -1886,90 +1882,6 @@
 												</div>
 
 												<div class="col-md-12">
-													<div class="form-group">
-														<label>Country Origin:</label>
-														<select name="location" data-placeholder="Select country origin"
-															class="form-control select-search" data-fouc>
-															<option></option>
-															<option value="kuwaiti">Kuwaiti</option>
-															<option value="kyrgyz">Kyrgyz</option>
-															<option value="laotian">Laotian</option>
-															<option value="latvian">Latvian</option>
-															<option value="lebanese">Lebanese</option>
-															<option value="liberian">Liberian</option>
-															<option value="libyan">Libyan</option>
-															<option value="liechtensteiner">Liechtensteiner</option>
-															<option value="lithuanian">Lithuanian</option>
-															<option value="luxembourger">Luxembourger</option>
-															<option value="macedonian">Macedonian</option>
-															<option value="malagasy">Malagasy</option>
-															<option value="malawian">Malawian</option>
-															<option value="malaysia" selected>Malaysia</option>
-															<option value="maldivan">Maldivan</option>
-															<option value="malian">Malian</option>
-															<option value="maltese">Maltese</option>
-															<option value="marshallese">Marshallese</option>
-															<option value="mauritanian">Mauritanian</option>
-															<option value="mauritian">Mauritian</option>
-															<option value="mexican">Mexican</option>
-															<option value="micronesian">Micronesian</option>
-															<option value="moldovan">Moldovan</option>
-															<option value="monacan">Monacan</option>
-															<option value="mongolian">Mongolian</option>
-															<option value="moroccan">Moroccan</option>
-															<option value="mosotho">Mosotho</option>
-															<option value="motswana">Motswana</option>
-															<option value="mozambican">Mozambican</option>
-															<option value="namibian">Namibian</option>
-															<option value="nauruan">Nauruan</option>
-															<option value="nepalese">Nepalese</option>
-															<option value="new zealander">New Zealander</option>
-															<option value="ni-vanuatu">Ni-Vanuatu</option>
-															<option value="nicaraguan">Nicaraguan</option>
-															<option value="nigerien">Nigerien</option>
-															<option value="north korean">North Korean</option>
-															<option value="northern irish">Northern Irish</option>
-															<option value="norwegian">Norwegian</option>
-															<option value="omani">Omani</option>
-															<option value="pakistani">Pakistani</option>
-															<option value="palauan">Palauan</option>
-															<option value="panamanian">Panamanian</option>
-															<option value="papua new guinean">Papua New Guinean</option>
-															<option value="paraguayan">Paraguayan</option>
-															<option value="peruvian">Peruvian</option>
-															<option value="polish">Polish</option>
-															<option value="portuguese">Portuguese</option>
-															<option value="qatari">Qatari</option>
-															<option value="romanian">Romanian</option>
-															<option value="russian">Russian</option>
-															<option value="rwandan">Rwandan</option>
-															<option value="saint lucian">Saint Lucian</option>
-															<option value="salvadoran">Salvadoran</option>
-															<option value="samoan">Samoan</option>
-															<option value="san marinese">San Marinese</option>
-														</select>
-													</div>
-												</div>
-
-												<div class="col-md-12">
-													<div class="form-group">
-														<label>Company Name:</label>
-														<input type="text" class="form-control"
-															placeholder="Example. Mitsubishi Motors">
-													</div>
-												</div>
-
-
-												<div class="col-md-12">
-													<div class="form-group">
-														<label>Description:</label>
-														<textarea type="text" class="form-control"
-															placeholder="Example. Transport heavy materials"
-															rows="4"></textarea>
-													</div>
-												</div>
-
-												<div class="col-md-12">
 													<div class="row">
 														<div class="col-md-4">
 															<div class="form-group">
@@ -1996,6 +1908,121 @@
 														</div>
 													</div>
 												</div>
+
+												<div class="col-md-12">
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group">
+																<label>Country Origin:</label>
+																<select name="location"
+																	data-placeholder="Select country origin"
+																	class="form-control select-search" data-fouc>
+																	<option></option>
+																	<option value="kuwaiti">Kuwaiti</option>
+																	<option value="kyrgyz">Kyrgyz</option>
+																	<option value="laotian">Laotian</option>
+																	<option value="latvian">Latvian</option>
+																	<option value="lebanese">Lebanese</option>
+																	<option value="liberian">Liberian</option>
+																	<option value="libyan">Libyan</option>
+																	<option value="liechtensteiner">Liechtensteiner
+																	</option>
+																	<option value="lithuanian">Lithuanian</option>
+																	<option value="luxembourger">Luxembourger
+																	</option>
+																	<option value="macedonian">Macedonian</option>
+																	<option value="malagasy">Malagasy</option>
+																	<option value="malawian">Malawian</option>
+																	<option value="malaysia" selected>Malaysia
+																	</option>
+																	<option value="maldivan">Maldivan</option>
+																	<option value="malian">Malian</option>
+																	<option value="maltese">Maltese</option>
+																	<option value="marshallese">Marshallese</option>
+																	<option value="mauritanian">Mauritanian</option>
+																	<option value="mauritian">Mauritian</option>
+																	<option value="mexican">Mexican</option>
+																	<option value="micronesian">Micronesian</option>
+																	<option value="moldovan">Moldovan</option>
+																	<option value="monacan">Monacan</option>
+																	<option value="mongolian">Mongolian</option>
+																	<option value="moroccan">Moroccan</option>
+																	<option value="mosotho">Mosotho</option>
+																	<option value="motswana">Motswana</option>
+																	<option value="mozambican">Mozambican</option>
+																	<option value="namibian">Namibian</option>
+																	<option value="nauruan">Nauruan</option>
+																	<option value="nepalese">Nepalese</option>
+																	<option value="new zealander">New Zealander
+																	</option>
+																	<option value="ni-vanuatu">Ni-Vanuatu</option>
+																	<option value="nicaraguan">Nicaraguan</option>
+																	<option value="nigerien">Nigerien</option>
+																	<option value="north korean">North Korean
+																	</option>
+																	<option value="northern irish">Northern Irish
+																	</option>
+																	<option value="norwegian">Norwegian</option>
+																	<option value="omani">Omani</option>
+																	<option value="pakistani">Pakistani</option>
+																	<option value="palauan">Palauan</option>
+																	<option value="panamanian">Panamanian</option>
+																	<option value="papua new guinean">Papua New
+																		Guinean
+																	</option>
+																	<option value="paraguayan">Paraguayan</option>
+																	<option value="peruvian">Peruvian</option>
+																	<option value="polish">Polish</option>
+																	<option value="portuguese">Portuguese</option>
+																	<option value="qatari">Qatari</option>
+																	<option value="romanian">Romanian</option>
+																	<option value="russian">Russian</option>
+																	<option value="rwandan">Rwandan</option>
+																	<option value="saint lucian">Saint Lucian
+																	</option>
+																	<option value="salvadoran">Salvadoran</option>
+																	<option value="samoan">Samoan</option>
+																	<option value="san marinese">San Marinese
+																	</option>
+																</select>
+															</div>
+														</div>
+
+
+														<div class="col-md-6">
+															<div class="form-group"><label>Certificate of
+																	Origin:</label>
+																<div class="custom-file">
+																	<input type="file" class="custom-file-input"
+																		id="customFile">
+																	<label class="custom-file-label"
+																		for="customFile">Choose
+																		file</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-md-12">
+													<div class="form-group">
+														<label>Company Name:</label>
+														<input type="text" class="form-control"
+															placeholder="Example. Mitsubishi Motors">
+													</div>
+												</div>
+
+
+												<div class="col-md-12">
+													<div class="form-group">
+														<label>Description:</label>
+														<textarea type="text" class="form-control"
+															placeholder="Example. Transport heavy materials"
+															rows="4"></textarea>
+													</div>
+												</div>
+
+
 
 												<div class="col-md-12">
 													<div class="form-group">
@@ -2268,95 +2295,6 @@
 														</div>
 													</div>
 
-
-
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Company Name:</label>
-															<input type="text" class="form-control"
-																placeholder="Example. Bahco">
-														</div>
-													</div>
-
-
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Description:</label>
-															<textarea type="text" class="form-control"
-																placeholder="Example. Used for fixing machine X"
-																rows="4"></textarea>
-														</div>
-													</div>
-
 													<div class="col-md-12">
 														<div class="row">
 															<div class="col-md-4">
@@ -2384,6 +2322,124 @@
 															</div>
 														</div>
 													</div>
+
+
+
+
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<div class="form-group">
+															<label>Company Name:</label>
+															<input type="text" class="form-control"
+																placeholder="Example. Bahco">
+														</div>
+													</div>
+
+
+													<div class="col-md-12">
+														<div class="form-group">
+															<label>Description:</label>
+															<textarea type="text" class="form-control"
+																placeholder="Example. Used for fixing machine X"
+																rows="4"></textarea>
+														</div>
+													</div>
+
+
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -2784,73 +2840,128 @@
 														</div>
 													</div>
 
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>System Brand:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. Youfa">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>System Model:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. YSP3123">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Quantity:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. 21">
+																</div>
+															</div>
+														</div>
+													</div>
+
 
 
 													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 
@@ -2880,33 +2991,7 @@
 													</div>
 												</div> -->
 
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>System Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. Youfa">
-																</div>
-															</div>
 
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>System Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. YSP3123">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 21">
-																</div>
-															</div>
-														</div>
-													</div>
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -3263,70 +3348,125 @@
 													</div>
 
 													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
+														<div class="row">
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Sub-Component Brand:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. Grimonprez">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Sub-Component Model:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. Gx300-Y">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Quantity:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. 100">
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 
@@ -3355,34 +3495,6 @@
 															placeholder="Example. Abc123" rows="4"></textarea>
 													</div>
 												</div> -->
-
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Sub-Component Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. Grimonprez">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Sub-Component Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. Gx300-Y">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 100">
-																</div>
-															</div>
-														</div>
-													</div>
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -3739,74 +3851,127 @@
 													</div>
 
 
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Sub-System Brand:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. Mitsubishi">
+																</div>
+															</div>
 
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Sub-System Model:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. TM3000x">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Quantity:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. 10">
+																</div>
+															</div>
+														</div>
+													</div>
 
 
 													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 
@@ -3836,33 +4001,7 @@
 													</div>
 												</div> -->
 
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Sub-System Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. Mitsubishi">
-																</div>
-															</div>
 
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Sub-System Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. TM3000x">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 10">
-																</div>
-															</div>
-														</div>
-													</div>
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -4214,71 +4353,127 @@
 																placeholder="Example. Component 1">
 														</div>
 													</div>
+
 													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
+														<div class="row">
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Component Brand:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. KENENG">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Component Model:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. T10">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Quantity:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. 30,000">
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 
@@ -4308,33 +4503,7 @@
 													</div>
 												</div> -->
 
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Component Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. KENENG">
-																</div>
-															</div>
 
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Component Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. T10">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 30,000">
-																</div>
-															</div>
-														</div>
-													</div>
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -4688,71 +4857,126 @@
 																placeholder="Example. Parts 1">
 														</div>
 													</div>
+
 													<div class="col-md-12">
-														<div class="form-group">
-															<label>Country Origin:</label>
-															<select name="location"
-																data-placeholder="Select country origin"
-																class="form-control select-search" data-fouc>
-																<option></option>
-																<option value="kuwaiti">Kuwaiti</option>
-																<option value="kyrgyz">Kyrgyz</option>
-																<option value="laotian">Laotian</option>
-																<option value="latvian">Latvian</option>
-																<option value="lebanese">Lebanese</option>
-																<option value="liberian">Liberian</option>
-																<option value="libyan">Libyan</option>
-																<option value="liechtensteiner">Liechtensteiner</option>
-																<option value="lithuanian">Lithuanian</option>
-																<option value="luxembourger">Luxembourger</option>
-																<option value="macedonian">Macedonian</option>
-																<option value="malagasy">Malagasy</option>
-																<option value="malawian">Malawian</option>
-																<option value="malaysia" selected>Malaysia</option>
-																<option value="maldivan">Maldivan</option>
-																<option value="malian">Malian</option>
-																<option value="maltese">Maltese</option>
-																<option value="marshallese">Marshallese</option>
-																<option value="mauritanian">Mauritanian</option>
-																<option value="mauritian">Mauritian</option>
-																<option value="mexican">Mexican</option>
-																<option value="micronesian">Micronesian</option>
-																<option value="moldovan">Moldovan</option>
-																<option value="monacan">Monacan</option>
-																<option value="mongolian">Mongolian</option>
-																<option value="moroccan">Moroccan</option>
-																<option value="mosotho">Mosotho</option>
-																<option value="motswana">Motswana</option>
-																<option value="mozambican">Mozambican</option>
-																<option value="namibian">Namibian</option>
-																<option value="nauruan">Nauruan</option>
-																<option value="nepalese">Nepalese</option>
-																<option value="new zealander">New Zealander</option>
-																<option value="ni-vanuatu">Ni-Vanuatu</option>
-																<option value="nicaraguan">Nicaraguan</option>
-																<option value="nigerien">Nigerien</option>
-																<option value="north korean">North Korean</option>
-																<option value="northern irish">Northern Irish</option>
-																<option value="norwegian">Norwegian</option>
-																<option value="omani">Omani</option>
-																<option value="pakistani">Pakistani</option>
-																<option value="palauan">Palauan</option>
-																<option value="panamanian">Panamanian</option>
-																<option value="papua new guinean">Papua New Guinean
-																</option>
-																<option value="paraguayan">Paraguayan</option>
-																<option value="peruvian">Peruvian</option>
-																<option value="polish">Polish</option>
-																<option value="portuguese">Portuguese</option>
-																<option value="qatari">Qatari</option>
-																<option value="romanian">Romanian</option>
-																<option value="russian">Russian</option>
-																<option value="rwandan">Rwandan</option>
-																<option value="saint lucian">Saint Lucian</option>
-																<option value="salvadoran">Salvadoran</option>
-																<option value="samoan">Samoan</option>
-																<option value="san marinese">San Marinese</option>
-															</select>
+														<div class="row">
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Parts Brand:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. KENENG">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Parts Model:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. T10">
+																</div>
+															</div>
+
+															<div class="col-md-4">
+																<div class="form-group">
+																	<label>Quantity:</label>
+																	<input type="text" class="form-control"
+																		placeholder="Example. 30,000">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label>Country Origin:</label>
+																	<select name="location"
+																		data-placeholder="Select country origin"
+																		class="form-control select-search" data-fouc>
+																		<option></option>
+																		<option value="kuwaiti">Kuwaiti</option>
+																		<option value="kyrgyz">Kyrgyz</option>
+																		<option value="laotian">Laotian</option>
+																		<option value="latvian">Latvian</option>
+																		<option value="lebanese">Lebanese</option>
+																		<option value="liberian">Liberian</option>
+																		<option value="libyan">Libyan</option>
+																		<option value="liechtensteiner">Liechtensteiner
+																		</option>
+																		<option value="lithuanian">Lithuanian</option>
+																		<option value="luxembourger">Luxembourger
+																		</option>
+																		<option value="macedonian">Macedonian</option>
+																		<option value="malagasy">Malagasy</option>
+																		<option value="malawian">Malawian</option>
+																		<option value="malaysia" selected>Malaysia
+																		</option>
+																		<option value="maldivan">Maldivan</option>
+																		<option value="malian">Malian</option>
+																		<option value="maltese">Maltese</option>
+																		<option value="marshallese">Marshallese</option>
+																		<option value="mauritanian">Mauritanian</option>
+																		<option value="mauritian">Mauritian</option>
+																		<option value="mexican">Mexican</option>
+																		<option value="micronesian">Micronesian</option>
+																		<option value="moldovan">Moldovan</option>
+																		<option value="monacan">Monacan</option>
+																		<option value="mongolian">Mongolian</option>
+																		<option value="moroccan">Moroccan</option>
+																		<option value="mosotho">Mosotho</option>
+																		<option value="motswana">Motswana</option>
+																		<option value="mozambican">Mozambican</option>
+																		<option value="namibian">Namibian</option>
+																		<option value="nauruan">Nauruan</option>
+																		<option value="nepalese">Nepalese</option>
+																		<option value="new zealander">New Zealander
+																		</option>
+																		<option value="ni-vanuatu">Ni-Vanuatu</option>
+																		<option value="nicaraguan">Nicaraguan</option>
+																		<option value="nigerien">Nigerien</option>
+																		<option value="north korean">North Korean
+																		</option>
+																		<option value="northern irish">Northern Irish
+																		</option>
+																		<option value="norwegian">Norwegian</option>
+																		<option value="omani">Omani</option>
+																		<option value="pakistani">Pakistani</option>
+																		<option value="palauan">Palauan</option>
+																		<option value="panamanian">Panamanian</option>
+																		<option value="papua new guinean">Papua New
+																			Guinean
+																		</option>
+																		<option value="paraguayan">Paraguayan</option>
+																		<option value="peruvian">Peruvian</option>
+																		<option value="polish">Polish</option>
+																		<option value="portuguese">Portuguese</option>
+																		<option value="qatari">Qatari</option>
+																		<option value="romanian">Romanian</option>
+																		<option value="russian">Russian</option>
+																		<option value="rwandan">Rwandan</option>
+																		<option value="saint lucian">Saint Lucian
+																		</option>
+																		<option value="salvadoran">Salvadoran</option>
+																		<option value="samoan">Samoan</option>
+																		<option value="san marinese">San Marinese
+																		</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="col-md-6">
+																<div class="form-group"><label>Certificate of
+																		Origin:</label>
+																	<div class="custom-file">
+																		<input type="file" class="custom-file-input"
+																			id="customFile">
+																		<label class="custom-file-label"
+																			for="customFile">Choose
+																			file</label>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 
@@ -4782,33 +5006,7 @@
 										</div>
 									</div> -->
 
-													<div class="col-md-12">
-														<div class="row">
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Parts Brand:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. KENENG">
-																</div>
-															</div>
 
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Parts Model:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. T10">
-																</div>
-															</div>
-
-															<div class="col-md-4">
-																<div class="form-group">
-																	<label>Quantity:</label>
-																	<input type="text" class="form-control"
-																		placeholder="Example. 30,000">
-																</div>
-															</div>
-														</div>
-													</div>
 
 													<div class="col-md-12">
 														<div class="form-group">
@@ -5306,8 +5504,8 @@
 											<form action="#">
 												<div class="form-group">
 													<label>Sector:</label>
-													<select data-placeholder="Select Sector"
-														class="form-control select-search" data-fouc>
+													<select data-placeholder="Select sub-sector"
+														class="form-control select" data-fouc>
 														<option></option>
 														<option value="">-- select one --</option>
 														<option value="Agriculture / Food Processing">Agriculture / Food
@@ -5359,10 +5557,9 @@
 
 												<div class="form-group">
 													<label>Sub-sector:</label>
-													<select data-placeholder="Select sub-sector"
-														class="form-control select-search" data-fouc>
-														<option></option>
-														<option value="">-- select one --</option>
+													<select data-placeholder="Select Sub-Sector"
+														class="form-control multiselect-filtering" multiple="multiple"
+														data-fouc>
 														<option value="Livestock">Livestock</option>
 														<option value="Farming">Farming</option>
 														<option value="v">Fisheries</option>
@@ -5482,40 +5679,28 @@
 
 												<div class="form-group">
 													<label>Product / Services:</label>
-													<select data-placeholder="Select product / services "
-														class="form-control select-search" data-fouc id="BAOptions2"
-														onchange="check2();">
-														<option></option>
+													<select data-placeholder="Select Product / Services"
+														class="form-control multiselect-filtering" multiple="multiple"
+														data-fouc id="BAOptions2" onchange="check2();">
 														<option value="Design">Design
 														</option>
 														<option value="Services">Services</option>
-														<option value="Maintenance, Repair, Overhaul (MRO)
-													">Maintenance, Repair, Overhaul (MRO)
-														</option>
-														<option value="Assembly & Testing
-													">Assembly & Testing
-														</option>
-														<option value="Construction">Construction
-														</option>
-														<option value="Manufacturing">Manufacturing
-														</option>
+														<option value="maintenance, repair, overhaul (mro)">Maintenance,
+															Repair, Overhaul (MRO)</option>
+														<option value="Assembly & Testing">Assembly & Testing</option>
+														<option value="Construction">Construction</option>
+														<option value="Manufacturing">Manufacturing</option>
 														<option value="Refurbishment / Rehabilitation">Refurbishment /
-															Rehabilitation
-														</option>
+															Rehabilitation </option>
 														<option value="System Engineering / Integration">System
-															Engineering / Integration
-														</option>
+															Engineering / Integration</option>
 														<option value="Trading / Distribution">Trading / Distribution
 														</option>
-														<option value="R&D">R&D
-														</option>
-														<option value="Certification Body">Certification Body
-														</option>
+														<option value="R&D">R&D</option>
+														<option value="Certification Body">Certification Body</option>
 														<option value="Infrastructure & Equipment">Infrastructure &
-															Equipment
-														</option>
-														<option value="Manpower">Manpower
-														</option>
+															Equipment</option>
+														<option value="Manpower">Manpower</option>
 														<option value="Education & Training">Education & Training
 														</option>
 														<option value="Others2">Others</option>
@@ -5701,8 +5886,8 @@
 				</div>
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#"
-							target="_blank">Technology Depository Agency (TDA)</a>
+						&copy; 2021. <a href="#">Suppy Chain</a> by <a href="#" target="_blank">Technology Depository
+							Agency (TDA)</a>
 					</span>
 				</div>
 			</div>

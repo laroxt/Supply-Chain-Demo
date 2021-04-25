@@ -2262,7 +2262,7 @@ textarea.form-control {
     padding: .4375rem .875rem;
     font-size: .8125rem;
     line-height: 1.5385;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SPU | User Account Settings | Change Password</title>
+	<title>IMU | User Account Settings | Edit Profile Details</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -67,14 +67,14 @@
 		<!-- Header with logos -->
 		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
 			<div class="navbar-brand navbar-brand-md">
-				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
+				<a href="./imu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav.png" style="width:120px; height: 25px; "
 						alt="">
 				</a>
 			</div>
 
 			<div class="navbar-brand navbar-brand-xs">
-				<a href="./spu-home-sc-introduction.html" class="d-inline-block">
+				<a href="./imu-home-sc-introduction.html" class="d-inline-block">
 					<img src="./global_assets/images/tda-logo/tda-logo-nav-collapse.png" alt=""
 						style="width:40px; height: 25px; ">
 				</a>
@@ -190,9 +190,7 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="./spu-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
-							Account
-							Settings</a>
+						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
@@ -230,19 +228,31 @@
 
 
 
+
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
 						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Strategic Planning Unit </div> <i class="icon-menu"
+							<div class="text-uppercase font-size-xs line-height-xs">TDA IMU</div> <i class="icon-menu"
 								title="Main"></i>
 						</li>
 
+						<!-- Home -->
+						<li class="nav-item">
+							<a href="./imu-home-recent-activity.html" class="nav-link ">
+								<i class="icon-home4"></i>
+								<span>
+									Home
+								</span>
+							</a>
+						</li>
+						<!-- /Home -->
+
 						<!-- Company -->
 						<li class="nav-item">
-							<a href="./spu-company-grid.html" class="nav-link">
+							<a href="./imu-company-grid.html" class="nav-link">
 								<i class="icon-magazine"></i>
 								<span>
 									View Company
@@ -251,9 +261,10 @@
 						</li>
 						<!-- /Company -->
 
+
 						<!-- Project -->
 						<li class="nav-item">
-							<a href="./spu-project-list-add.html" class="nav-link ">
+							<a href="./imu-project-list-add.html" class="nav-link ">
 								<i class="icon-pencil7"></i>
 								<span>
 									Create Supply Chain
@@ -263,12 +274,14 @@
 						<!-- /Project -->
 
 
-
 						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
+
 			</div>
+			<!-- /sidebar content -->
+
 		</div>
 		<!-- /main sidebar -->
 
@@ -282,8 +295,8 @@
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
 							<a href="#" class="breadcrumb-item"> Account Settings</a>
-							<a href="#" class="breadcrumb-item"> Change
-								Password</a>
+							<a href="#" class="breadcrumb-item"> Edit Profile
+								Details</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -295,42 +308,90 @@
 			<!-- Content area -->
 			<div class="content2 pt-0">
 				<div class="row">
+
 					<!-- card content placement -->
 					<div class="col-md-8 offset-md-2">
 						<div class="card">
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Change Password</h4>
+								<h4 class="card-title font-weight-bold">Account Settings</h4>
+								<div class="header-elements">
+									<div class="list-icons">
+
+
+									</div>
+								</div>
 							</div>
 
-
 							<div class="card-body">
-								<form action="#">
-									<div class="form-group">
-										<label>Current Password:</label>
-										<input type="text" class="form-control" placeholder="Example. Abc123">
-									</div>
-									<div class="form-group">
-										<label>New Password:</label>
-										<input type="text" class="form-control" placeholder="Example. Abc123">
-									</div>
-									<div class="form-group">
-										<label>Confirm Password:</label>
-										<input type="text" class="form-control" placeholder="Example. Abc123">
+								<!-- card content placement -->
+								<div class="row">
+									<div class="col-md-3">
+										<div class="card-user-profile-image" style="border-radius: 300px;">
+											<div class="card-img-actions">
+												<img class="card-img-top account-settings-user-profile-image"
+													src="./global_assets/images/placeholders/placeholder_u1.jpg" alt="">
+												<div
+													class="card-img-actions-overlay card-img-top account-settings-user-profile-image">
+													<a href="#"
+														class="btn btn-outline bg-primary text-white border-white border-2">
+														Upload Image
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 
+									<!--/ card content placement -->
+									<div class="col-md-9">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Name:</label>
+													<input type="text" class="form-control" placeholder="Change Name">
+												</div>
 
-								</form>
+												<div class="form-group">
+													<label>Role:</label>
+													<h5 class="card-title font-weight-semibold">Industry Intelligent
+													</h5>
+												</div>
+												<div class="form-group">
+													<label>Status:</label>
+													<h5 class="card-title font-weight-semibold">Active</h5>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Email:</label>
+													<h5 class="card-title font-weight-semibold">
+														Aidan@hummingsoft.com</h5>
+												</div>
+
+												<div class="form-group">
+													<label>Phone:</label>
+													<input type="number" class="form-control"
+														placeholder="Change Phone Number">
+												</div>
+
+												<div class=" form-group">
+													<label>Address:</label>
+													<textarea type="text" class="form-control"
+														placeholder="Change Address"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="text-right">
 									<button type="submit" class="btn btn-light"
-										onClick="location.href='spu-user-account-settings.html'">Cancel</button>
+										onClick="location.href='imu-user-account-settings.html'">Cancel</button>
 									<button type="submit" class="btn btn-success">Save</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!--/ card content placement -->
 				</div>
-
-
 			</div>
 			<!-- /content area -->
 

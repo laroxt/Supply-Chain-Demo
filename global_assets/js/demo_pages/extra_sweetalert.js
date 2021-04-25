@@ -620,6 +620,33 @@ var SweetAlert = (function () {
         });
     });
 
+    // Alert Submit_SC
+    $("#sweet_submit_sc").on("click", function () {
+      swalInit
+        .fire({
+          title: "Are you sure you want to submit ?",
+          // text: "Once submitted changes cannot be made",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes, submit it",
+          cancelButtonText: "No, cancel",
+          confirmButtonClass: "btn btn-success",
+          cancelButtonClass: "btn btn-danger",
+          buttonsStyling: false,
+        })
+        .then(function (result) {
+          if (result.value) {
+            swalInit.fire(
+              "Submitted!",
+              "Your form has been submitted.<br> Please add Sub-Contractor if there is any.",
+              "success"
+            );
+          } else if (result.dismiss === swal.DismissReason.cancel) {
+            swalInit.fire("Cancelled", "Your form has been cancelled.", "error");
+          }
+        });
+    });
+
     // Alert Delete 1
     $("#sweet_delete1").on("click", function () {
       swalInit

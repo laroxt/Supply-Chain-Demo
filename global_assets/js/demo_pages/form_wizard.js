@@ -30,13 +30,13 @@ var FormWizard = (function () {
       labels: {
         previous: '<i class="icon-arrow-left13 mr-2" /> Previous',
         next: 'Next <i class="icon-arrow-right14 ml-2" />',
-        finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
+        finish: 'Submit <i class="icon-arrow-right14 ml-2" />',
       },
-      onFinished: function (event, currentIndex) {
-        alert(
-          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
-        );
-      },
+      // onFinished: function (event, currentIndex) {
+      //   alert(
+      //     "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+      //   );
+      // },
     });
 
     // Async content loading
@@ -59,11 +59,11 @@ var FormWizard = (function () {
         _componentSelect2();
         _componentUniform();
       },
-      onFinished: function (event, currentIndex) {
-        alert(
-          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
-        );
-      },
+      // onFinished: function (event, currentIndex) {
+      //   alert(
+      //     "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+      //   );
+      // },
     });
 
     // Saving wizard state
@@ -74,16 +74,16 @@ var FormWizard = (function () {
       labels: {
         previous: '<i class="icon-arrow-left13 mr-2" /> Previous',
         next: 'Next <i class="icon-arrow-right14 ml-2" />',
-        finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
+        finish: 'Submit  <i class="icon-arrow-right14 ml-2" />',
       },
       transitionEffect: "fade",
       saveState: true,
       autoFocus: true,
-      onFinished: function (event, currentIndex) {
-        alert(
-          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
-        );
-      },
+      // onFinished: function (event, currentIndex) {
+      //   alert(
+      //     "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+      //   );
+      // },
     });
 
     // Specify custom starting step
@@ -94,16 +94,16 @@ var FormWizard = (function () {
       labels: {
         previous: '<i class="icon-arrow-left13 mr-2" /> Previous',
         next: 'Next <i class="icon-arrow-right14 ml-2"" />',
-        finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
+        finish: '<span id="sweet_submit_sc"">Submit  <i class="icon-arrow-right14 ml-2"/></span>',
       },
       transitionEffect: "fade",
       startIndex: 0,
       autoFocus: true,
-      onFinished: function (event, currentIndex) {
-        alert(
-          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
-        );
-      },
+      // onFinished: function (event, currentIndex) {
+      //   alert(
+      //     "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+      //   );
+      // },
     });
 
     // Enable all steps and make them clickable
@@ -118,11 +118,11 @@ var FormWizard = (function () {
         next: 'Next <i class="icon-arrow-right14 ml-2" />',
         finish: 'Submit form <i class="icon-arrow-right14 ml-2" />',
       },
-      onFinished: function (event, currentIndex) {
-        alert(
-          "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
-        );
-      },
+      // onFinished: function (event, currentIndex) {
+      //   alert(
+      //     "Thank you for your submission.\nKindly proceed to manage sub-contractor page(if any)"
+      //   );
+      // },
     });
 
     //
