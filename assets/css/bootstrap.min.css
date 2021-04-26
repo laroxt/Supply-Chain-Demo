@@ -9197,3 +9197,7 @@ body::-webkit-scrollbar-thumb {
 .icon-search-active {
     color: #1976D2;
 }
+
+.action-icon-width {
+    width: 230px;
+}
