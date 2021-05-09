@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA Admin | Supply Chain | Add New Project</title>
+	<title>Admin | Company List View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -43,6 +43,7 @@
 	<script src="./global_assets/js/plugins/ui/moment/moment.min.js"></script>
 	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.js"></script>
 	<script src="./global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
@@ -51,9 +52,6 @@
 	<script src="assets/js/app.js"></script>
 	<script src="./global_assets/js/demo_pages/form_wizard.js"></script>
 	<script src="./global_assets/js/demo_pages/form_select2.js"></script>
-	<script src="./global_assets/js/plugins/pickers/daterangepicker.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
-	<script src="./global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
 	<script src="./global_assets/js/demo_pages/picker_date.js"></script>
 	<!-- /theme JS files -->
 
@@ -190,7 +188,9 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item"><i class="icon-gear"></i> Account Settings</a>
+						<a href="./admin-user-account-settings.html" class="dropdown-item"><i class="icon-gear"></i>
+							Account
+							Settings</a>
 						<a href="./index.html" class="dropdown-item"><i class="icon-exit"></i> Logout</a>
 					</div>
 				</li>
@@ -232,67 +232,72 @@
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
-						<!-- Main -->
-						<li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">TDA Admin</div> <i class="icon-menu"
-								title="Main"></i>
-						</li>
+							<!-- Main -->
+							<li class="nav-item-header">
+								<div class="text-uppercase font-size-xs line-height-xs">TDA Admin</div> <i class="icon-menu"
+									title="Main"></i>
+							</li>
+							<!-- /Main -->
+	
+							<!-- Audit Trail -->
+							<li class="nav-item">
+								<a href="./admin-audit-trail.html" class="nav-link">
+									<i class="icon-clipboard3"></i>
+									<span>
+										Audit Trail
+									</span>
+								</a>
+							</li>
+							<!-- /Audit Trail -->
+	
+							<!-- View Company -->
+							<li class="nav-item">
+								<a href="./admin-company-grid.html" class="nav-link active">
+									<i class="icon-magazine"></i>
+									<span>
+										View Company
+									</span>
+								</a>
+							</li>
+							<!-- /View Company -->
+	
+	
+							<!-- User Management -->
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link "><i class="icon-user"></i> <span>User
+										Management</span></a>
+	
+								<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+									<li class="nav-item "><a href="./admin-um-role.html"
+											class="nav-link ">Role<br>Add/Remove/Update
+											Roles</a></li>
+									<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
+											<br>Add/Remove/Update Roles</a>
+									</li>
+								</ul>
+							</li>
+							<!-- /User Management -->
+	
+	
+							<!-- Settings Dropdown List -->
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link "><i class="icon-gear"></i> <span>Settings</span></a>
+	
+								<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+									<li class="nav-item "><a href="./admin-update-dropdown-list.html"
+											class="nav-link ">Supply Chain
+											Dropdown List Updates</a></li>
+								</ul>
+							</li>
+							<!-- /Settings Dropdown List -->
 
-						<!-- Audit Trail -->
-						<li class="nav-item">
-							<a href="./admin-audit-trail.html" class="nav-link">
-								<i class="icon-clipboard3"></i>
-								<span>
-									Audit Trail
-								</span>
-							</a>
-						</li>
-						<!-- /Audit Trail -->
 
-						<!-- View Company -->
-						<li class="nav-item">
-							<a href="./admin-company-grid.html" class="nav-link">
-								<i class="icon-magazine"></i>
-								<span>
-									View Company
-								</span>
-							</a>
-						</li>
-						<!-- /View Company -->
-
-						<!-- User Management -->
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link "><i class="icon-user"></i> <span>User
-									Management</span></a>
-
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item "><a href="./admin-um-role.html"
-										class="nav-link ">Role<br>Add/Remove/Update
-										Roles</a></li>
-								<li class="nav-item"><a href="./admin-um-user.html" class="nav-link">User
-										<br>Add/Remove/Update Roles</a>
-								</li>
-							</ul>
-						</li>
-						<!-- /User Management -->
-
-						<!-- Settings Dropdown List -->
-						<li class="nav-item nav-item-submenu nav-item-open">
-							<a href="#" class="nav-link active"><i class="icon-gear"></i> <span>Settings</span></a>
-
-							<ul class="nav nav-group-sub" data-submenu-title="Layouts" style="display: block;">
-								<li class="nav-item "><a href="./admin-update-dropdown-list.html"
-										class="nav-link active">Supply
-										Chain
-										Dropdown List Updates</a></li>
-							</ul>
-						</li>
-						<!-- /Settings Dropdown List -->
 
 						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
+
 			</div>
 			<!-- /sidebar content -->
 
@@ -308,7 +313,7 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex" style="margin-left:18px;">
 						<div class="breadcrumb">
-							<a href="#" class="breadcrumb-item"> Account Settings</a>
+							<a href="#" class="breadcrumb-item"> Company List</a>
 						</div>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
@@ -319,101 +324,188 @@
 
 			<!-- Content area -->
 			<div class="content2 pt-0">
+
+
 				<div class="row">
-
-					<!-- card content placement -->
-					<div class="col-md-8 offset-md-2">
+					<div class="col-md-12">
 						<div class="card">
+
 							<div class="card-header bg-white header-elements-inline">
-								<h4 class="card-title font-weight-bold">Account Settings</h4>
-								<div class="header-elements">
-									<div class="list-icons">
+								<h4 class="card-title font-weight-bold">Company List</h4>
+							</div>
 
+							<div class="card-header bg-white header-elements-inline pt-1 pb-1">
+								<div class="d-flex">
+									<div class="breadcrumb">
+										<a href="admin-company-grid.html" class="icon-grid2 icon-search"
+											data-popup="tooltip" title="" data-original-title="Grid"></a>
+										<a href="admin-company-list.html" class="icon-list2 ml-2 icon-search-active"
+											data-popup="tooltip" title="" data-original-title="List"></a>
 
+									</div>
+
+									<a href="#" class="header-elements-toggle text-default d-md-none"><i
+											class="icon-more"></i></a>
+								</div>
+
+								<div class="header-elements d-none">
+									<div class="breadcrumb justify-content-center">
+										<div href="#" class="breadcrumb-elements-item"> <span class="mr-2">Sort
+												By:</span>
+										</div>
+
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+
+													<option value="opt2">A-Z</option>
+													<option value="opt3">Z-A</option>
+
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<div href="#" class="breadcrumb-elements-item"> <span class="mr-2">Show:</span>
+										</div>
+
+									</div>
+									<div class="breadcrumb justify-content-center ml-2">
+										<form action="#">
+											<div class="form-group wmin-md-150">
+												<select name="select" class="form-control-select2" data-fouc>
+													<option value="25">25</option>
+													<option value="30">30</option>
+													<option value="50">50</option>
+													<option value="75">75</option>
+													<option value="100">100</option>
+												</select>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
+
+
+
+							<div class="col-md-12">
+								<div class="card-body row no-gutters align-items-center">
+
+									<div class="col">
+										<input class="form-control form-control-lg form-control-borderless m-1"
+											type="search" placeholder="Search topics or keywords">
+									</div>
+
+									<div class="col-auto">
+										<button class="btn btn-lg btn-primary" type="submit">Search</button>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="card">
 
 							<div class="card-body">
-								<!-- card content placement -->
-								<div class="row">
-									<div class="col-md-3">
-										<div class="card-user-profile-image" style="border-radius: 300px;">
-											<div class="card-img-actions">
-												<img class="card-img-top account-settings-user-profile-image"
-													src="./global_assets/images/placeholders/placeholder_u1.jpg" alt="">
-												<div
-													class="card-img-actions-overlay card-img-top account-settings-user-profile-image">
-													<a href="#"
-														class="btn btn-outline bg-primary text-white border-white border-2">
-														Upload Image
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
 
-									<!--/ card content placement -->
-									<div class="col-md-9">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Name:</label>
-													<h5 class="card-title font-weight-semibold">Aidan Chong</h5>
-												</div>
+							</div>
 
-												<div class="form-group">
-													<label>Role:</label>
-													<h5 class="card-title font-weight-semibold">Industry Intelligent
-													</h5>
-												</div>
-												<div class="form-group">
-													<label>Status:</label>
-													<h5 class="card-title font-weight-semibold">Active</h5>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>Email:</label>
-													<h5 class="card-title font-weight-semibold">
-														Aidan@hummingsoft.com</h5>
-												</div>
+							<div class="table-responsive table-scrollable">
+								<table class="table">
+									<thead class="table-header-stick">
+										<tr>
+											<th>No.</th>
+											<th>Company Name</th>
+											<th>Published</th>
+											<th>Action</th>
+										</tr>
+										<!-- <style>
+											.table-header-stick th {
+												Cancelground: #373234;
+												position: sticky;
+												z-index: 1;
+												top: 0;
+												/* Don't forget this, required for the stickiness */
+												box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+											}
+										</style> -->
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Gamuda berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-												<div class="form-group">
-													<label>Phone:</label>
-													<h5 class="card-title font-weight-semibold">
-														011-111 1111
-													</h5>
-												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>UEM Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-												<div class="form-group">
-													<label>Address:</label>
-													<h5 class="card-title font-weight-semibold">Kuala Lumpur</h5>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="text-right mb-2 mt-2">
-									<button type="button"
-										onClick="location.href='admin-user-account-settings-edit.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-compose"></i> Edit
-										Profile Details
-									</button>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>IJM Corporation</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
 
-									<button type="button"
-										onClick="location.href='admin-user-account-settings-reset-pass.html'"
-										class="btn bg-light btn-icon rounded-round"><i class="icon-lock"></i> Change
-										Password
-									</button>
-								</div>
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>WCT Holdings Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Mudajaya Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
+
 					</div>
-					<!--/ card content placement -->
+
+
+
+
+
+
 				</div>
 			</div>
 			<!-- /content area -->
+
 
 
 			<!-- Footer -->
