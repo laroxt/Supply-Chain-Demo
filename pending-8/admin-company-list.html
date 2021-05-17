@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>TDA | Company Grid View</title>
+	<title>Admin | Company List View</title>
 	<link rel="icon" type="image/png" href="./global_assets/images/tda-logo/tda-logo.png" />
 
 	<!-- Global stylesheets -->
@@ -250,17 +250,6 @@
 						</li>
 						<!-- /Audit Trail -->
 
-						<!-- View Company -->
-						<li class="nav-item">
-							<a href="./admin-company-grid.html" class="nav-link active">
-								<i class="icon-magazine"></i>
-								<span>
-									View Company
-								</span>
-							</a>
-						</li>
-						<!-- /View Company -->
-
 
 						<!-- User Management -->
 						<li class="nav-item nav-item-submenu">
@@ -292,6 +281,8 @@
 						<!-- /Settings Dropdown List -->
 
 
+
+						<!-- /Main -->
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -335,9 +326,9 @@
 							<div class="card-header bg-white header-elements-inline pt-1 pb-1">
 								<div class="d-flex">
 									<div class="breadcrumb">
-										<a href="admin-company-grid.html" class="icon-grid2 icon-search-active"
+										<a href="admin-company-grid.html" class="icon-grid2 icon-search"
 											data-popup="tooltip" title="" data-original-title="Grid"></a>
-										<a href="admin-company-list.html" class="icon-list2 ml-2 icon-search"
+										<a href="admin-company-list.html" class="icon-list2 ml-2 icon-search-active"
 											data-popup="tooltip" title="" data-original-title="List"></a>
 
 									</div>
@@ -405,150 +396,100 @@
 
 
 						</div>
-					</div>
 
-					<!-- card content placement -->
-					<div class="col-md-2">
 						<div class="card">
-							<a href="./admin-company-grid-view.html" class="card-hover" data-popup="tooltip" title=""
-								data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/Gamuda.jpg" alt="">
 
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">Gamuda Berhad</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
+							<div class="card-body">
+
+							</div>
+
+							<div class="table-responsive table-scrollable">
+								<table class="table">
+									<thead class="table-header-stick">
+										<tr>
+											<th>No.</th>
+											<th>Company Name</th>
+											<th>Published</th>
+											<th>Action</th>
+										</tr>
+										<!-- <style>
+											.table-header-stick th {
+												Cancelground: #373234;
+												position: sticky;
+												z-index: 1;
+												top: 0;
+												/* Don't forget this, required for the stickiness */
+												box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+											}
+										</style> -->
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Gamuda berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>UEM Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>IJM Corporation</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>WCT Holdings Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Mudajaya Group Berhad</td>
+											<th>Jan 18, 2021 3:30PM</th>
+											<td>
+												<button type="button" class="btn btn-light btn-icon"
+													data-popup="tooltip" title="" data-original-title="View"><i
+														class="icon-eye"></i></button>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
+
 					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/UEM.jpg" alt="">
 
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">UEM Group Berhad</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/IJM.jpg" alt="">
 
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">IJM Corporation</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
 
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/YTL.jpg" alt="">
 
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">YTL Corporation</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
 
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/WCT.jpg" alt="">
-
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">WCT Holdings Berhad</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
-
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/mudajaya.jpg" alt="">
-
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">Mudajaya Group Berhad</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="./admin-company-list-view.html" class="card-hover" data-popup="tooltip" title=""
-								data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/WCE.jpg" alt="">
-
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">WCE Holdings Berhad</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
-					<!-- card content placement -->
-					<div class="col-md-2">
-						<div class="card">
-							<a href="#" class="card-hover" data-popup="tooltip" title="" data-original-title="View">
-								<img class="card-img-top img-fluid"
-									src="./global_assets/images/card-content-logo/Muhibbah.jpg" alt="">
-
-								<div class="card-body-content">
-									<h7 class="card-title font-weight-bold">Muhibbah Bhd</h7>
-									<p class="card-text text-muted font-size-sm">Jan 18, 2021 <br> 3:30PM</p>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!--/ card content placement -->
-
-					<div class="col-md-12">
-						<div class="card card-body text-center">
-							<ul class="pagination pagination-flat pagination-rounded align-self-center">
-								<li class="page-item"><a href="#" class="page-link"><i
-											class="icon-arrow-left12"></i></a>
-								</li>
-								<li class="page-item rounded active"><a href="#" class="page-link">1</a></li>
-								<li class="page-item"><a href="#" class="page-link">2</a></li>
-								<li class="page-item"><a href="#" class="page-link">3</a></li>
-								<li class="page-item"><a href="#" class="page-link">4</a></li>
-								<li class="page-item"><a href="#" class="page-link"><i
-											class="icon-arrow-right13"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
 
 				</div>
 			</div>
