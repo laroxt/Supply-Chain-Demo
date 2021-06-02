@@ -318,10 +318,36 @@
 					<div class="card-header header-elements-inline bg-white">
 						<h4 class="card-title font-weight-bold">Roles</h4>
 						<div class="header-elements">
-							<div class="list-icons">
+							<!-- <div class="list-icons">
 								<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
-									data-target="#formRole" data-toggle="modal" data-toggle="modal" data-popup="tooltip"
-									title="Add"><i class="icon-plus3"></i></button>
+									data-target="#formRole" data-toggle="modal" data-popup="tooltip" title="Add"><i
+										class="icon-plus3"></i></button>
+							</div> -->
+
+							<div class="list-icons">
+
+								<div class="dropdown">
+									<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"
+										aria-expanded="true"><i class="icon-menu7" data-popup="tooltip"
+											data-original-title="Action"></i></a>
+									<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+										style="position: absolute; transform: translate3d(-147px, 19px, 0px); top: 0px; left: 0px; will-change: transform;">
+										<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+											As
+											PDF</a>
+										<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+											As
+											Excel</a>
+										<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+											AS
+											CSV</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item"><i class="icon-printer2"></i>Print</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item" data-target="#formRole" data-toggle="modal"><i
+												class="icon-plus3"></i>Add New Role</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -338,7 +364,7 @@
 						<tbody>
 							<tr>
 								<td>TDA</td>
-								<td><button class="btn btn-primary" data-target="#permission"
+								<td><button class="btn btn-primary" data-target="#role-tda"
 										data-toggle="modal">Permission</button></td>
 								<td>TDA Admin</td>
 								<td>
@@ -350,7 +376,7 @@
 									</span>
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td>CEO's Office </td>
 								<td><button class="btn btn-primary" data-target="#permission"
 										data-toggle="modal">Permission</button></td>
@@ -363,10 +389,10 @@
 										title="Remove"><i class="icon-trash-alt"></i></button>
 									</span>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<td>Main-Contractor</td>
-								<td><button class="btn btn-primary" data-target="#permission"
+								<td><button class="btn btn-primary" data-target="#role-mcontractor"
 										data-toggle="modal">Permission</button></td>
 								<td>TDA Admin</td>
 								<td>
@@ -380,7 +406,7 @@
 							</tr>
 							<tr>
 								<td>Sub-Contractor</td>
-								<td><button class="btn btn-primary" data-target="#permission"
+								<td><button class="btn btn-primary" data-target="#role-scontractor"
 										data-toggle="modal">Permission</button></td>
 								<td>TDA Admin</td>
 								<td>
@@ -422,8 +448,8 @@
 													onchange="check();">
 													<option></option>
 													<option value="">-- select one --</option>
-													<option value="ceo-office" disabled>CEO's Office
-													</option>
+													<!-- <option value="ceo-office" disabled>CEO's Office
+													</option> -->
 													<option value="tda" disabled>TDA</option>
 													<option value="main-contractor" disabled>Main-Contractor
 													</option>
@@ -470,7 +496,7 @@
 			<!-- /full width modal -->
 
 			<!-- Full width modal/ Sub-Contractor-->
-			<div id="permission" class="modal fade" tabindex="-1">
+			<div id="role-tda" class="modal fade" tabindex="-1">
 				<div class="modal-dialog  modal-full">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -526,9 +552,60 @@
 															<td><input type="checkbox" /></td>
 															<td><input type="checkbox" /></td>
 														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="text-right">
+												<button type="submit" class="btn btn-light" class="remove"
+													data-dismiss="modal">Cancel</button>
+												<button type="submit" class="btn btn-success">Save</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /full width modal -->
+
+			<!-- Full width modal/ Sub-Contractor-->
+			<div id="role-mcontractor" class="modal fade" tabindex="-1">
+				<div class="modal-dialog  modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<div class="card">
+										<div class="card-header bg-white header-elements-inline">
+											<h4 class="card-title font-weight-bold">Permission</h4>
+										</div>
+										<div class="card-body">
+											<div class="table-responsive">
+												<table class="table table-striped" id="tblData">
+													<thead>
 														<tr>
-															<td>CEO's Office</td>
-															<td><input type="checkbox" checked /></td>
+															<th>Page</th>
+															<th>View</th>
+															<th>Add</th>
+															<th>Edit</th>
+															<th>Delete</th>
+															<th>Export</th>
+															<th>Notification</th>
+															<th>Email</th>
+															<th>Upload</th>
+														</tr>
+													</thead>
+													<thead>
+														<tr>
+															<td>Select All <br><input type="checkbox" id="chkParent"
+																	class="table-checkbox" /></td>
+															<td><input type="checkbox" /></td>
 															<td><input type="checkbox" /></td>
 															<td><input type="checkbox" /></td>
 															<td><input type="checkbox" /></td>
@@ -537,6 +614,8 @@
 															<td><input type="checkbox" /></td>
 															<td><input type="checkbox" /></td>
 														</tr>
+													</thead>
+													<tbody>
 														<tr>
 															<td>Main-Contractor</td>
 															<td><input type="checkbox" checked /></td>
@@ -548,6 +627,69 @@
 															<td><input type="checkbox" checked /></td>
 															<td><input type="checkbox" checked /></td>
 														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="text-right">
+												<button type="submit" class="btn btn-light" class="remove"
+													data-dismiss="modal">Cancel</button>
+												<button type="submit" class="btn btn-success">Save</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /full width modal -->
+			<!-- Full width modal/ Sub-Contractor-->
+			<div id="role-scontractor" class="modal fade" tabindex="-1">
+				<div class="modal-dialog  modal-full">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8 offset-md-2">
+									<div class="card">
+										<div class="card-header bg-white header-elements-inline">
+											<h4 class="card-title font-weight-bold">Permission</h4>
+										</div>
+										<div class="card-body">
+											<div class="table-responsive">
+												<table class="table table-striped" id="tblData">
+													<thead>
+														<tr>
+															<th>Page</th>
+															<th>View</th>
+															<th>Add</th>
+															<th>Edit</th>
+															<th>Delete</th>
+															<th>Export</th>
+															<th>Notification</th>
+															<th>Email</th>
+															<th>Upload</th>
+														</tr>
+													</thead>
+													<thead>
+														<tr>
+															<td>Select All <br><input type="checkbox" id="chkParent"
+																	class="table-checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+															<td><input type="checkbox" /></td>
+														</tr>
+													</thead>
+													<tbody>
 														<tr>
 															<td>Sub-Contractor</td>
 															<td><input type="checkbox" checked /></td>

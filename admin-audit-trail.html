@@ -316,12 +316,40 @@
 								<h4 class="card-title font-weight-bold">Audit Trail</h4>
 								<div class="header-elements">
 									<div class="list-icons">
-										<button type="button" class="btn btn-light" data-toggle="modal"
-											data-target="#editAudittrail" data-toggle="modal" data-popup="tooltip"
-											title="Select Date Range"><i class="icon-calendar22 mr-1"></i>
-											01/01/2021 - 01/02/2021</button>
+
+										<div class="dropdown">
+											<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"
+												aria-expanded="true"><i class="icon-menu7" data-popup="tooltip"
+													data-original-title="Action"></i></a>
+											<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+												style="position: absolute; transform: translate3d(-147px, 19px, 0px); top: 0px; left: 0px; will-change: transform;">
+												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+													As
+													PDF</a>
+												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+													As
+													Excel</a>
+												<a href="#" class="dropdown-item"><i class="icon-download4"></i>Export
+													AS
+													CSV</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item"><i class="icon-printer2"></i>Print</a>
+												<div class="dropdown-divider"></div>
+												<a href="#" class="dropdown-item" data-toggle="modal"
+													data-target="#editAudittrail" data-popup="tooltip"
+													title="Select Audit Trail Range"><i
+														class="icon-calendar"></i>01/01/2021 -
+													01/02/2021</a>
+												<!-- <button type="button" class="btn" data-toggle="modal"
+													data-target="#editAudittrail"
+													data-popup="tooltip" title="Select Date Range"><i
+														class="icon-calendar22 mr-1"></i>
+													01/01/2021 - 01/02/2021</button> -->
+											</div>
+										</div>
 									</div>
 								</div>
+
 							</div>
 
 
