@@ -9186,6 +9186,11 @@ body::-webkit-scrollbar-thumb {
     overflow-y: scroll;
 }
 
+.tnc-scroll-2 {
+    height: 500px;
+    overflow-y: scroll;
+}
+
 .icon-search {
     color: #333;
 }
